@@ -1,0 +1,92 @@
+/*
+ * page title
+ */
+
+.page-title {
+    background: var(--colour-white);
+    padding: 1rem 0;
+    position: relative;
+}
+
+    @media (--small) {
+        .page-title {
+            padding: 2rem 0;
+        }
+    }
+
+    @media (--medium) {
+        .page-title {
+            padding: 3rem 0;
+        }
+    }
+
+
+    /* page title - zig zag foot */
+        .page-title:after {
+            position: absolute;
+            z-index: 1;
+            content: "";
+            display: block;
+            bottom: -1rem;
+            width: 100%;
+            height: 1rem;
+
+            background:
+                linear-gradient(
+                    45deg,
+                    var(--colour-white) 33.333%,
+                    transparent 33.333%,
+                    transparent 66.667%,
+                    var(--colour-white) 66.667%
+                ),
+                linear-gradient(
+                    -45deg,
+                    var(--colour-white) 33.333%,
+                    transparent 33.333%,
+                    transparent 66.667%,
+                    var(--colour-white) 66.667%
+                );
+            background-size: 10px 30px;
+        }
+
+
+    /* page title - heading */
+        .page-title__heading {
+            color: var(--colour-grey-mid);
+            font-size: 1.5rem;
+        }
+
+            @media (--small) {
+                .page-title__heading {
+                    font-size: 2rem;
+                }
+            }
+
+
+            .page-title__heading strong {
+                font-weight: normal;
+                color: var(--colour-orange);
+            }
+
+            .page-title__heading em {
+                font-style: normal;
+                color: var(--colour-black);
+            }
+
+            .page-title__heading a {
+                color: var(--colour-orange);
+            }
+
+
+        /* page title - home modifier */
+            .page-title__heading.-home {
+                margin: 0 auto;
+                text-align: center;
+                max-width: 40rem;
+            }
+
+                .page-title__heading.-home:before {
+                    content: "\0003C  \0003E"; /* < > */
+                    display: block;
+                    color: var(--colour-orange);
+                }

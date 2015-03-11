@@ -1,0 +1,34 @@
+/*
+ * Block styles
+ */
+
+.block {
+
+}
+
+
+    .block__header {
+
+    }
+
+        .block__title {
+            display: inline-block;
+            margin-right: 1rem;
+            color: var(--colour-orange);
+        }
+
+        .block__header-link {
+            display: inline-block;
+            margin: 0;
+        }
+
+            .block__header-link:hover {
+                text-decoration: none;
+            }
+
+            .block__header-link:after {
+                content: "\0003E";
+                margin-left: 0.2rem;
+                text-decoration: none;
+                font-size: 0.75rem;
+            }

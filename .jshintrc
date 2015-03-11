@@ -1,0 +1,10 @@
+{
+    "eqeqeq": true,
+    "freeze": true,
+    "indent": 4,
+    "latedef": "nofunc",
+    "nonbsp": true,
+    "quotmark": "single",
+    "undef": true,
+    "maxlen": 80
+}

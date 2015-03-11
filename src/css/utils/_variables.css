@@ -1,0 +1,29 @@
+/* variables */
+:root {
+    /* fonts */
+        --font-headings: "Raleway-Light", Helvetica, sans-serif;
+        --font-headings-bold: "Raleway-Medium", Helvetica, sans-serif;
+        --font-body: Helvetica, sans-serif;
+
+    /* colours */
+        --colour-white: #fff;
+        --colour-black: #232323;
+        --colour-grey-dark: #3e3e3e;
+        --colour-grey-mid: #999;
+        --colour-grey-light: #eee;
+
+        --colour-orange: rgba(255, 153, 0, 1); /* f90 */
+        --colour-green: rgba(122, 204, 142, 1); /* 7acc8e */
+
+    /* transitions */
+        --transition-time: 0.25s;
+
+    /* margins and spacing */
+        --gutter: 1rem;
+
+    /* content-wrap */
+        --content-wrap-max-width: 75rem; /* 1200px */
+
+    /* Buttons & Forms*/
+
+}

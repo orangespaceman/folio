@@ -1,0 +1,11 @@
+/*
+ * Content-wrap
+ * Enforce max-width across site
+ */
+
+.content-wrap {
+    max-width: var(--content-wrap-max-width);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+    position: relative;
+}

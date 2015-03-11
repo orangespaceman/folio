@@ -1,0 +1,27 @@
+/*
+ * Raleway
+ * https://www.theleagueofmoveabletype.com/raleway
+ * See readme for more detail
+ */
+
+@font-face {
+  font-family: "Raleway-Light";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/raleway/raleway-light.eot?#iefix");
+  src: url("../fonts/raleway/raleway-light.eot?#iefix") format("eot"),
+       url("../fonts/raleway/raleway-light.woff") format("woff"),
+       url("../fonts/raleway/raleway-light.ttf") format("truetype"),
+       url("../fonts/raleway/raleway-light.svg#DINnext500") format("svg");
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/raleway/raleway-medium.eot?#iefix");
+  src: url("../fonts/raleway/raleway-medium.eot?#iefix") format("eot"),
+       url("../fonts/raleway/raleway-medium.woff") format("woff"),
+       url("../fonts/raleway/raleway-medium.ttf") format("truetype"),
+       url("../fonts/raleway/raleway-medium.svg#DINnext500") format("svg");
+}

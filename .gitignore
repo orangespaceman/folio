@@ -1,0 +1,15 @@
+# Logs
+*.log
+
+# Mac
+.DS_Store
+*~
+*.swp
+*.swo
+
+# npm
+/node_modules/
+npm-debug.log
+
+# Bower
+/bower_components/

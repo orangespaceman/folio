@@ -73,9 +73,13 @@
                 color: var(--colour-black);
             }
 
-            .page-title__heading a {
-                color: var(--colour-orange);
+            .page-title__link {
+                /*color: var(--colour-orange);*/
             }
+
+                .page-title__link:after {
+                    display: none; /* override default */
+                }
 
 
         /* page title - home modifier */

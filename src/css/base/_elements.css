@@ -55,17 +55,39 @@
 
 /* links */
     a {
+        position: relative;
         transition: all var(--transition-time);
         color: var(--colour-green);
         text-decoration: none;
+        border-bottom: 1px solid var(--colour-green);
     }
 
     a:hover,
     a:focus,
     a:active {
-        color: var(--colour-orange);
-        text-decoration: underline;
+        border-bottom-color: var(--colour-orange);
     }
+
+        a:after {
+            content: " \0003E"; /* > */
+            position: absolute;
+            right: -0.7rem;
+            bottom: 0;
+            border-bottom: 1px solid transparent; /* alignment */
+            opacity: 0;
+            line-height: 1;
+            font-family: var(--font-headings);
+            color: var(--colour-orange);
+            transition: all var(--transition-time);
+        }
+
+        a:hover:after,
+        a:focus:after,
+        a:active:after {
+            opacity: 1;
+        }
+
+
 
 
 /* forms */

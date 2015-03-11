@@ -3,7 +3,7 @@
  */
 
 .block {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -12,8 +12,6 @@
     }
 
         .block__title {
-            display: inline-block;
-            margin-right: 1rem;
             color: var(--colour-orange);
         }
 

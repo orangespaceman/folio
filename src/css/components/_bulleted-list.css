@@ -1,0 +1,22 @@
+/*
+ * replace bullets
+ */
+    .bulleted-list {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+        .bulleted-list__item {
+            list-style: none;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .bulleted-list__item:before {
+            content: " \0003E"; /* > */
+            position: absolute;
+            left: 0.5rem;
+            top: -0.15rem;
+            font-family: var(--font-headings);
+            color: var(--colour-orange);
+        }

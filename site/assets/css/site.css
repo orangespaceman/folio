@@ -1213,7 +1213,7 @@ input[type="radio"],
 .page-title__heading.-home {
                 margin: 0 auto;
                 text-align: center;
-                max-width: 40rem;
+                max-width: 42rem;
             }
 .page-title__heading.-home:before {
                     content: "\0003C  \0003E"; /* < > */

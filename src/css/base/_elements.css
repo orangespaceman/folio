@@ -2,11 +2,13 @@
  * HTML element styles
  */
 
-/* box model */
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
+/* box model: http://goo.gl/quQpCV */
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
     }
 
 

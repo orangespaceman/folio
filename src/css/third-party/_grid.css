@@ -137,7 +137,7 @@
   /* [2] */
   padding: 0;
   /* [2] */
-  margin-left: -1rem;
+  margin-left: -2rem;
   /* [3] */ }
 
 /**
@@ -150,7 +150,7 @@
 .grid__item {
   display: inline-block;
   /* [1] */
-  padding-left: 1rem;
+  padding-left: 2rem;
   /* [2] */
   vertical-align: top;
   /* [3] */
@@ -214,17 +214,17 @@
  * Create grids with narrower gutters. Extends `.grid`.
  */
 .grid--narrow {
-  margin-left: -0.5rem; }
+  margin-left: -1rem; }
   .grid--narrow > .grid__item {
-    padding-left: 0.5rem; }
+    padding-left: 1rem; }
 
 /**
  * Create grids with wider gutters. Extends `.grid`.
  */
 .grid--wide {
-  margin-left: -2rem; }
+  margin-left: -4rem; }
   .grid--wide > .grid__item {
-    padding-left: 2rem; }
+    padding-left: 4rem; }
 
 /*------------------------------------*\
     $WIDTHS

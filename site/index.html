@@ -7,6 +7,7 @@
         <title>Pete Goodman - Brighton-based Web Developer</title>
         <meta name="description" content="Online portfolio for Pete Goodman, freelance web developer and teacher based in Brighton, UK">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ff9900">
         <link rel="stylesheet" href="assets/css/site.css">
     </head>
 
@@ -64,67 +65,75 @@
         <main class="main" role="main">
             <div class="main__inner content-wrap">
 
-                <div class="grid">
+                <section class="block" aria-labelledby="portfolio">
 
-                    <div class="grid__item one-whole">
+                    <div class="grid">
+                        <div class="grid__item one-whole medium--one-third">
 
-                        <section class="block -portfolio-home" aria-labelledby="portfolio">
                             <header class="block__header clearfix">
                                 <h2 id="portfolio" class="block__title">Recent work</h2>
-                                <a class="block__header-link" href="#">View all</a>
                             </header>
 
-                            <div class="portfolio">
+                        </div>
+                    </div>
 
-                                <div class="grid">
+                    <div class="portfolio">
 
-                                    <div class="grid__item one-whole medium--one-third">
+                        <div class="grid">
 
-                                        <nav class="portfolio-nav" role="navigation">
-                                            <ul class="portfolio-nav__list">
-                                                <li><a href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                            </ul>
-                                        </nav>
+                            <div class="grid__item one-whole medium--one-third">
 
-                                        <h3 class="portfolio__title">Lorem Ipsum</h3>
-                                        <div class="portfolio__description">
+                                <div class="portfolio__information">
+                                    <h3 class="portfolio__title">Lorem Ipsum</h3>
+                                    <div class="portfolio__description">
+                                        <div class="editorial">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p class="portfolio__link"><a href="#">See all of my recent projects</a></p>
                                         </div>
-
-                                    </div><!--
-
-                                    --><div class="grid__item one-whole medium--two-thirds">
-
-                                        <div class="portfolio__screenshots">
-                                            <img src="http://placehold.it/500x300" alt="" class="portfolio__screenshot -desktop">
-                                            <img src="http://placehold.it/150x200" alt="" class="portfolio__screenshot -mobile">
-                                        </div>
-
                                     </div>
-
                                 </div>
+
+                            </div><!--
+
+                            --><div class="grid__item one-whole medium--two-thirds">
+
+                                <div class="portfolio__imagery">
+                                    <div class="portfolio__screenshots -desktop">
+                                        <img src="http://placehold.it/500x300" alt="" class="portfolio__screenshot -desktop">
+                                    </div>
+                                    <div class="portfolio__screenshots -mobile">
+                                        <img src="http://placehold.it/200x300" alt="" class="portfolio__screenshot -mobile">
+                                    </div>
+                                </div>
+
                             </div>
-                        </section>
 
-                    </div><!--
+                        </div>
+                    </div><!-- /.portfolio -->
 
-                    --><div class="grid__item one-whole medium--one-half">
+                </section>
 
-                        <section class="block -labs-home" aria-labelledby="labs">
+
+                <div class="grid">
+
+                    <div class="grid__item one-whole medium--one-half">
+
+                        <section class="block" aria-labelledby="labs">
                             <header class="block__header clearfix">
                                 <h2 id="labs" class="block__title">Recent labs</h2>
-                                <a class="block__header-link" href="#">View all</a>
                             </header>
 
-                            <div class="lab">
-                                <h3 class="lab__title">Lorem ipsum</h3>
-                                <div class="lab__description">
-                                    <p>Quidquid Latine dictum sit altum videtur</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="listing">
+                                <h3 class="listing__title">Lorem ipsum</h3>
+                                <img src="http://placehold.it/500x200" alt="" class="listing__screenshot">
+                                <div class="listing__description">
+                                    <div class="editorial">
+                                        <p>Quidquid Latine dictum sit altum videtur</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <p class="listing__link"><a href="#">See all of my lab projects</a></p>
+                                    </div>
                                 </div>
-                                <img src="http://placehold.it/150x200" alt="" class="lab__screenshot">
                             </div>
                         </section>
 
@@ -135,19 +144,18 @@
                         <section class="block -about-home" aria-labelledby="about">
                             <header class="block__header clearfix">
                                 <h2 id="about" class="block__title">About me</h2>
-                                <a class="block__header-link" href="#">Read more</a>
                             </header>
 
-                            <div class="about">
+                            <div class="editorial">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 <ul>
                                     <li>Recently listening to: </li>
                                     <li>Recently reading: </li>
                                     <li>Recent playlist: </li>
-                                    <li>Recently worked on: </li>
                                     <li>Recent photo: </li>
                                     <li>Recent tweet: none</li>
                                 </ul>
+                                <p><a href="#">See a bit more about me</a></p>
                             </div>
                         </section>
 

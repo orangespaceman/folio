@@ -1,0 +1,15 @@
+/*
+ * listing element
+ */
+
+.listing {}
+
+    .listing__title {}
+
+    .listing__screenshot {
+        width: 100%;
+    }
+
+    .listing__description {}
+
+    .listing__link {}

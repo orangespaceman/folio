@@ -3,5 +3,5 @@
  */
 
 @custom-media --small  (min-width: 25rem); /* 400px */
-@custom-media --medium (min-width: 43.75rem); /* 700px */
+@custom-media --medium (min-width: 45rem); /* 720px */
 @custom-media --large  (min-width: var(--content-wrap-max-width));

@@ -1,0 +1,13 @@
+/*
+ * Editorial text content
+ */
+
+.editorial {
+    line-height: 2;
+}
+
+    .editorial p {}
+
+    .editorial ul, ol {}
+
+    .editorial li {}

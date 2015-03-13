@@ -61,7 +61,19 @@ Webfont versions have been downloaded from [fontpro](http://fontpro.com/raleway-
 
 ## Back-end
 
-TBC
+The site uses [Jekyll](http://jekyllrb.com/) to build static templates, so the first step is to install it (see their website for instructions)
+
+```
+gem install jekyll
+```
+
+To compile the static templates, run:
+
+```
+jekyll build
+```
+
+
 
 
 ## Deployment

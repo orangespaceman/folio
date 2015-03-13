@@ -10,7 +10,6 @@
 
 /* utils */
 @import "src/css/utils/_variables.css";
-@import "src/css/utils/_media-queries.css";
 
 /* base */
 @import "src/css/base/_elements.css";

@@ -4,7 +4,7 @@
  */
 
 .content-wrap {
-    max-width: var(--content-wrap-max-width);
+    max-width: var(--width-large);
     margin: 0 auto;
     padding: 0 var(--gutter);
     position: relative;

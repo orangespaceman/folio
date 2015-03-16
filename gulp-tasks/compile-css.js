@@ -14,5 +14,5 @@ module.exports = function () {
             require('postcss-custom-media')(),
             require('autoprefixer-core')()
         ]))
-        .pipe(gulp.dest(global.config.siteDir + '/css'));
+        .pipe(gulp.dest(global.config.compiledDir + '/css'));
 };

@@ -1,0 +1,37 @@
+/**
+ * @define SiteFooter; use strict
+ *
+ * Site Footer
+ */
+
+.SiteFooter {
+    background: var(--colour-black);
+    color: var(--colour-white);
+    font-family: var(--font-headings);
+    text-align: center;
+}
+
+    @media (--medium) {
+        .SiteFooter {
+            text-align: left;
+        }
+    }
+
+    .SiteFooter-inner {
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+        .SiteFooter-contact {
+            color: var(--colour-orange);
+        }
+
+        @media (--medium) {
+            .SiteFooter-contact {
+                float: left;
+            }
+
+            .SiteFooter-copy {
+                float: right;
+            }
+        }

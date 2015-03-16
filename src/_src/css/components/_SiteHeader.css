@@ -1,0 +1,74 @@
+/**
+ * @define SiteHeader; use strict
+ *
+ * Site Header
+ */
+
+.SiteHeader {
+    background: var(--colour-grey-dark);
+    text-align: center;
+}
+
+    @media (--medium) {
+        .SiteHeader {
+            text-align: left;
+        }
+    }
+
+    .SiteHeader-inner {
+        padding-top: 1rem;
+    }
+
+        @media (--medium) {
+            .SiteHeader-inner {
+                padding-bottom: 1rem;
+            }
+        }
+
+
+    /* site header - title */
+        .SiteHeader-title {
+            display: inline-block;
+            padding-right: 1rem;
+            color: var(--colour-white);
+            background: var(--colour-orange);
+            font-family: var(--font-headings);
+            margin: 0 auto 1rem auto;
+            font-size: 0.8rem;
+        }
+
+            @media (--small) {
+                .SiteHeader-title {
+                    font-size: 1rem;
+                }
+            }
+
+            @media (--medium) {
+                .SiteHeader-title {
+                    margin-bottom: 0;
+                }
+            }
+
+            .SiteHeader-title strong {
+                font-family: var(--font-headings-bold);
+            }
+
+            .SiteHeader-title:before {
+                content: "\0003C  \0003E"; /* < > */
+                padding: 0.5rem 1rem;
+                margin-right: 1rem;
+                display: inline-block;
+                background: var(--colour-green);
+            }
+
+
+    /* site header - nav */
+        .SiteHeader-nav { }
+
+            @media (--medium) {
+                .SiteHeader-nav {
+                    position: absolute;
+                    right: var(--gutter);
+                    bottom: 0;
+                }
+            }

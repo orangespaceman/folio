@@ -1,0 +1,62 @@
+---
+title: Home
+---
+
+            {% include PageTitle/PageTitle.html modifier="home" title="__Pete Goodman__ - freelance _web developer_ and _teacher_ based in Brighton, UK" %}
+
+            {% include Main/Main-open.html %}
+
+            <section class="Block" aria-labelledby="recent-work">
+
+                {% include Block/Block-header.html title="Recent work" slug="recent-work" width="medium--one-third" %}
+
+                {% for project in site.tags["featured-project"] limit:1 %}
+                    {% include Listing/Listing--project.html item=project %}
+                {% endfor %}
+
+            </section>
+
+
+            <div class="grid">
+
+                <div class="grid__item one-whole medium--one-half">
+
+                    <section class="Block" aria-labelledby="recent-labs">
+
+                        {% include Block/Block-header.html title="Recent labs" slug="recent-labs" %}
+
+                        {% for project in site.tags["featured-lab"] limit:1 %}
+                            {% include Listing/Listing--older-project.html item=project %}
+                        {% endfor %}
+
+                    </section>
+
+                </div><!--
+
+                --><div class="grid__item one-whole medium--one-half">
+
+                    <section class="Block" aria-labelledby="about">
+
+                        {% include Block/Block-header.html title="About me" slug="about" %}
+
+                        <div class="Editorial">
+
+                            {% capture about %}{% include About/About-home.md %}{% endcapture %}
+                            {{ about | markdownify }}
+
+                            <ul class="BulletedList">
+                                <li class="BulletedList-item">Recently listening to: </li>
+                                <li class="BulletedList-item">Recently reading: </li>
+                                <li class="BulletedList-item">Recent playlist: </li>
+                                <li class="BulletedList-item">Recent photo: </li>
+                                <li class="BulletedList-item">Recent tweet: none</li>
+                            </ul>
+                            <p><a href="./about/">See a bit more about me</a></p>
+                        </div>
+                    </section>
+
+                </div><!-- .grid__item -->
+
+            </div><!-- .grid -->
+
+            {% include Main/Main-close.html %}

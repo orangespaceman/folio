@@ -1,0 +1,11 @@
+/**
+ * @define u-Invisible; use strict
+ *
+ * Hide visually and from screen readers, but maintain layout
+ *
+ * via H5BP
+ */
+
+.u-Invisible {
+    visibility: hidden;
+}

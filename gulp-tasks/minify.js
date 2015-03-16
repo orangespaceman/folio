@@ -10,12 +10,12 @@ var mincss = require('gulp-minify-css');
 module.exports = function () {
 
     var js = gulp
-        .src(global.config.siteDir + '/js/**/*.js')
+        .src(global.config.compiledDir + '/js/**/*.js')
         .pipe(uglify())
         .pipe(gulp.dest(global.config.buildDir + '/js'));
 
     var css = gulp
-        .src(global.config.siteDir + '/css/**/*.css')
+        .src(global.config.compiledDir + '/css/**/*.css')
         .pipe(mincss({
             keepSpecialComments: 0,
             noAdvanced: true

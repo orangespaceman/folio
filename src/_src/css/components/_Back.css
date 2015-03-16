@@ -1,0 +1,30 @@
+/**
+ * @define Back; use strict
+ *
+ * <back link
+ */
+
+.Back {
+    margin-bottom: 2rem;
+}
+
+    .Back-link {
+        margin-left: 0.7rem;
+    }
+
+        .Back-link:before {
+            content: " \0003C"; /* < */
+            position: absolute;
+            left: -0.7rem;
+            bottom: 0;
+            border-bottom: 1px solid transparent; /* alignment */
+            /*opacity: 0;*/
+            line-height: 1;
+            font-family: var(--font-headings);
+            color: var(--colour-orange);
+            transition: all var(--transition-time);
+        }
+
+        .Back-link:after {
+            display: none;
+        }

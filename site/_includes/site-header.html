@@ -1,0 +1,35 @@
+
+    {% comment %}
+
+        Calculate current section, logic separated from markup
+
+    {% endcomment %}
+
+    {% capture home_class %}{% if page.url == '/index.html' %} is-active{% endif %}{% endcapture %}
+    {% capture portfolio_class %}{% if page.url contains 'portfolio/' %} is-active{% endif %}{% endcapture %}
+    {% capture labs_class %}{% if page.url contains 'labs/' %} is-active{% endif %}{% endcapture %}
+    {% capture about_class %}{% if page.url contains 'about/' %} is-active{% endif %}{% endcapture %}
+
+        <header class="site-header" role="banner">
+            <div class="site-header__inner content-wrap">
+                <p class="site-header__title">
+                    <strong>Pete Goodman</strong> Web Developer
+                </p>
+                <nav class="site-header__nav" role="navigation">
+                    <ul class="site-nav">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link{{ home_class }}" href="/">Home</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link{{ portfolio_class }}" href="/portfolio/">Portfolio</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link{{ labs_class }}" href="/labs/">Labs</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link{{ about_class }}" href="/about/">About</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header><!-- .site-header -->

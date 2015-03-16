@@ -1,0 +1,27 @@
+# Site settings
+source: site
+
+# Global config settings
+destination: build
+
+# Build settings
+permalink: /:categories/:title/
+
+# defaults
+defaults:
+    - scope:
+        path: ""
+      values:
+        layout: "master"
+
+    - scope:
+        path: "portfolio"
+      values:
+        layout: "master"
+        category: "portfolio"
+
+    - scope:
+        path: "labs"
+      values:
+        layout: "master"
+        category: "labs"

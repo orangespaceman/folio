@@ -1,0 +1,22 @@
+---
+title: Labs
+page_title: _Here are a few experiments that I have compiled over the years._
+            There are plenty more on [github](http://github.com/...)
+---
+
+            {% include page-title.html %}
+
+            {% include main-open.html %}
+
+            Labs page content
+
+            <ul>
+                {% for post in site.categories["labs"] %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        {{ post.excerpt }}
+                    </li>
+                {% endfor %}
+            </ul>
+
+            {% include main-close.html %}

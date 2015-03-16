@@ -5,9 +5,9 @@ var util = require('util');
 
 var c = global.config = {};
 
-c.srcDir = './src';
+c.srcDir = './src/_src/';
 c.buildDir = './build';
-c.siteDir = './site/assets';
+c.compiledDir = './src/assets/';
 c.bowerDir = './bower_components';
 
 c.jsDir = util.format('%s/js', c.srcDir);
@@ -27,11 +27,11 @@ Object.keys(tasks).forEach(function (name) {
 });
 
 gulp.task('start', function (cb) {
-    seq('lint', 'compile', 'watch', cb);
+    seq('lint-js', 'compile', 'watch', cb);
 });
 
-gulp.task('lint', function (cb) {
-    seq(['jshint', 'jscs'], cb);
+gulp.task('lint-js', function (cb) {
+    seq(['lint-js-jshint', 'lint-js-jscs'], cb);
 });
 
 gulp.task('compile', function (cb) {
@@ -44,5 +44,5 @@ gulp.task('build', function (cb) {
 
 gulp.task('watch', function () {
     gulp.watch(c.cssFiles, ['compile-css']);
-    gulp.watch(c.jsFiles, ['compile-js', 'lint']);
+    gulp.watch(c.jsFiles, ['compile-js', 'lint-js']);
 });

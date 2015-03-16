@@ -1,0 +1,54 @@
+/**
+ * @define Listing; use strict
+ *
+ * Listing block styles
+ */
+
+.Listing {
+    margin-bottom: 3rem;
+}
+
+    /* listing - text */
+
+        .Listing-title {}
+
+        .Listing-description {}
+
+        .Listing-link {}
+
+
+    /* listing - image comtainer */
+        .Listing-imagery {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+            .Listing-screenshots {}
+
+                .Listing-screenshots--desktop {}
+
+                .Listing-screenshots--mobile {
+                    position: absolute;
+                    right: 0;
+                    bottom: -2rem;
+                    z-index: 1;
+                    max-width: 40%;
+                    transition: all var(--transition-time);
+                }
+
+                .Listing-imagery:hover .Listing-screenshots--mobile {
+                    transform: perspective(600) rotateY(-20deg) rotateX(10deg);
+                    transform-style: preserve-3d;
+                }
+
+
+                /* listing - images */
+                    .Listing-screenshot {
+                        width: 100%;
+                    }
+
+                        .Listing-screenshot--desktop {
+                            padding-right: 2rem;
+                        }
+
+                        .Listing-screenshot--mobile {}

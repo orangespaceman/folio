@@ -1,0 +1,26 @@
+/**
+ * @define BulletedList; use strict
+ *
+ * > bulleted
+ * > lists
+ */
+
+.BulletedList {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+    .BulletedList-item {
+        list-style: none;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+
+    .BulletedList-item:before {
+        content: " \0003E"; /* > */
+        position: absolute;
+        left: 0.5rem;
+        top: -0.15rem;
+        font-family: var(--font-headings);
+        color: var(--colour-orange);
+    }

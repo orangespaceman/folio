@@ -1,0 +1,99 @@
+/**
+ * @define PageTitle; use strict
+ *
+ * Page title blocks
+ */
+
+.PageTitle {
+    background: var(--colour-white);
+    padding: 1rem 0;
+    position: relative;
+}
+
+    @media (--small) {
+        .PageTitle {
+            padding: 2rem 0;
+        }
+    }
+
+    @media (--medium) {
+        .PageTitle {
+            padding: 3rem 0;
+        }
+    }
+
+
+    /* page title - zig zag foot */
+        .PageTitle:after {
+            position: absolute;
+            z-index: 1;
+            content: "";
+            display: block;
+            bottom: -1rem;
+            width: 100%;
+            height: 1rem;
+
+            background:
+                linear-gradient(
+                    45deg,
+                    var(--colour-white) 33.333%,
+                    transparent 33.333%,
+                    transparent 66.667%,
+                    var(--colour-white) 66.667%
+                ),
+                linear-gradient(
+                    -45deg,
+                    var(--colour-white) 33.333%,
+                    transparent 33.333%,
+                    transparent 66.667%,
+                    var(--colour-white) 66.667%
+                );
+            background-size: 10px 30px;
+        }
+
+
+    /* page title - heading */
+        .PageTitle-heading {
+            color: var(--colour-grey-mid);
+            font-size: 1.5rem;
+        }
+
+            @media (--small) {
+                .PageTitle-heading {
+                    font-size: 2rem;
+                }
+            }
+
+
+            .PageTitle-heading strong {
+                font-weight: normal;
+                color: var(--colour-orange);
+            }
+
+            .PageTitle-heading em {
+                display: block;
+                font-style: normal;
+                color: var(--colour-black);
+            }
+
+                .PageTitle-heading a:after {
+                    display: none; /* override default */
+                }
+
+
+        /* page title - home modifier */
+            .PageTitle-heading--home {
+                margin: 0 auto;
+                text-align: center;
+                max-width: var(--width-medium);
+            }
+
+                .PageTitle-heading--home em {
+                    display: inline;
+                }
+
+                .PageTitle-heading--home:before {
+                    content: "\0003C  \0003E"; /* < > */
+                    display: block;
+                    color: var(--colour-orange);
+                }

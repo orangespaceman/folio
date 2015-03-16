@@ -24,7 +24,7 @@ module.exports = function () {
         return bundler.bundle()
             .on('error', gutil.log.bind(gutil, 'Browserify Error'))
             .pipe(source('bundle.js'))
-            .pipe(gulp.dest(global.config.siteDir + '/js'));
+            .pipe(gulp.dest(global.config.compiledDir + '/js'));
     }
 
     bundler.on('update', bundle);

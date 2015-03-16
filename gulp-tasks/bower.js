@@ -13,5 +13,5 @@ module.exports = function () {
         .src(bower())
         .pipe(filter('*.js'))
         .pipe(concat('third-party.js'))
-        .pipe(gulp.dest(global.config.siteDir + '/js'));
+        .pipe(gulp.dest(global.config.compiledDir + '/js'));
 };

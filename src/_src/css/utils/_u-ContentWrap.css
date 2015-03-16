@@ -1,0 +1,15 @@
+/*
+/**
+ * @define u-ContentWrap; use strict
+ *
+ * Enforce max-width across site
+ */
+
+.u-ContentWrap {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+    max-width: var(--width-large);
+}

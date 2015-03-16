@@ -1,5 +1,5 @@
 # Site settings
-source: site
+source: src
 
 # Global config settings
 destination: build
@@ -17,11 +17,11 @@ defaults:
     - scope:
         path: "portfolio"
       values:
-        layout: "master"
+        layout: "portfolio-detail"
         category: "portfolio"
 
     - scope:
         path: "labs"
       values:
-        layout: "master"
+        layout: "labs-detail"
         category: "labs"

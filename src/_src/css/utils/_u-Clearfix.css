@@ -1,0 +1,25 @@
+/**
+ * @define u-Clearfix; use strict
+ *
+ * contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `u-Clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ *
+ * via H5BP
+ */
+
+.u-Clearfix:before,
+.u-Clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.u-Clearfix:after {
+    clear: both;
+}

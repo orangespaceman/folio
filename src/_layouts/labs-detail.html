@@ -1,0 +1,37 @@
+---
+layout: master
+section: Labs
+---
+
+            {% include PageTitle/PageTitle.html title=page.title %}
+
+            {% include Main/Main-open.html %}
+
+            {% include Back/Back.html title="Back to all labs" %}
+
+            <section class="Block" aria-labelledby="project-detail">
+
+                <div class="Listing">
+
+                    <div class="Listing-imagery">
+                        <div class="Listing-screenshots">
+                            <img src="http://placehold.it/500x100" alt="" class="Listing-screenshot">
+                        </div>
+                    </div>
+
+                    <div class="grid grid--right">
+                        <div class="grid__item one-whole medium--two-thirds">
+
+                            <div class="Listing-information">
+                                <div class="Listing-description">
+                                    <div class="Editorial">
+                                        {{content}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.listing -->
+            </section>
+
+            {% include Main/Main-close.html %}

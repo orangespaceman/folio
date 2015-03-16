@@ -1,0 +1,20 @@
+/**
+ * @define Block; use strict
+ *
+ * block-level container, provides spacing
+ */
+
+.Block {
+    margin-bottom: 1rem;
+}
+
+
+    .Block-header {
+        border-bottom: 1px solid var(--colour-grey-mid);
+        padding-bottom: 0.25rem;
+    }
+
+        .Block-title {
+            color: var(--colour-orange);
+        }
+

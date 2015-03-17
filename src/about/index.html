@@ -7,21 +7,20 @@ title: About
             {% include Main/Main-open.html %}
 
             <section class="Block" aria-labelledby="about-me">
-
                 <h2 class="u-VisuallyHidden">About me</h2>
-
                 <div class="grid">
 
                     <div class="grid__item one-whole medium--two-thirds">
-
                         <div class="Editorial">
-
                             {% capture about %}{% include About/About-main.md %}{% endcapture %}
                             {{ about | markdownify }}
-
-                            <p><a href="https://www.linkedin.com/in/petegoodman" rel="external">See my linkedin profile</a></p>
+                            <ul class="BulletedList">
+                                <li class="BulletedList-item"><a href="/cv/">See my CV</a></li>
+                                <li class="BulletedList-item"><a href="https://www.linkedin.com/in/petegoodman" rel="external">See my linkedin profile</a></li>
+                            </ul>
                         </div>
                     </div><!--
+
                     --><div class="grid__item one-whole medium--one-third">
                         <a href="https://www.flickr.com/photos/thegingerbloke/3873433525/" rel="external">
                             <img src="/assets/images/me.jpg" alt="Me">
@@ -37,18 +36,9 @@ title: About
 
                 <div class="grid">
                     <div class="grid__item one-whole">
-                        <div class="Editorial">
-                            <p>If you are looking for experienced freelance developers, I can recommend the <em><a href="http://madebycomrades.com" rel="external">Comrades!</a></em></p>
-                            <p>Over the years I've worked with lots of people I'd recommend:</p>
-                            <ul class="BulletedList">
-                                {% for comrade in site.data.comrades %}
-                                <li class="BulletedList-item">
-                                    <a href="{{comrade.url}}" rel="external">{{comrade.name}}</a>
-                                    ({{comrade.skills}})
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
+
+                        {% include Comrades/Comrades.html %}
+
                     </div>
                 </div>
             </section>

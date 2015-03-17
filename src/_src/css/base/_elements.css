@@ -58,13 +58,18 @@
     a:hover,
     a:focus,
     a:active {
+        /*color: var(--colour-green-dark);*/
         border-bottom-color: var(--colour-orange);
+    }
+
+    a:visited {
+        /*color: var(--colour-green-dark);*/
     }
 
         a:after {
             content: " \0003E"; /* > */
             position: absolute;
-            right: -0.7rem;
+            right: -0.3rem;
             bottom: 0;
             border-bottom: 1px solid transparent; /* alignment */
             opacity: 0;
@@ -77,6 +82,7 @@
         a:hover:after,
         a:focus:after,
         a:active:after {
+            right: -0.7rem;
             opacity: 1;
         }
 

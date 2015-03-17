@@ -1,5 +1,5 @@
 ---
-layout: master
+layout: page
 title: Labs
 ---
 
@@ -16,7 +16,7 @@ title: Labs
                         {% for post in site.categories["labs"] %}
 
                             --><div class="grid__item one-whole small--one-half medium--one-third">
-                                {% include Listing/Listing--older-project.html item=post %}
+                                {% include Listing/Listing--item.html item=post %}
                             </div><!--
 
                         {% endfor %}

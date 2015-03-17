@@ -441,7 +441,7 @@ ul {
 :root {
     /* fonts */
 
-    /* colours */ /* f90 */ /* 7acc8e */
+    /* colours */ /* f90 */ /* e68000 */ /* 7acc8e */ /* 61b375 */
 
     /* transitions */
 
@@ -499,12 +499,16 @@ a {
 a:hover,
     a:focus,
     a:active {
+        /*color: var(--colour-green-dark);*/
         border-bottom-color: rgba(255, 153, 0, 1);
+    }
+a:visited {
+        /*color: var(--colour-green-dark);*/
     }
 a:after {
             content: " \0003E"; /* > */
             position: absolute;
-            right: -0.7rem;
+            right: -0.3rem;
             bottom: 0;
             border-bottom: 1px solid transparent; /* alignment */
             opacity: 0;
@@ -516,6 +520,7 @@ a:after {
 a:hover:after,
         a:focus:after,
         a:active:after {
+            right: -0.7rem;
             opacity: 1;
         }
 /* forms */
@@ -1138,6 +1143,7 @@ input[type="radio"],
         list-style: none;
         position: relative;
         padding-left: 1.5rem;
+        margin-bottom: 0.25rem;
     }
 .BulletedList-item:before {
         content: " \0003E"; /* > */
@@ -1147,6 +1153,83 @@ input[type="radio"],
         font-family: "Raleway-Light", Helvetica, sans-serif;
         color: rgba(255, 153, 0, 1);
     }
+/**
+ * @define Comrades; use strict
+ */
+.Comrades { }
+.Comrades-list {}
+@media (min-width: 45rem) {
+            .Comrades-list {
+                -webkit-column-count: 3;
+                   -moz-column-count: 3;
+                        column-count: 3;
+                -webkit-column-width: 30%;
+                   -moz-column-width: 30%;
+                        column-width: 30%;
+                -webkit-column-gap: 2rem;
+                   -moz-column-gap: 2rem;
+                        column-gap: 2rem;
+            }
+        }
+.Comrades-item {
+        list-style: none;
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.25rem;
+    }
+.Comrades-item:before {
+        content: " \0003E"; /* > */
+        position: absolute;
+        left: 0.5rem;
+        top: -0.15rem;
+        font-family: "Raleway-Light", Helvetica, sans-serif;
+        color: rgba(255, 153, 0, 1);
+    }
+.Comrades-link:visited {
+        color: rgba(97, 179, 117, 1);
+    }
+.Comrades-link:after {
+            display: none;
+        }
+.Comrades-skills {
+        font-size: 0.75rem;
+        font-style: italic;
+        color: #999;
+    }
+/**
+ * @define CV; use strict
+ */
+.CV {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.CV h1,
+    .CV h2,
+    .CV h3,
+    .CV h4 {
+        margin-bottom: 1rem;
+    }
+.CV h4 {
+        font-style: italic;
+    }
+.CV p,
+    .CV ul {
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+.CV li {
+            list-style: none;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+.CV li:before {
+            content: " \0003E"; /* > */
+            position: absolute;
+            left: 0.5rem;
+            top: -0.15rem;
+            font-family: "Raleway-Light", Helvetica, sans-serif;
+            color: rgba(255, 153, 0, 1);
+        }
 /**
  * @define Editorial; use strict
  *
@@ -1172,7 +1255,10 @@ input[type="radio"],
     margin-bottom: 3rem;
 }
 /* listing - text */
-.Listing-title {}
+.Listing-title {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
 .Listing-description {}
 .Listing-link {}
 /* listing - image comtainer */
@@ -1204,6 +1290,10 @@ input[type="radio"],
                             padding-right: 2rem;
                         }
 .Listing-screenshot--mobile {}
+/* Listing blocks */
+.Listing--block {}
+/* Listing items */
+.Listing--item {}
 /**
  * @define Main; use strict
  *
@@ -1378,33 +1468,12 @@ input[type="radio"],
         }
 /* site header - title */
 .SiteHeader-title {
-            display: inline-block;
-            padding-right: 1rem;
-            color: #fff;
-            background: rgba(255, 153, 0, 1);
-            font-family: "Raleway-Light", Helvetica, sans-serif;
             margin: 0 auto 1rem auto;
-            font-size: 0.8rem;
         }
-@media  (min-width: 25rem) {
-                .SiteHeader-title {
-                    font-size: 1rem;
-                }
-            }
 @media (min-width: 45rem) {
                 .SiteHeader-title {
                     margin-bottom: 0;
                 }
-            }
-.SiteHeader-title strong {
-                font-family: "Raleway-Medium", Helvetica, sans-serif;
-            }
-.SiteHeader-title:before {
-                content: "\0003C  \0003E"; /* < > */
-                padding: 0.5rem 1rem;
-                margin-right: 1rem;
-                display: inline-block;
-                background: rgba(122, 204, 142, 1);
             }
 /* site header - nav */
 .SiteHeader-nav { }
@@ -1463,6 +1532,65 @@ input[type="radio"],
                     font-family: "Raleway-Light", Helvetica, sans-serif;
                 }
             }
+/**
+ * @define SiteTitle; use strict
+ *
+ * Site Title
+ */
+.SiteTitle {
+    display: inline-block;
+}
+.SiteTitle-link {
+        display: inline-block;
+        position: relative;
+        border: none;
+
+        padding:0.5rem 1rem 0.5rem 4rem;
+        font-family: "Raleway-Light", Helvetica, sans-serif;
+        font-size: 0.8rem;
+        color: #fff;
+        background: rgba(255, 153, 0, 1);
+    }
+@media  (min-width: 25rem) {
+            .SiteTitle-link {
+                font-size: 1rem;
+            }
+        }
+.SiteTitle-link:after {
+            display: none;
+        }
+.SiteTitle-link:hover {
+            background: rgba(230, 128, 0, 1);
+        }
+.SiteTitle strong {
+        font-family: "Raleway-Medium", Helvetica, sans-serif;
+    }
+/* Site title - lines */
+.SiteTitle-logo {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 3rem;
+            display: block;
+            background: rgba(122, 204, 142, 1);
+        }
+.SiteTitle-line {
+            position: absolute;
+            background: #fff;
+            height: 1px;
+            width: 0.8rem;
+            transition: all 0.25s;
+        }
+.SiteTitle-line--left-top       { left: 0.6rem; top: 0.8rem; -webkit-transform: rotate(-35deg); -ms-transform: rotate(-35deg); transform: rotate(-35deg); }
+.SiteTitle-line--left-bottom    { left: 0.6rem; top: 1.25rem; -webkit-transform: rotate(35deg); -ms-transform: rotate(35deg); transform: rotate(35deg); }
+.SiteTitle-line--right-top      { left: 1.6rem; top: 0.8rem; -webkit-transform: rotate(35deg); -ms-transform: rotate(35deg); transform: rotate(35deg); }
+.SiteTitle-line--right-bottom   { left: 1.6rem; top: 1.25rem; -webkit-transform: rotate(-35deg); -ms-transform: rotate(-35deg); transform: rotate(-35deg); }
+.SiteTitle-link:hover .SiteTitle-line--left-top       { width: 1.4rem; left: 0.3rem; top: 0.8rem; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
+.SiteTitle-link:hover .SiteTitle-line--left-bottom    { width: 0.8rem; left: 0.55rem; top: 1.5rem; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
+.SiteTitle-link:hover .SiteTitle-line--right-top      { width: 1.4rem; left: 1.3rem; top: 0.8rem; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+.SiteTitle-link:hover .SiteTitle-line--right-bottom   { width: 0.8rem; left: 1.6rem; top: 1.5rem; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
 
 /* util classes */
 /**
@@ -1498,10 +1626,16 @@ input[type="radio"],
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     max-width: 75rem;
 }
+@media (min-width: 45rem) {
+        .u-ContentWrap {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
 /**
  * @define u-Hidden; use strict
  *

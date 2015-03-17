@@ -22,6 +22,8 @@
 @import "src/_src/css/components/_Back.css";
 @import "src/_src/css/components/_Block.css";
 @import "src/_src/css/components/_BulletedList.css";
+@import "src/_src/css/components/_Comrades.css";
+@import "src/_src/css/components/_CV.css";
 @import "src/_src/css/components/_Editorial.css";
 @import "src/_src/css/components/_Listing.css";
 @import "src/_src/css/components/_Main.css";
@@ -29,6 +31,7 @@
 @import "src/_src/css/components/_SiteFooter.css";
 @import "src/_src/css/components/_SiteHeader.css";
 @import "src/_src/css/components/_SiteNav.css";
+@import "src/_src/css/components/_SiteTitle.css";
 
 /* util classes */
 @import "src/_src/css/utils/_u-Clearfix.css";

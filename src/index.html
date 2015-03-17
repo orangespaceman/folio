@@ -10,9 +10,8 @@ title: Home
 
                 {% include Block/Block-header.html title="Recent work" slug="recent-work" width="medium--one-third" %}
 
-                {% for project in site.tags["featured-project"] limit:1 %}
-                    {% include Listing/Listing--project.html item=project %}
-                {% endfor %}
+                {% assign featuredProject = site.tags["featured-project"][0] %}
+                {% include Listing/Listing--block.html item=featuredProject url="/portfolio/" link="See more of my projects" %}
 
             </section>
 
@@ -25,9 +24,8 @@ title: Home
 
                         {% include Block/Block-header.html title="Recent labs" slug="recent-labs" %}
 
-                        {% for project in site.tags["featured-lab"] limit:1 %}
-                            {% include Listing/Listing--older-project.html item=project %}
-                        {% endfor %}
+                        {% assign featuredLab = site.tags["featured-lab"][0] %}
+                        {% include Listing/Listing--item.html item=featuredLab url="/labs/" link="See more of my lab projects" %}
 
                     </section>
 

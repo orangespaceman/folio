@@ -10,7 +10,10 @@
 
     /* listing - text */
 
-        .Listing-title {}
+        .Listing-title {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
 
         .Listing-description {}
 
@@ -52,3 +55,11 @@
                         }
 
                         .Listing-screenshot--mobile {}
+
+
+    /* Listing blocks */
+        .Listing--block {}
+
+
+    /* Listing items */
+        .Listing--item {}

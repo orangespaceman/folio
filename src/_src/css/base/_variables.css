@@ -16,7 +16,10 @@
         --colour-grey-light: #eee;
 
         --colour-orange: rgba(255, 153, 0, 1); /* f90 */
+        --colour-orange-dark: rgba(230, 128, 0, 1); /* e68000 */
+
         --colour-green: rgba(122, 204, 142, 1); /* 7acc8e */
+        --colour-green-dark: rgba(97, 179, 117, 1); /* 61b375 */
 
     /* transitions */
         --transition-time: 0.25s;
@@ -24,6 +27,7 @@
     /* Buttons & Forms*/
 
     /* margins and spacing */
+        --gutter-small: 1rem;
         --gutter: 2rem;
 
     /* content widths */

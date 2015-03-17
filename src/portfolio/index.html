@@ -1,10 +1,10 @@
 ---
-layout: master
+layout: page
 title: Portfolio
 ---
 
 
-            {% include PageTitle/PageTitle.html title="Below are some of my favourite recent projects. _For more information please [download my CV](#cv)_" %}
+            {% include PageTitle/PageTitle.html title="Below are some of my favourite recent projects. _For more information please [see my CV](/cv/)_" %}
 
             {% include Main/Main-open.html %}
 
@@ -14,7 +14,7 @@ title: Portfolio
 
                 {% for project in site.categories.portfolio limit:2 %}
 
-                    {% include Listing/Listing--project.html item=project %}
+                    {% include Listing/Listing--block.html item=project %}
 
                 {% endfor %}
 
@@ -30,7 +30,7 @@ title: Portfolio
                     {% for project in site.categories.portfolio offset:2 %}
 
                         --><div class="grid__item one-whole small--one-half medium--one-third">
-                            {% include Listing/Listing--older-project.html item=project %}
+                            {% include Listing/Listing--item.html item=project %}
                         </div><!--
 
                     {% endfor %}

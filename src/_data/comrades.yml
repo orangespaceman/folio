@@ -1,19 +1,504 @@
+- name: Adnan Mangral
+  url: http://thisishatch.co.uk/
+  skills: UX, Video
+  tags: [ux, design, video]
+
 - name: Adrian Rowbotham
   url: https://aderowbotham.com/
-  skills: Developer
+  skills: Design, Development
+  tags: [design, development, html, css, js, php]
 
-- name: Matt Thomas
-  url: http://openbyhand.com
-  skills: Illustration/Motion Graphics
+- name: Alan Thomson
+  url: http://projectmccoll.co.uk
+  skills: Development
+  tags: [development, html, css, js, php]
+
+- name: Alastair Lockie
+  url: http://alastairlockie.com/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Alex Dobbin
+  url: http://alexdobbin.co.uk/
+  skills: Motion Graphics, Animation
+  tags: [motion-graphics, animation, illustration]
+
+- name: Arthur Nurse
+  url: http://artstudiolondon.com/
+  skills: Design
+  tags: [design]
+
+- name: Barnaby Sheeran
+  url: http://www.thesebeautifullies.com/
+  skills: Development
+  tags: [development]
+
+- name: Ben Scammels
+  url: http://www.benscammelsdesign.com/
+  skills: Design, UX
+  tags: [ux, design]
+
+- name: Carles Barrobés
+  url: https://technomilk.wordpress.com/
+  skills: Development
+  tags: [development, python]
+
+- name: Caz Lock
+  url: http://www.cazlock.com/
+  skills: Illustration, Photo Retouching
+  tags: [illustration, photo-retouching]
+
+- name: Chris James (03)
+  url: http://chrisjamesbk.com/
+  skills: Development
+  tags: [development, html, css, js, php]
+
+- name: Chris James (05)
+  url: http://www.05creative.com/
+  skills: Design, UX
+  tags: [design, ux]
+
+- name: Christian Klotz
+  url: http://www.christianklotz.co.uk
+  skills: Development
+  tags: [development, ios]
+
+- name: Daniel Hutchinson
+  url: http://danielhutchinson.com
+  skills: Design, UX
+  tags: [design, ux]
+
+- name: Dave Bond
+  url: http://www.bondybondy.com/
+  skills: Design, Illustration
+  tags: [design, illustration]
+
+- name: David Boleas
+  url: http://davidboleas.com/
+  skills: Design
+  tags: [design]
+
+- name: Davy McGeorge
+  url: http://davymacca.com/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Ed Harrison
+  url: http://edharrisondesign.com/
+  skills: Design
+  tags: [design]
+
+- name: Eduardo De Felipe
+  url: http://cargocollective.com/eduardodefelipe
+  skills: Design
+  tags: [design]
+
+- name: Emma Smith
+  url: http://thisishatch.co.uk/
+  skills: Design, UX
+  tags: [design, ux]
+
+- name: Fran Swatton
+  url: http://www.osomi.co.uk/
+  skills: Design
+  tags: [design]
+
+- name: Francesca McWhirter
+  url: http://francescamcwhirter.com/
+  skills: Design
+  tags: [design]
+
+- name: Gabriel Bucknall
+  url: http://www.pixelbreaker.com/
+  skills: Development
+  tags: [development, html, css, js, php]
+
+- name: Gideon Fisher
+  url: http://elixirphotography.co.uk/
+  skills: Photography
+  tags: [photography]
+
+- name: Greg Tilley
+  url: http://www.gregtilley.co.uk/
+  skills: Design
+  tags: [design]
+
+- name: Hayley Watchorn
+  url: http://www.hayleywatchorn.com/
+  skills: Design, Video
+  tags: [design, video]
+
+- name: Henry Cooke
+  url: http://prehensile.co.uk/
+  skills: Development
+  tags: [development, python, ios]
+
+- name: Iain Campbell
+  url: http://www.iaincampbellphotography.com/
+  skills: Photography
+  tags: [photography]
+
+- name: Iain Mullan
+  url: http://iainmullan.com/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Ian Hart
+  url: http://ianmadethis.com/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Jake Prime
+  url: http://team-prime.com/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: James Beer
+  url: http://www.logologo.co.uk/
+  skills: Design
+  tags: [design]
+
+- name: James Booth
+  url: http://www.jamesbooth.net/
+  skills: Design, Photography
+  tags: [design, photography]
+
+- name: James Cooke
+  url: http://jamescooke.info/
+  skills: Development
+  tags: [development, python]
+
+- name: James McCarthy
+  url: http://thisishatch.co.uk/
+  skills: Development
+  tags: [development, ruby]
+
+- name: James Wragg
+  url: http://jameswragg.com/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Jamie Long
+  url: http://jamielong.tumblr.com/
+  skills: Design, Photography
+  tags: [design, photography]
+
+- name: Jed Richards
+  url: http://www.seisaku.co.uk/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Jessica Rutson
+  url: https://instagram.com/jessierutson/
+  skills: Production
+  tags: [production]
+
+- name: Jimmy Cunnane
+  url: http://jimmyalphachannels.net/
+  skills: Design, Illustration
+  tags: [design, illustration]
+
+- name: Joe Wheeler
+  url: https://www.linkedin.com/in/joewheeleruk
+  skills: Design, Development
+  tags: [design, development]
+
+- name: John Lund
+  url: http://indiefolk.co.uk/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Jon Aizlewood
+  url: http://carbongraffiti.com/
+  skills: Design
+  tags: [design]
+
+- name: Jonas Haefele
+  url: http://www.jonashaefele.com/
+  skills: Design, Development
+  tags: [design, development, html, css, js]
+
+- name: Jonny Goodall
+  url: http://www.jonnygoodall.com/
+  skills: Design
+  tags: [design]
+
+- name: Joshua Maxey
+  url: https://jeshua.co/
+  skills: Development
+  tags: [development]
+
+- name: Judit Greskovits
+  url: http://www.juditgreskovits.com/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Julio Ruiz
+  url: https://www.linkedin.com/in/xfatboy
+  skills: Development
+  tags: [development, html, css, js, php]
+
+- name: Kalle Lind
+  url: http://www.kallelind.com/
+  skills: Design, Photography
+  tags: [design, photography]
+
+- name: Kate Booth
+  url: uk.linkedin.com/in/katebooth
+  skills: Production
+  tags: [production]
+
+- name: Katrina Stubbings
+  url: http://www.katstubbings.com/
+  skills: Design
+  tags: [design]
+
+- name: Kenzo Mayama Kramarz
+  url: https://www.linkedin.com/in/kenzomayamakramarz
+  skills: Design
+  tags: [design]
+
+- name: Krystal Wu
+  url: http://essencious.com/
+  skills: Development
+  tags: [development, html, css, js, php, python]
+
+- name: Liam Walsh
+  url: http://liamwalsh.com/
+  skills: Development
+  tags: [development]
+
+- name: Luke Davies
+  url: http://lukehmu.com/
+  skills: Production
+  tags: [production]
+
+- name: Malcolm Elsworth
+  url: http://electricputty.co.uk/
+  skills: Development
+  tags: [development, html, css, js, php]
+
+- name: Marta Bacardit
+  url: https://www.linkedin.com/in/martabacardit
+  skills: Production
+  tags: [production]
+
+- name: Mat Keller
+  url: http://www.mathewkeller.com/
+  skills: Design, Photography
+  tags: [design, photography]
 
 - name: Matt Collins
   url: http://mcollins.co.uk/
-  skills: Developer
+  skills: Development
+  tags: [development, html, css, js, php, python]
+
+- name: Matt Sephton
+  url: http://www.gingerbeardman.com/
+  skills: Development
+  tags: [development]
+
+- name: Matt Thomas
+  url: http://openbyhand.com/
+  skills: Motion Graphics, Animation
+  tags: [motion-graphics, animation, illustration]
+
+- name: Mazz Moseley
+  url: http://houseofmnowster.com/
+  skills: Development
+  tags: [development, python]
+
+- name: Melanie Burke
+  url: http://electricputty.co.uk/
+  skills: UX
+  tags: [ux]
 
 - name: Michael Allanson
   url: http://michaelallanson.com/
-  skills: Developer
+  skills: Development
+  tags: [development, html, css, js, php, python]
+
+- name: Miklós Petravich
+  url: http://petravich.com/
+  skills: UX
+  tags: [ux]
+
+- name: Neil Noakes
+  url: https://www.linkedin.com/in/neilnoakes
+  skills: UX
+  tags: [ux]
+
+- name: Nick Kuh
+  url: http://www.nickkuh.com/
+  skills: Development
+  tags: [development, iOS]
+
+- name: Nick Murray Willis
+  url: http://www.nickmw.com/
+  skills: Animation, Illustration
+  tags: [animation, illustration]
+
+- name: Nick Wavish
+  url: http://www.wavish.com/
+  skills: Design, Illustration
+  tags: [design, illustration]
+
+- name: Nicolas Pigelet
+  url: http://www.nicolaspigelet.com/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Ollie Wright
+  url: http://www.digitoli.com/
+  skills: Production
+  tags: [production]
+
+- name: Paul Love
+  url: http://anglepoised.com/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Pete Graham
+  url: http://petegraham.co.uk/
+  skills: Development
+  tags: [development, html, css, js, php, python]
+
+- name: Premasagar Rose
+  url: http://premasagar.com/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Rebecca Bailey
+  url: http://www.optimisticfox.co.uk/
+  skills: Branding
+  tags: [branding]
+
+- name: Remi Shergold
+  url: http://remi-shergold.com/
+  skills: Development
+  tags: [development, html, css, js, php, ruby, iOS]
+
+- name: Rich Sage
+  url: https://richsage.uk/
+  skills: Development
+  tags: [development, html, css, js, php, iOS]
 
 - name: Richard Hallows
   url: http://richardhallows.com/
-  skills: Developer
+  skills: Development
+  tags: [development, html, css, js, php]
+
+- name: Robin Hodges
+  url: http://www.highpass.co.uk/
+  skills: Development
+  tags: [development, html, css, js, php]
+
+- name: Rolo Mawlabaux
+  url: http://wildfish.com/
+  skills: Development
+  tags: [development, python]
+
+- name: Ron Siemerink
+  url: http://www.siemerink.co.uk/
+  skills: Design, UX
+  tags: [design, ux]
+
+- name: Rory MacDonald
+  url: https://www.madetech.co.uk/
+  skills: Development
+  tags: [development, html, css, js, ruby]
+
+- name: Ruth Watson
+  url: http://www.osomi.co.uk/
+  skills: Design
+  tags: [design]
+
+- name: Sabina Chaudhry
+  url: http://uk.linkedin.com/pub/sabina-chaudhry/9/333/124
+  skills: Production
+  tags: [production]
+
+- name: Samara Clifford
+  url: http://www.samaraclifford.com/
+  skills: Photography
+  tags: [photography]
+
+- name: Sarah Wildman
+  url: http://www.wearewonderworks.com/
+  skills: Branding
+  tags: [branding]
+
+- name: Scott Boyle
+  url: http://scottboyle.co.uk/
+  skills: Development
+  tags: [development, html, css, js]
+
+- name: Sebastian Meier
+  url: http://www.sebastianmeier.eu/
+  skills: Design, Development
+  tags: [design, development]
+
+- name: Sergio Garcez
+  url: http://sergiogarcez.com/
+  skills: Development
+  tags: [development, python]
+
+- name: Sian Allen
+  url:  http://uk.linkedin.com/pub/sian-allen/51/a43/b97
+  skills: Design
+  tags: [design]
+
+- name: Sim Wishlade
+  url: http://studiowishlade.com/
+  skills: Design
+  tags: [design]
+
+- name: Simon Elliott
+  url: http://www.papercreatures.com/
+  skills: Development
+  tags: [development, perl]
+
+- name: Simon Heys
+  url: https://www.simonheys.com/
+  skills: Design, Development
+  tags: [design, development, iOS]
+
+- name: Simon Oliver
+  url: http://www.handcircus.com/
+  skills: Development
+  tags: [development]
+
+- name: Simon Underhill
+  url: http://uk.linkedin.com/pub/simon-underhill/3/836/b54
+  skills: Production
+  tags: [production]
+
+- name: Stephen Moynihan
+  url: http://stephenmoynihan.com/
+  skills: Illustration
+  tags: [illustration]
+
+- name: Tom Bandy
+  url: http://tombandy.com/
+  skills: Development
+  tags: [development]
+
+- name: Tom Juby
+  url: http://www.tomjuby.com/
+  skills: Development
+  tags: [development, html, css, php]
+
+- name: Tom Parslow
+  url: http://tomparslow.co.uk/
+  skills: Development
+  tags: [development, html, css, js, python]
+
+- name: Tony Currie
+  url: http://tonycurrie.com/
+  skills: Development
+  tags: [development]
+
+- name: Valerie Rabot
+  url: http://uk.linkedin.com/in/valerierabot
+  skills: Production
+  tags: [production]

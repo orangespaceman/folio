@@ -12,7 +12,7 @@ defaults:
     - scope:
         path: ""
       values:
-        layout: "master"
+        layout: "page"
 
     - scope:
         path: "portfolio"

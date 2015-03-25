@@ -1580,17 +1580,17 @@ input[type="radio"],
             position: absolute;
             background: #fff;
             height: 1px;
-            width: 0.8rem;
+            width: 30%;
             transition: all 0.25s;
         }
-.SiteTitle-line--left-top       { left: 0.6rem; top: 0.8rem; -webkit-transform: rotate(-35deg); -ms-transform: rotate(-35deg); transform: rotate(-35deg); }
-.SiteTitle-line--left-bottom    { left: 0.6rem; top: 1.25rem; -webkit-transform: rotate(35deg); -ms-transform: rotate(35deg); transform: rotate(35deg); }
-.SiteTitle-line--right-top      { left: 1.6rem; top: 0.8rem; -webkit-transform: rotate(35deg); -ms-transform: rotate(35deg); transform: rotate(35deg); }
-.SiteTitle-line--right-bottom   { left: 1.6rem; top: 1.25rem; -webkit-transform: rotate(-35deg); -ms-transform: rotate(-35deg); transform: rotate(-35deg); }
-.SiteTitle-link:hover .SiteTitle-line--left-top       { width: 1.4rem; left: 0.3rem; top: 0.8rem; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
-.SiteTitle-link:hover .SiteTitle-line--left-bottom    { width: 0.8rem; left: 0.55rem; top: 1.5rem; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
-.SiteTitle-link:hover .SiteTitle-line--right-top      { width: 1.4rem; left: 1.3rem; top: 0.8rem; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
-.SiteTitle-link:hover .SiteTitle-line--right-bottom   { width: 0.8rem; left: 1.6rem; top: 1.5rem; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
+.SiteTitle-line--left-top       { left: 15%;  top: 35%;    -webkit-transform: rotate(-35deg);    -ms-transform: rotate(-35deg);    transform: rotate(-35deg); }
+.SiteTitle-line--left-bottom    { left: 15%;  bottom: 35%; -webkit-transform: rotate(35deg); -ms-transform: rotate(35deg); transform: rotate(35deg); }
+.SiteTitle-line--right-top      { right: 15%; top: 35%;    -webkit-transform: rotate(35deg);    -ms-transform: rotate(35deg);    transform: rotate(35deg); }
+.SiteTitle-line--right-bottom   { right: 15%; bottom: 35%; -webkit-transform: rotate(-35deg); -ms-transform: rotate(-35deg); transform: rotate(-35deg); }
+.SiteTitle-link:hover .SiteTitle-line--left-top       { width: 45%; left: 12%;  top: 40%;    -webkit-transform: rotate(-45deg);    -ms-transform: rotate(-45deg);    transform: rotate(-45deg); }
+.SiteTitle-link:hover .SiteTitle-line--left-bottom    { width: 20%; left: 20%;  bottom: 30%; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
+.SiteTitle-link:hover .SiteTitle-line--right-top      { width: 45%; right: 12%; top: 40%;    -webkit-transform: rotate(45deg);    -ms-transform: rotate(45deg);    transform: rotate(45deg); }
+.SiteTitle-link:hover .SiteTitle-line--right-bottom   { width: 20%; right: 20%; bottom: 30%; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
 
 /* util classes */
 /**

@@ -1,0 +1,72 @@
+/**
+ * @define SiteTitle; use strict
+ *
+ * Site Title
+ */
+
+.SiteTitle {
+    display: inline-block;
+}
+
+    .SiteTitle-link {
+        display: inline-block;
+        position: relative;
+        border: none;
+
+        padding:0.5rem 1rem 0.5rem 4rem;
+        font-family: var(--font-headings);
+        font-size: 0.8rem;
+        color: var(--colour-white);
+        background: var(--colour-orange);
+    }
+
+        @media (--small) {
+            .SiteTitle-link {
+                font-size: 1rem;
+            }
+        }
+
+        .SiteTitle-link:after {
+            display: none;
+        }
+
+        .SiteTitle-link:hover {
+            background: var(--colour-orange-dark);
+        }
+
+
+    .SiteTitle strong {
+        font-family: var(--font-headings-bold);
+    }
+
+
+    /* Site title - lines */
+
+        .SiteTitle-logo {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 3rem;
+            display: block;
+            background: var(--colour-green);
+        }
+
+        .SiteTitle-line {
+            position: absolute;
+            background: var(--colour-white);
+            height: 1px;
+            width: 30%;
+            transition: all var(--transition-time);
+        }
+
+            .SiteTitle-line--left-top       { left: 15%;  top: 35%;    transform: rotate(-35deg); }
+            .SiteTitle-line--left-bottom    { left: 15%;  bottom: 35%; transform: rotate(35deg); }
+            .SiteTitle-line--right-top      { right: 15%; top: 35%;    transform: rotate(35deg); }
+            .SiteTitle-line--right-bottom   { right: 15%; bottom: 35%; transform: rotate(-35deg); }
+
+            .SiteTitle-link:hover .SiteTitle-line--left-top       { width: 45%; left: 12%;  top: 40%;    transform: rotate(-45deg); }
+            .SiteTitle-link:hover .SiteTitle-line--left-bottom    { width: 20%; left: 20%;  bottom: 30%; transform: rotate(90deg); }
+            .SiteTitle-link:hover .SiteTitle-line--right-top      { width: 45%; right: 12%; top: 40%;    transform: rotate(45deg); }
+            .SiteTitle-link:hover .SiteTitle-line--right-bottom   { width: 20%; right: 20%; bottom: 30%; transform: rotate(-90deg); }

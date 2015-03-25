@@ -1,0 +1,25 @@
+
+
+                        <div class="Listing Listing--item">
+                            <h3 class="Listing-title">{{include.item.title}}</h3>
+                            <div class="Listing-imagery">
+                                <div class="Listing-screenshots">
+                                    <img src="http://placehold.it/500x300" alt="" class="Listing-screenshot">
+                                </div>
+                            </div>
+                            <div class="Listing-information">
+                                <div class="Listing-description">
+                                    <div class="Editorial">
+                                        {{include.item.excerpt | markdownify }}
+                                        <p class="Listing-link">
+                                            {% if include.url and include.link %}
+                                            <a href="{{include.url}}">{{include.link}}</a>
+                                            {% else %}
+                                            <a href="{{include.item.url}}">See further details about this project</a>
+                                            {% endif %}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.listing -->
+

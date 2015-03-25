@@ -15,7 +15,11 @@ section: Portfolio
 
                     <div class="Listing-imagery">
                         <div class="Listing-screenshots">
-                            <img src="http://placehold.it/500x200" alt="" class="Listing-screenshot">
+                            {% if page.images.featured %}
+                            <img src="/assets/images{{page.id}}/{{page.images.featured}}" alt="" class="Listing-screenshot">
+                            {% else %}
+                            <img src="http://placehold.it/500x100" alt="" class="Listing-screenshot">
+                            {% endif %}
                         </div>
                     </div>
 
@@ -27,22 +31,50 @@ section: Portfolio
                                     <div class="Editorial">
                                         <h3>Project details</h3>
                                         <ul class="BulletedList">
-                                            <li class="BulletedList-item">Date: ...</li>
-                                            <li class="BulletedList-item">Client: <a href="#">...</a></li>
-                                            <li class="BulletedList-item">URL: <a href="#">www.project.url</a></li>
+                                            <li class="BulletedList-item">
+                                                Date: {{ page.date | date_to_long_string }}
+                                            </li>
+
+                                            {% if page.client %}
+                                                <li class="BulletedList-item">
+                                                    Client:
+                                                    <a href="{{site.data.clients[page.client].link}}" rel="external">
+                                                        {{site.data.clients[page.client].name}}
+                                                    </a>
+                                                </li>
+                                            {% endif %}
+
+                                            {% if page.link %}
+                                                <li class="BulletedList-item">
+                                                    Link:
+                                                    <a href="{{page.link}}" rel="external">
+                                                        {{page.link}}
+                                                    </a>
+                                                </li>
+                                            {% endif %}
                                         </ul>
 
-                                        <h3>Skills</h3>
-                                        <ul class="BulletedList">
-                                            <li class="BulletedList-item">PHP</li>
-                                            <li class="BulletedList-item">HTML</li>
-                                        </ul>
+                                        {% if page.technologies %}
+                                            <h3>Technologies/Skills</h3>
+                                            <ul class="BulletedList">
+                                                {% for technology in page.technologies %}
+                                                    <li class="BulletedList-item">{{technology}}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
 
-                                        <h3>Collaborators</h3>
-                                        <ul class="BulletedList">
-                                            <li class="BulletedList-item">Lorem</li>
-                                            <li class="BulletedList-item">Ipsum</li>
-                                        </ul>
+                                        {% if page.collaborators %}
+                                            <h3>Collaborators</h3>
+                                            <ul class="BulletedList">
+                                                {% for collaborator in page.collaborators %}
+                                                    <li class="BulletedList-item">
+                                                        <a href="{{site.data.comrades[collaborator].link}}" rel="external">
+                                                            {{site.data.comrades[collaborator].name}}
+                                                        </a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
@@ -60,9 +92,11 @@ section: Portfolio
 
                             <div class="Listing-imagery">
                                 <div class="Listing-screenshots">
-                                    <img src="http://placehold.it/500x300" alt="" class="Listing-screenshot">
-                                    <img src="http://placehold.it/500x300" alt="" class="Listing-screenshot">
-                                    <img src="http://placehold.it/500x300" alt="" class="Listing-screenshot">
+                                    {% if page.images.screenshots %}
+                                        {% for screenshot in page.images.screenshots %}
+                                        <img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Listing-screenshot">
+                                        {% endfor %}
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>

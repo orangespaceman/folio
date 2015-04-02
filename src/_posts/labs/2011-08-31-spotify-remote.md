@@ -3,7 +3,7 @@ title: Mac PHP/JS Spotify Remote Control - Spotimote
 excerpt: Control Spotify remotely from a phone or browser
 tag: featured-lab
 links:
- code: http://github.com/thegingerbloke/Spotify-Remote
+ code: http://github.com/thegingerbloke/spotify-remote
  demo:
 images:
   featured: featured.jpg

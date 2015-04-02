@@ -4,17 +4,15 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>
-            {% if page.title %}{{ page.title }} | {% endif %}
-            {% if page.section %}{{ page.section }} | {% endif %}
-            Pete Goodman - Brighton-based Web Developer
-        </title>
-        <meta name="description" content="Online portfolio for Pete Goodman, freelance web developer and teacher based in Brighton, UK">
+        <title>{% if page.title %}{{ page.title }} | {% endif %}{% if page.section %}{{ page.section }} | {% endif %}{{ site.sitetitle }}</title>
+        <meta name="description" content="{%if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.sitedescription }}{% endif %}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/assets/css/site.css">
         <link rel="stylesheet" href="/css/syntax.css">
         <meta name="theme-color" content="#ff9900">
         <link rel="icon" type="image/png" href="/assets/images/avatar.png">
+
+        {% include Head/Head-cards.html %}
     </head>
 
     <!--

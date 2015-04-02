@@ -1,0 +1,8 @@
+
+        <meta name="twitter:card" content="{% if page.images.thumbs.desktop %}summary_large_image{% else %}summary{% endif %}" />
+        <meta name="twitter:site" content="@{{ site.sitehandle }}" />
+        <meta name="twitter:creator" content="@{{ site.sitehandle }}" />
+        <meta property="og:url" content="{{ site.sitehost }}{{ page.id }}" />
+        <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{% if page.section %}{{ page.section }} | {% endif %}{{ site.sitetitle }}" />
+        <meta property="og:description" content="{%if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.sitedescription }}{% endif %}" />
+        <meta property="og:image" content="{{ site.sitehost }}{% if page.images.thumbs.desktop %}/assets/images{{page.type}}{{page.id}}/{{page.images.thumbs.desktop}}{% else %}/assets/images/avatar.png{% endif %}" />

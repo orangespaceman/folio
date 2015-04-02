@@ -15,18 +15,95 @@ section: Labs
 
                     <div class="Listing-imagery">
                         <div class="Listing-screenshots">
-                            <img src="http://placehold.it/500x100" alt="" class="Listing-screenshot">
+                            {% if page.images.featured %}
+                            <img src="/assets/images{{page.id}}/{{page.images.featured}}" alt="" class="Listing-screenshot">
+                            {% endif %}
                         </div>
                     </div>
 
-                    <div class="grid grid--right">
-                        <div class="grid__item one-whole medium--two-thirds">
+                    <div class="grid">
+                        <div class="grid__item one-whole medium--one-third">
 
                             <div class="Listing-information">
                                 <div class="Listing-description">
                                     <div class="Editorial">
-                                        {{content}}
+                                        <h3>Lab details</h3>
+                                        <ul class="BulletedList">
+                                            <li class="BulletedList-item">
+                                                Date: {{ page.date | date: '%B %Y' }}
+                                            </li>
+
+                                            {% if page.links.demo %}
+                                                <li class="BulletedList-item">
+                                                    Demo:
+                                                    <a href="{{page.links.demo}}" rel="external">
+                                                        {{page.links.demo}}
+                                                    </a>
+                                                </li>
+                                            {% endif %}
+
+                                            {% if page.links.code %}
+                                                <li class="BulletedList-item">
+                                                    Code:
+                                                    <a href="{{page.links.code}}" rel="external">
+                                                        {{page.links.code}}
+                                                    </a>
+                                                </li>
+                                            {% endif %}
+
+                                        </ul>
+
+                                        {% if page.technologies %}
+                                            <h3>Technologies/Skills</h3>
+                                            <ul class="BulletedList">
+                                                {% for technology in page.technologies %}
+                                                    <li class="BulletedList-item">{{technology}}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+
+                                        {% if page.collaborators %}
+                                            <h3>Collaborators</h3>
+                                            <ul class="BulletedList">
+                                                {% for collaborator in page.collaborators %}
+                                                    <li class="BulletedList-item">
+                                                        <a href="{{site.data.comrades[collaborator].link}}" rel="external">
+                                                            {{site.data.comrades[collaborator].name}}
+                                                        </a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
                                     </div>
+                                </div>
+                            </div>
+                        </div><!--
+
+                        --><div class="grid__item one-whole medium--two-thirds">
+
+                            <div class="Listing-information">
+                                <div class="Listing-description">
+                                    <div class="Editorial">
+                                        {{ content }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Listing-imagery">
+                                <div class="Listing-screenshots">
+                                    {% if page.images.desktop %}
+                                        {% for screenshot in page.images.desktop %}
+                                        <img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Listing-screenshot">
+                                        {% endfor %}
+                                    {% endif %}
+                                </div>
+
+                                <div class="Listing-screenshots">
+                                    {% if page.images.mobile %}
+                                        {% for screenshot in page.images.mobile %}
+                                        <img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Listing-screenshot">
+                                        {% endfor %}
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>

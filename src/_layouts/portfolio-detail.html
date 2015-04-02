@@ -17,8 +17,6 @@ section: Portfolio
                         <div class="Listing-screenshots">
                             {% if page.images.featured %}
                             <img src="/assets/images{{page.id}}/{{page.images.featured}}" alt="" class="Listing-screenshot">
-                            {% else %}
-                            <img src="http://placehold.it/500x100" alt="" class="Listing-screenshot">
                             {% endif %}
                         </div>
                     </div>
@@ -32,12 +30,12 @@ section: Portfolio
                                         <h3>Project details</h3>
                                         <ul class="BulletedList">
                                             <li class="BulletedList-item">
-                                                Date: {{ page.date | date_to_long_string }}
+                                                Date: {{ page.date | date: '%B %Y' }}
                                             </li>
 
                                             {% if page.client %}
                                                 <li class="BulletedList-item">
-                                                    Client:
+                                                    Built for:
                                                     <a href="{{site.data.clients[page.client].link}}" rel="external">
                                                         {{site.data.clients[page.client].name}}
                                                     </a>
@@ -92,8 +90,16 @@ section: Portfolio
 
                             <div class="Listing-imagery">
                                 <div class="Listing-screenshots">
-                                    {% if page.images.screenshots %}
-                                        {% for screenshot in page.images.screenshots %}
+                                    {% if page.images.desktop %}
+                                        {% for screenshot in page.images.desktop %}
+                                        <img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Listing-screenshot">
+                                        {% endfor %}
+                                    {% endif %}
+                                </div>
+
+                                <div class="Listing-screenshots">
+                                    {% if page.images.mobile %}
+                                        {% for screenshot in page.images.mobile %}
                                         <img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Listing-screenshot">
                                         {% endfor %}
                                     {% endif %}

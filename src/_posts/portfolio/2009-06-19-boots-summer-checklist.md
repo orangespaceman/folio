@@ -1,12 +1,33 @@
 ---
 title: Boots Summer Checklist
-excerpt: A Boots microsite aimed at providing holidaymakers with a checklist of items they might need for their Summer holiday
+excerpt: A microsite aimed at providing holidaymakers with a checklist of items they might need for their summer holiday
+client: grandunion
+link:
+images:
+  featured: featured.jpg
+  thumbs:
+    desktop: thumb-desktop.jpg
+  desktop:
+    - desktop-home.jpg
+    - desktop-thank-you.jpg
+technologies:
+  - HTML
+  - CSS
+  - JavaScript
+collaborators:
+  - simwishlade
 ---
 
 # Boots Summer Checklist
 
-HTML templates built for a Boots microsite aimed at providing holidaymakers with a checklist of items they might need for their Summer holiday.
+## Project overview
 
-HTML, CSS, JavaScript
-Design by Sim Wishlade
-Built at Grand Union
+A microsite aimed at providing holidaymakers with a checklist of items they might need for their summer holiday.
+
+## Technical solution
+
+A static HTML website that would contain links to various items on the main Boots website.
+
+## My role
+
+I was responsible for building the static website.

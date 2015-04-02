@@ -17,6 +17,7 @@
 
 /* third party */
 @import "src/_src/css/third-party/_grid.css";
+@import "src/_src/css/third-party/_syntax-highlighting.css";
 
 /* components */
 @import "src/_src/css/components/_Back.css";

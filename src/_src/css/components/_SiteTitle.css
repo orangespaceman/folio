@@ -58,7 +58,7 @@
             background: var(--colour-white);
             height: 1px;
             width: 30%;
-            transition: all var(--transition-time);
+            transition: all 0.1s;
         }
 
             .SiteTitle-line--left-top       { left: 15%;  top: 35%;    transform: rotate(-35deg); }

@@ -479,6 +479,10 @@ h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
     }
 /* text */
 p { }
+blockquote {
+        padding: 0 1rem;
+        border-left: 10px solid #999;
+    }
 /* lists */
 ul, ol { }
 li { }
@@ -1086,6 +1090,139 @@ input[type="radio"],
 /**
  * Pull classes, to move grid items back to the left by certain amounts.
  */
+/**
+ * Syntax highlighting styles - copied from Jekyll default repo
+ */
+/* container */
+.highlight {
+    background: #fff;
+}
+/* lines */
+.highlight .lineno {
+        background: #ddd;
+        display: inline-block;
+        padding: 0 10px;
+        border-bottom: 1px solid #ccc;
+    }
+/* els */
+.highlight .c     { color: #998; font-style: italic }
+/* Comment */
+.highlight .err   { color: #a61717; background-color: #e3d2d2 }
+/* Error */
+.highlight .k     { font-weight: bold }
+/* Keyword */
+.highlight .o     { font-weight: bold }
+/* Operator */
+.highlight .cm    { color: #998; font-style: italic }
+/* Comment.Multiline */
+.highlight .cp    { color: #999; font-weight: bold }
+/* Comment.Preproc */
+.highlight .c1    { color: #998; font-style: italic }
+/* Comment.Single */
+.highlight .cs    { color: #999; font-weight: bold; font-style: italic }
+/* Comment.Special */
+.highlight .gd    { color: #000; background-color: #fdd }
+/* Generic.Deleted */
+.highlight .gd .x { color: #000; background-color: #faa }
+/* Generic.Deleted.Specific */
+.highlight .ge    { font-style: italic }
+/* Generic.Emph */
+.highlight .gr    { color: #a00 }
+/* Generic.Error */
+.highlight .gh    { color: #999 }
+/* Generic.Heading */
+.highlight .gi    { color: #000; background-color: #dfd }
+/* Generic.Inserted */
+.highlight .gi .x { color: #000; background-color: #afa }
+/* Generic.Inserted.Specific */
+.highlight .go    { color: #888 }
+/* Generic.Output */
+.highlight .gp    { color: #555 }
+/* Generic.Prompt */
+.highlight .gs    { font-weight: bold }
+/* Generic.Strong */
+.highlight .gu    { color: #aaa }
+/* Generic.Subheading */
+.highlight .gt    { color: #a00 }
+/* Generic.Traceback */
+.highlight .kc    { font-weight: bold }
+/* Keyword.Constant */
+.highlight .kd    { font-weight: bold }
+/* Keyword.Declaration */
+.highlight .kp    { font-weight: bold }
+/* Keyword.Pseudo */
+.highlight .kr    { font-weight: bold }
+/* Keyword.Reserved */
+.highlight .kt    { color: #458; font-weight: bold }
+/* Keyword.Type */
+.highlight .m     { color: #099 }
+/* Literal.Number */
+.highlight .s     { color: #d14 }
+/* Literal.String */
+.highlight .na    { color: #008080 }
+/* Name.Attribute */
+.highlight .nb    { color: #0086B3 }
+/* Name.Builtin */
+.highlight .nc    { color: #458; font-weight: bold }
+/* Name.Class */
+.highlight .no    { color: #008080 }
+/* Name.Constant */
+.highlight .ni    { color: #800080 }
+/* Name.Entity */
+.highlight .ne    { color: #900; font-weight: bold }
+/* Name.Exception */
+.highlight .nf    { color: #900; font-weight: bold }
+/* Name.Function */
+.highlight .nn    { color: #555 }
+/* Name.Namespace */
+.highlight .nt    { color: #000080 }
+/* Name.Tag */
+.highlight .nv    { color: #008080 }
+/* Name.Variable */
+.highlight .ow    { font-weight: bold }
+/* Operator.Word */
+.highlight .w     { color: #bbb }
+/* Text.Whitespace */
+.highlight .mf    { color: #099 }
+/* Literal.Number.Float */
+.highlight .mh    { color: #099 }
+/* Literal.Number.Hex */
+.highlight .mi    { color: #099 }
+/* Literal.Number.Integer */
+.highlight .mo    { color: #099 }
+/* Literal.Number.Oct */
+.highlight .sb    { color: #d14 }
+/* Literal.String.Backtick */
+.highlight .sc    { color: #d14 }
+/* Literal.String.Char */
+.highlight .sd    { color: #d14 }
+/* Literal.String.Doc */
+.highlight .s2    { color: #d14 }
+/* Literal.String.Double */
+.highlight .se    { color: #d14 }
+/* Literal.String.Escape */
+.highlight .sh    { color: #d14 }
+/* Literal.String.Heredoc */
+.highlight .si    { color: #d14 }
+/* Literal.String.Interpol */
+.highlight .sx    { color: #d14 }
+/* Literal.String.Other */
+.highlight .sr    { color: #009926 }
+/* Literal.String.Regex */
+.highlight .s1    { color: #d14 }
+/* Literal.String.Single */
+.highlight .ss    { color: #990073 }
+/* Literal.String.Symbol */
+.highlight .bp    { color: #999 }
+/* Name.Builtin.Pseudo */
+.highlight .vc    { color: #008080 }
+/* Name.Variable.Class */
+.highlight .vg    { color: #008080 }
+/* Name.Variable.Global */
+.highlight .vi    { color: #008080 }
+/* Name.Variable.Instance */
+.highlight .il    { color: #099 }
+/* Literal.Number.Integer.Long */
 
 /* components */
 /**
@@ -1270,8 +1407,8 @@ input[type="radio"],
 .Listing-screenshots--desktop {}
 .Listing-screenshots--mobile {
                     position: absolute;
-                    right: 0;
-                    bottom: -2rem;
+                    right: -0.5rem;
+                    bottom: -0.5rem;
                     z-index: 1;
                     max-width: 40%;
                     transition: all 0.25s;
@@ -1286,13 +1423,17 @@ input[type="radio"],
 .Listing-screenshot {
                         width: 100%;
                     }
-.Listing-screenshot--desktop {
-                            padding-right: 2rem;
-                        }
+.Listing-screenshot--desktop {}
 .Listing-screenshot--mobile {}
-/* Listing blocks */
+/* Listing blocks - full-width content blocks */
 .Listing--block {}
-/* Listing items */
+.Listing--block .Listing-screenshot--mobile {
+                bottom: -2rem;
+            }
+.Listing--block .Listing-screenshot--desktop {
+                right: -1rem;
+            }
+/* Listing items - smaller list items with less detail */
 .Listing--item {}
 /**
  * @define Main; use strict
@@ -1581,7 +1722,7 @@ input[type="radio"],
             background: #fff;
             height: 1px;
             width: 30%;
-            transition: all 0.25s;
+            transition: all 0.1s;
         }
 .SiteTitle-line--left-top       { left: 15%;  top: 35%;    -webkit-transform: rotate(-35deg);    -ms-transform: rotate(-35deg);    transform: rotate(-35deg); }
 .SiteTitle-line--left-bottom    { left: 15%;  bottom: 35%; -webkit-transform: rotate(35deg); -ms-transform: rotate(35deg); transform: rotate(35deg); }

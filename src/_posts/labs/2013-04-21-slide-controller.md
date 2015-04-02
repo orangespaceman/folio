@@ -1,8 +1,34 @@
 ---
 title: Slide Controller
-excerpt: Quidquid Latine dictum sit altum videtur
+excerpt: Node.js-based controller for HTML slideshows - S5 and Google slides
+tag: featured-lab
+links:
+ code: https://github.com/thegingerbloke/slide-controller
+images:
+  featured: featured.jpg
+  thumbs:
+    desktop: thumb-desktop.jpg
+    mobile: thumb-mobile.jpg
+  desktop:
+    - desktop-goog.jpg
+    - desktop-s5.jpg
+  mobile:
+    - mobile-home.jpg
+technologies:
+  - HTML
+  - CSS
+  - JavaScript
+  - Node.js
+  - Websockets
 ---
 
 # Slide Controller
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+When teaching, it helps to be able to control the main slideshow when away from the keyboard.
+
+This is a simple Node app that allows me to run a controller on a phone.
+
+The controller app sits waiting for a slideshow to be started. When a slideshow begins, the controller works out how many slides there are, and also if any of those slides have hidden notes associated with them. If there are notes, these are shown below the control buttons.
+
+The controller has been implemented with both S5 and (old) Google slides, but it would be fairly straightforward to apply a similar logic to other slideshows too.
+

@@ -1,18 +1,24 @@
 ---
 title: Brandstencil
 excerpt: A web app that allows charities to manage how their staff communicate their brand
-client: putty
+client: electricputty
 link: https://brandstencil.com
 tag: featured-project
 images:
-  featured: featured.png
-  mobile: mobile.png
-  thumb: thumb.png
-  screenshots:
-    - 1.png
-    - 2.png
-    - 3.png
-    - 4.png
+  featured: featured.jpg
+  thumbs:
+    desktop: thumb-desktop.jpg
+    mobile: thumb-mobile.jpg
+  mobile:
+    - mobile-home.jpg
+    - mobile-listing.jpg
+    - mobile-editor.jpg
+    - mobile-image-select.jpg
+  desktop:
+    - desktop-home.jpg
+    - desktop-listing.jpg
+    - desktop-editor.jpg
+    - desktop-image-select.jpg
 technologies:
   - HTML
   - CSS
@@ -20,6 +26,7 @@ technologies:
   - PHP
   - Laravel
   - wkhtmltopdf
+  - vagrant
 collaborators:
   - malcolmelsworth
   - lukedavies
@@ -29,4 +36,15 @@ collaborators:
 
 # Brandstencil
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Project overview
+
+Brandstencil is a web app that allows charities to manage how their staff communicate their brand.
+
+
+## Technical solution
+
+The app is based on Laravel, with PDFs and images generated using wkhtmltopdf
+
+## My role
+
+I was a member of the development team responsible for building and maintaining the app.

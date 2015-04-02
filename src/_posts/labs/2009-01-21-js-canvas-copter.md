@@ -1,8 +1,50 @@
 ---
-title: JS Canvas Copter
-excerpt: Quidquid Latine dictum sit altum videtur
+title: JavaScript Copter, with Canvas
+excerpt: An attempt to recreate the classic flash 'copter' game using Javascript and canvas
+tag: featured-lab
+links:
+ code: https://github.com/thegingerbloke/js-canvas-copter
+ demo: http://thegingerbloke.github.io/js-canvas-copter/
+images:
+  featured: featured.png
+  thumbs:
+    desktop: thumb-desktop.png
+technologies:
+  - JavaScript
+  - Canvas
 ---
 
-# JS Canvas Copter
+# JavaScript Copter, with Canvas
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+As a big fan of both the [original flash copter game](http://www.coptergame.net/) and the various phone conversions, I decided to try to recreate the game using Javascript and the canvas element.  A few evenings of tinkering later, I've managed to come up with this:
+
+Click anywhere in the game to start.  Hold the mouse button down to rise, let go to fall.
+
+<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/js-canvas-copter/" width="600" height="430"></iframe>
+
+To play this game you need to use a browser that supports the canvas element.
+
+The game is initialised by the javascript call below:
+
+
+{% highlight javascript linenos %}
+// initialise the copter
+var options = {
+    copter : {
+        height : 15,
+        width : 30
+    },
+    canvas : {
+        height : 300,
+        width : 500,
+        refreshRate : 20
+    }
+};
+
+jsCopter.init("jscopter", "jscopter-container", options);
+{% endhighlight %}
+
+
+The **options** variable here contains a list of potential options that you can set to customise the game - look at the top of the javascript file to see a full list.  The initialisation call takes three parameters, the id of the new copter canvas element, the id of the html element to create the canvas in, and the options to initialise the game with.
+
+It's not amazing; there are plenty of speed/optimisation issues, some code fudges, and the hit detection isn't very good. I haven't spent too long thinking up the game logic either, the floor and ceiling could certainly be improved.   But it's a proof of concept and an interesting display of the possibilities (and limitations) of Canvas.

@@ -1,8 +1,29 @@
 ---
 title: Select All Checkboxes
-excerpt: Quidquid Latine dictum sit altum videtur
+excerpt: A javascript snippet that allows you to use a 'select all' checkbox to automatically fill multiple form elements
+links:
+ code: https://github.com/thegingerbloke/select-all-checkbox
+ demo: http://thegingerbloke.github.io/select-all-checkbox/
+images:
+  featured: featured.png
+  thumbs:
+    desktop: thumb-desktop.jpg
+technologies:
+  - JavaScript
 ---
 
-# Select All Checkboxes
+# HTML forms - Select all checkbox
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+When a long form is necessary on a page, it can be daunting (not to mention time-intensive) for a user to fill it out completely.  This script allows a 'parent' checkbox to control the input value of many child checkboxes, potentially saving time and energy clicking each one individually.
+
+<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/select-all-checkbox/" width="600" height="350"></iframe>
+
+The function call to enable this is straightforward. It takes two parameters:
+
+  - **parentcheckbox** - the id of the parent check box that toggles the rest
+  - **childboxcontainer** - the id of the html container for all child checkboxes
+
+{% highlight javascript linenos %}
+// initialise the 'select all' checkbox
+formUtil.toggleCheckboxes('checkboxall', 'childboxes');
+{% endhighlight %}

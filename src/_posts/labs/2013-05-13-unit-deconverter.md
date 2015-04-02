@@ -1,8 +1,31 @@
 ---
 title: Unit Deconverter
-excerpt: Quidquid Latine dictum sit altum videtur
+excerpt: Converts any unit into a useless measurement
+links:
+ code: https://github.com/thegingerbloke/unit-deconverter
+ demo: http://unitdeconverter.com/
+images:
+  featured: featured.png
+  thumbs:
+    desktop: thumb-desktop.jpg
+    mobile: thumb-mobile.jpg
+  desktop:
+    - desktop-home.png
+  mobile:
+    - mobile-home.png
+technologies:
+  - HTML
+  - CSS
+  - JavaScript
+collaborators:
+  - jamesbooth
+  - cazlock
+  - michaelallanson
+  - petegraham
+  - johnlund
+  - mattcollins
 ---
 
 # Unit Deconverter
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ever wanted to know a weight as a percentage of the weight of Mr T's gold? Distance measured as a proportion of Meat Loaf's belt sizes? Time measured in nanoseconds since Dave Benson-Philips was born, or as Akabusi Awoogas? Well now you can find out!

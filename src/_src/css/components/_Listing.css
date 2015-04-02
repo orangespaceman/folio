@@ -32,8 +32,8 @@
 
                 .Listing-screenshots--mobile {
                     position: absolute;
-                    right: 0;
-                    bottom: -2rem;
+                    right: -0.5rem;
+                    bottom: -0.5rem;
                     z-index: 1;
                     max-width: 40%;
                     transition: all var(--transition-time);
@@ -50,16 +50,23 @@
                         width: 100%;
                     }
 
-                        .Listing-screenshot--desktop {
-                            padding-right: 2rem;
-                        }
+                        .Listing-screenshot--desktop {}
 
                         .Listing-screenshot--mobile {}
 
 
-    /* Listing blocks */
+    /* Listing blocks - full-width content blocks */
         .Listing--block {}
 
+            .Listing--block .Listing-screenshot--mobile {
+                bottom: -2rem;
+            }
 
-    /* Listing items */
+            .Listing--block .Listing-screenshot--desktop {
+                right: -1rem;
+            }
+
+
+
+    /* Listing items - smaller list items with less detail */
         .Listing--item {}

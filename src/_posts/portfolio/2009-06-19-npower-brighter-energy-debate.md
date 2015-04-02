@@ -1,12 +1,29 @@
 ---
 title: Npower Brighter Energy Debate
-excerpt: HTML for an interactive debate site allowing members of the public the chance to ask questions about npower and the energy industry.
+excerpt: An interactive debate website allowing members of the public the chance to ask questions about npower and the energy industry.
+client: grandunion
+images:
+  featured: featured.jpg
+  thumbs:
+    desktop: thumb-desktop.jpg
+  desktop:
+    - desktop-home.jpg
+technologies:
+  - HTML
+  - CSS
+  - JavaScript
 ---
 
 # Npower Brighter Energy Debate
 
-HTML templates built for the npower brighter energy website, an interactive debate site allowing members of the public the chance to ask questions about npower and the energy industry.
+## Project overview
 
-HTML, CSS, JavaScript
-Built at Grand Union
+An interactive debate website allowing members of the public the chance to ask questions about npower and the energy industry.
 
+## Technical solution
+
+I created static HTML page templates that were implemented by an external company who were building the e-commerce aspect of the site.
+
+## My role
+
+I was responsible for building static HTML templates.

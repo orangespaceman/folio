@@ -1,8 +1,74 @@
 ---
 title: CSS3 Transition Blocks
-excerpt: Quidquid Latine dictum sit altum videtur
+excerpt: Playing around with CSS3 transitions
+tag: featured-lab
+links:
+ code: https://github.com/thegingerbloke/css3-transition-blocks
+ demo: http://thegingerbloke.github.io/css3-transition-blocks/
+images:
+  featured: featured.jpg
+  thumbs:
+    desktop: thumb-desktop.jpg
+technologies:
+  - CSS
 ---
 
 # CSS3 Transition Blocks
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+CSS3 transitions allow you to create animations without needing to use JavaScript.  After reading an [article on A List Apart](http://www.alistapart.com/articles/understanding-css3-transitions/) I created a little experiment to test this.
+
+The example below contains 25 blocks of different dimensions.  Various CSS values are alternating between two states.
+
+(At the moment this only works in Safari/Chrome, but these transitions will soon be available to most modern browsers.)
+
+<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/css3-transition-blocks/" width="600" height="400"></iframe>
+
+The code is straightforward, each block is a simple HTML element:
+
+{% highlight html linenos %}
+<p id="element-1" class="el">1</p>
+<p id="element-2" class="el">2</p>
+...
+<p id="element-25" class="el">25</p>
+{% endhighlight %}
+
+For each element, two random sets of CSS properties ('from' and 'to') are generated:
+
+{% highlight css linenos %}
+  @keyframes element-1-anim {
+      from {
+          background:rgba(96, 69, 248, 0.62);
+          left:79%;
+          top:89%;
+          width:23px;
+          height:53px;
+          z-index:26;
+          line-height:53px;
+          opacity:0.47;
+          text-shadow: rgba(8, 60, 23, 0.83) 9px -7px 7px;
+          transform: scale(0.56) rotate(65deg);
+      }
+      to {
+          background:rgba(100, 165, 96, 0.77);
+          left:65%;
+          top:66%;
+          width:95px;
+          height:53px;
+          z-index:45;
+          line-height:53px;
+          opacity:0.81;
+          text-shadow: rgba(7, 20, 87, 0.48) 6px -2px 5px;
+          transform: scale(0.69) rotate(337deg);
+      }
+  }
+
+  p#element-1 {
+      animation-name: element-1-anim;
+      animation-duration: 5s;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+  }
+{% endhighlight %}
+
+The [list of CSS properties that can be adjusted](http://www.w3.org/TR/css3-transitions/#properties-from-css-) shows what is possible with CSS3 transitions.

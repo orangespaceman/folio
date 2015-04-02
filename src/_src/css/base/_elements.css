@@ -31,6 +31,11 @@
 /* text */
     p { }
 
+    blockquote {
+        padding: 0 1rem;
+        border-left: 10px solid var(--colour-grey-mid);
+    }
+
 
 /* lists */
     ul, ol { }

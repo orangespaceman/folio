@@ -1,8 +1,39 @@
 ---
-title: JavaSCript Canvas Letters Banner
-excerpt: Quidquid Latine dictum sit altum videtur
+title: JavaScript Canvas Letters Banner
+excerpt: Scrolling pixel letters created with JavaScript and canvas
+tag: featured-lab
+links:
+ code: https://github.com/thegingerbloke/canvas-letters/tree/gh-pages/banner
+ demo: http://thegingerbloke.github.io/canvas-letters/banner
+images:
+  featured: featured.png
+  thumbs:
+    desktop: thumb-desktop.png
+technologies:
+  - JavaScript
+  - Canvas
 ---
 
-# JavaSCript Canvas Letters Banner
+# JavaScript Canvas Letters Banner
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Here's a variation on the original  [Canvas Letters](../javascript-canvas-letters) experiment.
+
+This time the words scroll as a banner rather than animating in at fixed positions.
+
+<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/canvas-letters/banner/" width="600" height="400"></iframe>
+
+When initialising this script, a string of text is passed which renders each letter individually. There are a few optional parameters that control the rendering of the text:
+
+{% highlight javascript linenos %}
+var canvasElement = new canvasLettersBanner();
+canvasElement.init({
+    inline : true,
+    canvasId : "canvas-one",
+    blockColour : "ff9900",
+    canvasColour : "000000",
+    textString : "This is a test.",
+    clearance : 5,
+    speed : 5
+});
+{% endhighlight %}

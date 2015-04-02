@@ -1,14 +1,38 @@
 ---
 title: Linklaters
-excerpt: Created a number of HTML templates for an intranet web application for law firm Linklaters
+excerpt: An intranet web application for law firm Linklaters
+client: tonic
+link:
+images:
+  featured: featured.jpg
+  thumbs:
+    desktop: thumb-desktop.jpg
+  desktop:
+    - desktop-1.jpg
+    - desktop-2.jpg
+    - desktop-3.jpg
+    - desktop-4.jpg
+    - desktop-5.jpg
+technologies:
+  - HTML
+  - CSS
+  - JavaScript
+collaborators:
+  - simwishlade
+  - ronsiemerink
 ---
 
 # Linklaters
 
-Created a number of HTML templates for an intranet web application for law firm Linklaters.
+## Project overview
 
-HTML, CSS, JavaScript
+An intranet web application for law firm Linklaters.
 
-Designed by Sim Wishlade and Ron Siemerink
-Built at Tonic
+## Technical solution
+
+We designed and built HTML templates for their team of in-house developers to integrate into an intranet application.
+
+## My role
+
+I was responsible for building the HTML templates.
 

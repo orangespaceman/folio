@@ -1,9 +1,39 @@
 ---
 title: Royal Free
-excerpt: Quidquid Latine dictum sit altum videtur
+excerpt: Website for London-based hospital
 tag: featured-project
+client: electricputty
+link: https://www.royalfree.nhs.uk/
+tag: featured-project
+images:
+  featured: featured.jpg
+  thumbs:
+    desktop: thumb-desktop.jpg
+    mobile: thumb-mobile.jpg
+  mobile:
+    - mobile-home.jpg
+    - mobile-item.jpg
+  desktop:
+    - desktop-home.jpg
+    - desktop-item.jpg
+technologies:
+  - HTML
+  - CSS
+  - JavaScript
+collaborators:
+  - robinhodges
 ---
 
 # Royal Free
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Project overview
+
+Website for London-based hospital the Royal Free.
+
+## Technical solution
+
+The website runs on Expression Engine.
+
+## My role
+
+I assisted with the creation of responsive HTML/CSS layouts, including the home page. I also wrote JavaScript for many of the interactive elements of the site.

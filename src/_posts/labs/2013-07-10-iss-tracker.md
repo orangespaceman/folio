@@ -1,8 +1,42 @@
 ---
 title: ISS Tracker
-excerpt: Quidquid Latine dictum sit altum videtur
+excerpt: See the location of the International Space Station, and when it'll be overhead next
+tag: featured-lab
+links:
+ code: https://github.com/thegingerbloke/iss-tracker
+ demo: http://thegingerbloke.github.io/iss-tracker/
+images:
+  featured: featured.jpg
+  thumbs:
+    desktop: thumb-desktop.jpg
+    mobile: thumb-mobile.jpg
+technologies:
+  - HTML
+  - CSS
+  - JavaScript
+  - Geolocation API
+collaborators:
+  - tomparslow
+  - premasagarrose
 ---
 
 # ISS Tracker
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A web app that tracks the position of the International Space Station (ISS), and plots this on a map of the world.
+
+It also locates the user's current position, and calculates when the ISS will next fly overhead.
+
+<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/iss-tracker/" width="600" height="500"></iframe>
+
+The clever bits come from the [open notify API](http://open-notify.org/) - this provides both the current position of the ISS and when it'll next fly overhead based on the user's location.
+
+This is all plotted on a Google Map, and updated every few seconds.
+
+## The ISS
+
+ - A habitable artificial satellite in low Earth orbit
+ - First launched in 1998
+ - The size of a football pitch - 108x73m - the largest artificial body in orbit
+ - It completes 15.7 orbits per day
+ - Travels at nearly 8km per second
+ - It can often be seen at the appropriate time with the naked eye from Earth

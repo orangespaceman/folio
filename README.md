@@ -23,6 +23,14 @@ Run:
 npm start
 ```
 
+and
+
+```
+jekyll serve
+```
+
+View the site at [http://localhost:4000/](http://localhost:4000/)
+
 
 ### CSS
 
@@ -72,8 +80,6 @@ To compile the static templates, run:
 ```
 jekyll build
 ```
-
-
 
 
 ## Deployment

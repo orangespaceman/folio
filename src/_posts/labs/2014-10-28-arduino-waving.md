@@ -1,8 +1,38 @@
 ---
 title: Arduino Waving
-excerpt: Quidquid Latine dictum sit altum videtur
+excerpt: Making a thing do stuff with an Arduino
+tag: featured-lab
+links:
+  code: https://github.com/thegingerbloke/arduino-waving
+images:
+  featured: featured.jpg
+  thumbs:
+    desktop: thumb-arduino.jpg
+  desktop:
+    - arduino-1.jpg
+    - arduino-2.jpg
+    - arduino-3.jpg
+    - arduino-4.jpg
+    - arduino-5.jpg
+    - arduino-6.jpg
+technologies:
+  - Arduino
+collaborators:
+  - jamesbooth
+  - lukedavies
+  - juditgreskovits
+  - remishergold
 ---
 
 # Arduino Waving
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+An attempt to build something with an Arduino, along with a few friends.
+
+We decided to make an arm on a servo that waved as people walked past a hatch window.
+
+Using a light-sensitive resistor (and a small mirror reflecting light from a nearby wall light), we detected a drop in light levels to activate the servo.
+
+James has a [full write-up on his website](http://www.jamesbooth.net/blog/2014/10/28/making-things-club-aka-jjlpr)
+
+<iframe src="https://player.vimeo.com/video/110232737?color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+

@@ -26,17 +26,13 @@
                         --><div class="grid__item one-whole medium--two-thirds">
                             <div class="Listing-imagery">
                                 <div class="Listing-screenshots Listing-screenshots--desktop">
-                                    {% if include.item.images.featured %}
-                                    <img src="/assets/images{{include.item.id}}/{{include.item.images.thumb}}" alt="" class="Listing-screenshot Listing-screenshot--desktop">
-                                    {% else %}
-                                    <img src="http://placehold.it/500x300" alt="" class="Listing-screenshot Listing-screenshot--desktop">
+                                    {% if include.item.images.thumbs.desktop %}
+                                    <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.desktop]}}" alt="" class="Listing-screenshot Listing-screenshot--desktop">
                                     {% endif %}
                                 </div>
                                 <div class="Listing-screenshots Listing-screenshots--mobile">
-                                    {% if include.item.images.featured %}
-                                    <img src="/assets/images{{include.item.id}}/{{include.item.images.mobile}}" alt="" class="Listing-screenshot Listing-screenshot--mobile">
-                                    {% else %}
-                                    <img src="http://placehold.it/200x300" alt="" class="Listing-screenshot Listing-screenshot--mobile">
+                                    {% if include.item.images.thumbs.mobile %}
+                                    <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.mobile]}}" alt="" class="Listing-screenshot Listing-screenshot--mobile">
                                     {% endif %}
                                 </div>
                             </div>

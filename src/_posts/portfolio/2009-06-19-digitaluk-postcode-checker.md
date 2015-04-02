@@ -1,11 +1,30 @@
 ---
 title: DigitalUK Postcode Checker
-excerpt: A site aimed at providing UK citizens with information regarding their switchover dates for digital television services
+excerpt: A website aimed at providing UK citizens with information regarding their switchover dates for digital television services
+client: grandunion
+link:
+images:
+  featured: featured.jpg
+  thumbs:
+    desktop: thumb-desktop.jpg
+  desktop:
+    - desktop-home.jpg
+technologies:
+  - HTML
+  - CSS
+  - JavaScript
 ---
 
 # DigitalUK Postcode Checker
 
-HTML templates created for the Digital UK Postcode Checker, a site aimed at providing UK citizens with information regarding their switchover dates for digital television services. The site contains collapsible sections of content, and custom overlays containing extra information for certain parts of the site.
+## Project overview
 
-HTML, CSS, JavaScript
-Built at Grand Union
+A website aimed at providing UK citizens with information regarding their switchover dates for digital television services
+
+## Technical solution
+
+The build required sections of content to be collapsable, and custom overlays containing extra information to be triggered when the user interacted with specific regions of the page.
+
+## My role
+
+I was responsible for creating HTML templates that would be integrated into a server-side web app.

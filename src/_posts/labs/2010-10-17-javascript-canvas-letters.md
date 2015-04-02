@@ -1,8 +1,56 @@
 ---
 title: Javascript Canvas Letters
-excerpt: Quidquid Latine dictum sit altum videtur
+excerpt: Animated pixel letters created with JavaScript and canvas
+tag: featured-lab
+links:
+ code: https://github.com/thegingerbloke/canvas-letters
+ demo:
+images:
+  featured: featured.png
+  thumbs:
+    desktop: thumb-desktop.png
+  desktop:
+    - a.png
+technologies:
+  - JavaScript
+  - Canvas
 ---
 
 # Javascript Canvas Letters
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Here's a little JavaScript experiment with canvas to animate letters.
+
+<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/canvas-letters/full-screen/" width="600" height="550"></iframe>
+
+Each letter is made up of a small matrix containing 35 numbers, representing 5 columns and seven rows.  These are then stored in JavaScript arrays.  The image below displays how the letter A' is turned into an array.
+
+{% highlight javascript linenos %}
+characters = {
+    "a": [0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,1]
+};
+{% endhighlight %}
+
+When initialising this script, a string of text is passed which renders each letter individually.  There are a few optional parameters that control the rendering of the text:
+
+{% highlight javascript linenos %}
+var canvasElement = new canvasLetters();
+
+canvasElement.init({
+  inline : true,
+  canvasId : "canvas-one",
+  blockColour : "ff9900",
+  canvasColour : "000000",
+  blockSize : 5,
+  textString : "This is a test.",
+  breakWord : false,
+  clearance : 5,
+  ordering : 'horizontal',
+  loop : true,
+  speed : 5,
+  animate : true
+});
+{% endhighlight %}
+
+It's also possible to create a configurable tool to allow the display of letters to be changed on the fly
+
+<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/canvas-letters/inline/" width="600" height="1000"></iframe>

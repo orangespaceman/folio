@@ -1,8 +1,34 @@
 ---
 title: Awe-inspring Synonyms
-excerpt: Quidquid Latine dictum sit altum videtur
+excerpt: A Chrome extension that automatically replaces the word 'awesome' with a random (but superior) synonym
+tag: featured-lab
+links:
+ code: https://github.com/thegingerbloke/awe-inspiring-synonyms-extension
+ demo: http://thegingerbloke.github.io/awe-inspiring-synonyms-extension/
+images:
+  featured: featured.png
+  thumbs:
+    desktop: thumb-desktop.jpg
+technologies:
+  - JavaScript
 ---
 
-# Awe-inspring Synonyms
+# Awe-inspring Synonyms - Chrome extension
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A Chrome extension that automatically replaces the word 'awesome' with a random (but superior) synonym
+
+## Installation
+
+Open Chrome, open the extensions view (chrome://extensions/) and drag/drop the awe-inspiring-synonyms-extension.crx file into the window
+
+## Usage
+
+The plugin will automatically detect and replace every instance of 'phenomenal' on the page.
+
+These will be underlined to subtly highlight the location of the original word.
+
+To find the replaced words more easily, click the button in the toolbar to toggle a yellow background colour on each replacement.
+
+## Demo
+
+<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/awe-inspiring-synonyms-extension/" width="600" height="550"></iframe>

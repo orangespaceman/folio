@@ -1,8 +1,48 @@
 ---
 title: Sarah Lindsay
-excerpt: Quidquid Latine dictum sit altum videtur
+excerpt: Website and shop for jewellery designer
+client:
+link: http://sarahlindsay.info
+tag: featured-project
+images:
+  featured: featured.jpg
+  thumbs:
+    desktop: thumb-desktop.jpg
+    mobile: thumb-mobile.jpg
+  mobile:
+    - mobile-home.jpg
+    - mobile-shop.jpg
+    - mobile-item.jpg
+    - mobile-collections.jpg
+    - mobile-news.jpg
+    - mobile-stockists.jpg
+  desktop:
+    - desktop-home.jpg
+    - desktop-shop.jpg
+    - desktop-item.jpg
+    - desktop-collections.jpg
+    - desktop-news.jpg
+technologies:
+  - HTML
+  - CSS
+  - JavaScript
+  - Shopify
+  - Liquid
+collaborators:
+  - danielhutchinson
+  - hayleywatchorn
 ---
 
 # Sarah Lindsay
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Project overview
+
+Website and shop for jewellery designer Sarah Lindsay.
+
+## Technical solution
+
+The website uses Shopify as a back-end, and the liquid templating language for page creation.
+
+## My role
+
+I was responsible for building the website.

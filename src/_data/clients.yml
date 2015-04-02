@@ -1,4 +1,4 @@
-putty:
+electricputty:
   name: Electric Putty
   link: http://www.electricputty.co.uk
 
@@ -8,3 +8,10 @@ pirata:
 tonic:
   name: Tonic Design
 
+grandunion:
+  name: Grand Union
+  link: http://www.thegrandunion.com/
+
+smesh:
+  name: Smesh
+  link: http://sme.sh/

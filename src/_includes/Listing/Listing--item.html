@@ -3,8 +3,13 @@
                         <div class="Listing Listing--item">
                             <h3 class="Listing-title">{{include.item.title}}</h3>
                             <div class="Listing-imagery">
-                                <div class="Listing-screenshots">
-                                    <img src="http://placehold.it/500x300" alt="" class="Listing-screenshot">
+                                <div class="Listing-screenshots Listing-screenshots--desktop">
+                                    <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.desktop]}}" alt="" class="Listing-screenshot Listing-screenshot--desktop">
+                                </div>
+                                <div class="Listing-screenshots Listing-screenshots--mobile">
+                                    {% if include.item.images.thumbs.mobile %}
+                                    <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.mobile]}}" alt="" class="Listing-screenshot Listing-screenshot--mobile">
+                                    {% endif %}
                                 </div>
                             </div>
                             <div class="Listing-information">

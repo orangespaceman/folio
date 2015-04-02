@@ -16,7 +16,7 @@ technologies:
 
 When a long form is necessary on a page, it can be daunting (not to mention time-intensive) for a user to fill it out completely.  This script allows a 'parent' checkbox to control the input value of many child checkboxes, potentially saving time and energy clicking each one individually.
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/select-all-checkbox/" width="600" height="350"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/select-all-checkbox/" ratio="70" %}
 
 The function call to enable this is straightforward. It takes two parameters:
 

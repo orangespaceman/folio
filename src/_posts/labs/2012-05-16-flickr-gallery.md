@@ -34,4 +34,4 @@ The page is reponsive, the images resize to fill the available space.
 
 The interactions for moving between slides are swipe-enabled, and can also be controlled via the keyboard arrow keys.
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/flickr-gallery" width="600" height="600"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/flickr-gallery/" ratio="100" %}

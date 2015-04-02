@@ -25,7 +25,7 @@ Drag the link below to your bookmarks toolbar or to a tab to start browser break
 
 ***
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/browser-breakout/bookmarklet/" width="600" height="120"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/browser-breakout/bookmarklet/" ratio="30" %}
 
 ***
 

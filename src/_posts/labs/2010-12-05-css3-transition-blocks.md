@@ -21,7 +21,7 @@ The example below contains 25 blocks of different dimensions.  Various CSS value
 
 (At the moment this only works in Safari/Chrome, but these transitions will soon be available to most modern browsers.)
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/css3-transition-blocks/" width="600" height="400"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/css3-transition-blocks/" ratio="80" %}
 
 The code is straightforward, each block is a simple HTML element:
 

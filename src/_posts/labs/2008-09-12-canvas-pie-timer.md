@@ -20,7 +20,7 @@ The html canvas element offers an enormous potential for scripting graphics.
 
 A while ago I put together a small experiment to test the (very!) basic animation potential of canvas.  I wanted to see whether it would be possible to create a circular timer, to count down X number of seconds, and trigger a function call when complete.
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/canvas-pie-timer/" width="600" height="350"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/canvas-pie-timer/" ratio="60" %}
 
 The javascript for this test is fairly basic, although I found it difficult to find much helpful documentation online.
 

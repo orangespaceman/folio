@@ -29,4 +29,4 @@ Give it a go - click in the iframe below then enter the Konami code
 
 ***
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/konami-code/" width="600" height="430"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/konami-code/" ratio="80" %}

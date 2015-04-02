@@ -19,4 +19,4 @@ technologies:
 
 An old experiment playing with interacting particles...
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/js-particles/" width="600" height="350"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/js-particles/" ratio="50" %}

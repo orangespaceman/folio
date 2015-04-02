@@ -31,4 +31,4 @@ To find the replaced words more easily, click the button in the toolbar to toggl
 
 ## Demo
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/awe-inspiring-synonyms-extension/" width="600" height="550"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/awe-inspiring-synonyms-extension/" ratio="90" %}

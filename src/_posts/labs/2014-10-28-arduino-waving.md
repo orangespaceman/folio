@@ -34,5 +34,4 @@ Using a light-sensitive resistor (and a small mirror reflecting light from a nea
 
 James has a [full write-up on his website](http://www.jamesbooth.net/blog/2014/10/28/making-things-club-aka-jjlpr)
 
-<iframe src="https://player.vimeo.com/video/110232737?color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
+{% include ArticleIframe/ArticleIframe.html src="https://player.vimeo.com/video/110232737?color=ffffff" ratio="75" %}

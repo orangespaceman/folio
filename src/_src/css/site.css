@@ -20,6 +20,7 @@
 @import "src/_src/css/third-party/_syntax-highlighting.css";
 
 /* components */
+@import "src/_src/css/components/_ArticleIframe.css";
 @import "src/_src/css/components/_Back.css";
 @import "src/_src/css/components/_Block.css";
 @import "src/_src/css/components/_BulletedList.css";

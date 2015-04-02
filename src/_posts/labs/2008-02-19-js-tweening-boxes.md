@@ -22,7 +22,7 @@ I used the [jstween library](http://jstween.blogspot.com/) to handle the movemen
 
 Click on one of the links to move the content...
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/js-tweening-boxes/" width="600" height="350"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/js-tweening-boxes/" ratio="50" %}
 
 The html is pretty simple, just a number of div elements with a class of 'box', within a parent container.
 

@@ -21,7 +21,7 @@ Here's a variation on the original  [Canvas Letters](../javascript-canvas-letter
 
 This time the words scroll as a banner rather than animating in at fixed positions.
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/canvas-letters/banner/" width="600" height="400"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/canvas-letters/banner/" ratio="80" %}
 
 When initialising this script, a string of text is passed which renders each letter individually. There are a few optional parameters that control the rendering of the text:
 

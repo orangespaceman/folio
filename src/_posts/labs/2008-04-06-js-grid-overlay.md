@@ -43,7 +43,7 @@ grid.init("box", "./grid.gif", "left top", "no-repeat");
 
 Try it on the example below - click in the iframe and then press **Control** and **;**
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/js-grid-overlay/" width="600" height="450"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/js-grid-overlay/" ratio="60" %}
 
 ## One function call for the entire site:
 

@@ -19,7 +19,7 @@ technologies:
 This code quickly turns any unordered list of links into horizontal navigation.  These lists of links should semantically be marked up as an unordered list `UL` element.  The following example shows this is possible simply by adding the class of `horiznavlist` to the parent list element.
 
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/horiznavlist/" width="600" height="180"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/horiznavlist/" ratio="30" %}
 
 
 It may be necessary to add a class of `clearfix` in order to correctly position the list, as the containing elements are floated.

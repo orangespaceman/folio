@@ -20,7 +20,7 @@ As a big fan of both the [original flash copter game](http://www.coptergame.net/
 
 Click anywhere in the game to start.  Hold the mouse button down to rise, let go to fall.
 
-<iframe class="ArticleIframe" src="http://thegingerbloke.github.io/js-canvas-copter/" width="600" height="430"></iframe>
+{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/js-canvas-copter/" ratio="80" %}
 
 To play this game you need to use a browser that supports the canvas element.
 

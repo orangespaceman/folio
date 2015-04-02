@@ -509,7 +509,7 @@ a:hover,
 a:visited {
         /*color: var(--colour-green-dark);*/
     }
-a:after {
+a:before {
             content: " \0003E"; /* > */
             position: absolute;
             right: -0.3rem;
@@ -1269,6 +1269,12 @@ input[type="radio"],
 .Back-link:after {
             display: none;
         }
+/* print styles */
+@media print {
+        .Back {
+            display: none;
+        }
+    }
 /**
  * @define Block; use strict
  *
@@ -1691,6 +1697,12 @@ input[type="radio"],
                     font-family: "Raleway-Light", Helvetica, sans-serif;
                 }
             }
+/* print styles */
+@media print {
+        .SiteNav {
+            display: none;
+        }
+    }
 /**
  * @define SiteTitle; use strict
  *
@@ -1879,6 +1891,16 @@ input[type="radio"],
 
     abbr[title]:after {
         content: " (" attr(title) ")";
+    }
+
+    a[href]:after,
+    abbr[title]:after {
+        position: static;
+        border-bottom: none;
+        opacity: 1;
+        display: block;
+        font-family: "Raleway-Light", Helvetica, sans-serif;
+        color: #232323;
     }
 
     /*

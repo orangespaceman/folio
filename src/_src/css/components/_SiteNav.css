@@ -54,3 +54,11 @@
                     font-family: var(--font-headings);
                 }
             }
+
+
+/* print styles */
+    @media print {
+        .SiteNav {
+            display: none;
+        }
+    }

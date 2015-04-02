@@ -28,3 +28,11 @@
         .Back-link:after {
             display: none;
         }
+
+
+/* print styles */
+    @media print {
+        .Back {
+            display: none;
+        }
+    }

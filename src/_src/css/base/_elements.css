@@ -71,7 +71,7 @@
         /*color: var(--colour-green-dark);*/
     }
 
-        a:after {
+        a:before {
             content: " \0003E"; /* > */
             position: absolute;
             right: -0.3rem;

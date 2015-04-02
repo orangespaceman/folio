@@ -28,6 +28,16 @@
         content: " (" attr(title) ")";
     }
 
+    a[href]:after,
+    abbr[title]:after {
+        position: static;
+        border-bottom: none;
+        opacity: 1;
+        display: block;
+        font-family: var(--font-headings);
+        color: var(--colour-black);
+    }
+
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol

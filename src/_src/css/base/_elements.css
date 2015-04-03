@@ -84,9 +84,9 @@
             transition: all var(--transition-time);
         }
 
-        a:hover:after,
-        a:focus:after,
-        a:active:after {
+        a:hover:before,
+        a:focus:before,
+        a:active:before {
             right: -0.7rem;
             opacity: 1;
         }

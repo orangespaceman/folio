@@ -76,8 +76,8 @@
                 color: var(--colour-black);
             }
 
-                .PageTitle-heading a:after {
-                    display: none; /* override default */
+                .PageTitle-heading a:before {
+                    display: none;  /* override default link hover */
                 }
 
 

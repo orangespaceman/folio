@@ -11,12 +11,12 @@ section: Portfolio
 
             <section class="Block" aria-labelledby="project-detail">
 
-                <div class="Listing">
+                <div class="Article">
 
-                    <div class="Listing-imagery">
-                        <div class="Listing-screenshots">
+                    <div class="Article-imagery">
+                        <div class="Article-screenshots Article-screenshots--featured">
                             {% if page.images.featured %}
-                            <img src="/assets/images{{page.id}}/{{page.images.featured}}" alt="" class="Listing-screenshot">
+                            <img src="/assets/images{{page.id}}/{{page.images.featured}}" alt="" class="Article-screenshot Article-screenshot--featured">
                             {% endif %}
                         </div>
                     </div>
@@ -24,8 +24,8 @@ section: Portfolio
                     <div class="grid">
                         <div class="grid__item one-whole medium--one-third">
 
-                            <div class="Listing-information">
-                                <div class="Listing-description">
+                            <div class="Article-information">
+                                <div class="Article-description">
                                     <div class="Editorial">
                                         <h3>Project details</h3>
                                         <ul class="BulletedList">
@@ -80,34 +80,51 @@ section: Portfolio
 
                         --><div class="grid__item one-whole medium--two-thirds">
 
-                            <div class="Listing-information">
-                                <div class="Listing-description">
+                            <div class="Article-information">
+                                <div class="Article-description">
                                     <div class="Editorial">
                                         {{ content }}
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="Listing-imagery">
-                                <div class="Listing-screenshots">
-                                    {% if page.images.desktop %}
-                                        {% for screenshot in page.images.desktop %}
-                                        <img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Listing-screenshot">
-                                        {% endfor %}
-                                    {% endif %}
+                            <div class="Article-imagery">
+                                {% if page.images.desktop %}
+                                <div class="Article-screenshots Article-screenshots--desktop">
+                                    <div class="Editorial">
+                                        <h2>Desktop Screenshots</h2>
+                                    </div>
+                                    {% for screenshot in page.images.desktop %}
+                                    <img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Article-screenshot Article-screenshot--desktop">
+                                    {% endfor %}
                                 </div>
+                                {% endif %}
 
-                                <div class="Listing-screenshots">
-                                    {% if page.images.mobile %}
-                                        {% for screenshot in page.images.mobile %}
-                                        <img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Listing-screenshot">
-                                        {% endfor %}
-                                    {% endif %}
+                                {% if page.images.mobile %}
+                                <div class="Article-screenshots Article-screenshots--mobile">
+                                    <div class="Editorial">
+                                        <h2>Mobile Screenshots</h2>
+                                    </div><!--
+                                    {% for screenshot in page.images.mobile %}
+                                    --><img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Article-screenshot Article-screenshot--mobile"><!--
+                                    {% endfor %}
+                                --></div>
+                                {% endif %}
+
+                                {% if page.images.photos %}
+                                <div class="Article-screenshots Article-screenshots--photos">
+                                    <div class="Editorial">
+                                        <h2>Photos</h2>
+                                    </div>
+                                    {% for photo in page.images.photos %}
+                                    <img src="/assets/images{{page.id}}/{{photo}}" alt="" class="Article-screenshot Article-screenshot--photo">
+                                    {% endfor %}
                                 </div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
-                </div><!-- /.listing -->
+                </div><!-- /.Article -->
             </section>
 
             {% include Main/Main-close.html %}

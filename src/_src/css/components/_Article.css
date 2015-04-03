@@ -1,0 +1,68 @@
+/**
+ * @define Article; use strict
+ *
+ * Article block styles
+ */
+
+.Article { }
+
+    /* Article - text */
+
+        .Article-title {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .Article-description {}
+
+        .Article-link {}
+
+
+    /* Article - image comtainer */
+        .Article-imagery {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+            .Article-screenshots {}
+
+                .Article-screenshots--featured {}
+
+                .Article-screenshots--desktop {}
+
+                .Article-screenshots--mobile {}
+
+                .Article-screenshots--photos {}
+
+
+                /* Article - images */
+                    .Article-screenshot {
+                        width: 100%;
+                        border: 2px solid var(--colour-grey-mid);
+                        margin-bottom: 2rem;
+                    }
+
+                        .Article-screenshot--featured {
+                            margin: 0;
+                        }
+
+                        .Article-screenshot--desktop {}
+
+                        .Article-screenshot--photo {}
+
+                        .Article-screenshot--mobile {
+                            border-color: var(--colour-grey-dark);
+                        }
+
+                        @media (--small) {
+                            .Article-screenshot--mobile {
+                                width: 47.5%;
+                                display: inline-block;
+                                vertical-align: top;
+                            }
+
+                            .Article-screenshot--mobile:nth-child(even) {
+                                margin-right: 5%;
+                            }
+                        }
+

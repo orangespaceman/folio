@@ -33,11 +33,11 @@ Ultimately, the PHP function called via Ajax that controls the volume is this:
 
 {% highlight php linenos %}
 function setVolume($vol) {
-    shell_exec("osascript -e ''set volume output volume ".$vol."''");
+    shell_exec("osascript -e 'set volume output volume ".$vol."'");
 }
 {% endhighlight %}
 
-The current volume is displayed by adjusting the colour of the volume blocks.  To add a bit of visual effect, ''active'' volume blocks have a bit of glow, added with [CSS3 box shadow](http://www.css3.info/preview/box-shadow/):
+The current volume is displayed by adjusting the colour of the volume blocks.  To add a bit of visual effect, 'active' volume blocks have a bit of glow, added with [CSS3 box shadow](http://www.css3.info/preview/box-shadow/):
 
 {% highlight css linenos %}
 ul#vol li.active a span {

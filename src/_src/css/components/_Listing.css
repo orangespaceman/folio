@@ -48,15 +48,23 @@
                 /* listing - images */
                     .Listing-screenshot {
                         width: 100%;
+                        border: 2px solid var(--colour-grey-mid);
+                        margin-bottom: 2rem;
                     }
 
                         .Listing-screenshot--desktop {}
 
-                        .Listing-screenshot--mobile {}
+                        .Listing-screenshot--mobile {
+                            border-color: var(--colour-grey-dark);
+                        }
 
 
     /* Listing blocks - full-width content blocks */
         .Listing--block {}
+
+            .Listing--block .Listing-screenshot {
+                border-width: 5px;
+            }
 
             .Listing--block .Listing-screenshot--mobile {
                 bottom: -2rem;

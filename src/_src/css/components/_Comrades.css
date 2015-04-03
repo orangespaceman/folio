@@ -34,8 +34,8 @@
         color: var(--colour-green-dark);
     }
 
-        .Comrades-link:after {
-            display: none;
+        .Comrades-link:before {
+            display: none;  /* override default link hover */
         }
 
     .Comrades-skills {

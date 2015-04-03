@@ -16,14 +16,14 @@
                                 <div class="Listing-description">
                                     <div class="Editorial">
                                         {{include.item.excerpt | markdownify }}
-                                        <p class="Listing-link">
-                                            {% if include.url and include.link %}
-                                            <a href="{{include.url}}">{{include.link}}</a>
-                                            {% else %}
-                                            <a href="{{include.item.url}}">See further details about this project</a>
-                                            {% endif %}
-                                        </p>
                                     </div>
+                                    <p class="Listing-link">
+                                        {% if include.url and include.link %}
+                                        <a href="{{include.url}}">{{include.link}}</a>
+                                        {% else %}
+                                        <a href="{{include.item.url}}">See further details about this project</a>
+                                        {% endif %}
+                                    </p>
                                 </div>
                             </div>
                         </div><!-- /.listing -->

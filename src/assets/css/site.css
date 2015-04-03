@@ -521,9 +521,9 @@ a:before {
             color: rgba(255, 153, 0, 1);
             transition: all 0.25s;
         }
-a:hover:after,
-        a:focus:after,
-        a:active:after {
+a:hover:before,
+        a:focus:before,
+        a:active:before {
             right: -0.7rem;
             opacity: 1;
         }
@@ -1096,6 +1096,7 @@ input[type="radio"],
 /* container */
 .highlight {
     background: #fff;
+    margin: 2rem 0;
 }
 /* lines */
 .highlight .lineno {
@@ -1226,6 +1227,54 @@ input[type="radio"],
 
 /* components */
 /**
+ * @define Article; use strict
+ *
+ * Article block styles
+ */
+.Article { }
+/* Article - text */
+.Article-title {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+.Article-description {}
+.Article-link {}
+/* Article - image comtainer */
+.Article-imagery {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+.Article-screenshots {}
+.Article-screenshots--featured {}
+.Article-screenshots--desktop {}
+.Article-screenshots--mobile {}
+.Article-screenshots--photos {}
+/* Article - images */
+.Article-screenshot {
+                        width: 100%;
+                        border: 2px solid #999;
+                        margin-bottom: 2rem;
+                    }
+.Article-screenshot--featured {
+                            margin: 0;
+                        }
+.Article-screenshot--desktop {}
+.Article-screenshot--photo {}
+.Article-screenshot--mobile {
+                            border-color: #3e3e3e;
+                        }
+@media  (min-width: 25rem) {
+                            .Article-screenshot--mobile {
+                                width: 47.5%;
+                                display: inline-block;
+                                vertical-align: top;
+                            }
+
+                            .Article-screenshot--mobile:nth-child(even) {
+                                margin-right: 5%;
+                            }
+                        }
+/**
  * @define ArticleIframe; use strict
  *
  * Responsive iframe wrapper
@@ -1235,6 +1284,7 @@ input[type="radio"],
     padding-bottom: 75%;
     height: 0;
     overflow: hidden;
+    margin: 2rem 0;
 }
 .ArticleIframe-iframe {
         position: absolute;
@@ -1258,16 +1308,14 @@ input[type="radio"],
             content: " \0003C"; /* < */
             position: absolute;
             left: -0.7rem;
+            right: auto;  /* override default link hover */
+            opacity: 1;  /* override default link hover */
             bottom: 0;
             border-bottom: 1px solid transparent; /* alignment */
-            /*opacity: 0;*/
             line-height: 1;
             font-family: "Raleway-Light", Helvetica, sans-serif;
             color: rgba(255, 153, 0, 1);
             transition: all 0.25s;
-        }
-.Back-link:after {
-            display: none;
         }
 /* print styles */
 @media print {
@@ -1299,6 +1347,7 @@ input[type="radio"],
 .BulletedList {
     margin-left: 0;
     padding-left: 0;
+    line-height: 1.5;
 }
 .BulletedList-item {
         list-style: none;
@@ -1349,8 +1398,8 @@ input[type="radio"],
 .Comrades-link:visited {
         color: rgba(97, 179, 117, 1);
     }
-.Comrades-link:after {
-            display: none;
+.Comrades-link:before {
+            display: none;  /* override default link hover */
         }
 .Comrades-skills {
         font-size: 0.75rem;
@@ -1399,14 +1448,38 @@ input[type="radio"],
  */
 .Editorial {
     line-height: 1.5;
+    margin: 1rem 0;
 }
+.Editorial h1,
+    .Editorial h2,
+    .Editorial h3,
+    .Editorial h4 {
+        margin: 2rem 0 1rem 0;
+    }
 .Editorial p {
         margin: 1rem 0;
     }
 .Editorial ul, ol {
         margin: 1rem 0;
     }
-.Editorial li {}
+/* duplicate bulleted list styles */
+.Editorial ul li {
+            list-style: none;
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+.Editorial ul li:before {
+            content: " \0003E"; /* > */
+            position: absolute;
+            left: 0.5rem;
+            top: -0.15rem;
+            font-family: "Raleway-Light", Helvetica, sans-serif;
+            color: rgba(255, 153, 0, 1);
+        }
+.Editorial a:before {
+         display: none; /* override default link hover */
+    }
 /**
  * @define Listing; use strict
  *
@@ -1446,11 +1519,18 @@ input[type="radio"],
 /* listing - images */
 .Listing-screenshot {
                         width: 100%;
+                        border: 2px solid #999;
+                        margin-bottom: 2rem;
                     }
 .Listing-screenshot--desktop {}
-.Listing-screenshot--mobile {}
+.Listing-screenshot--mobile {
+                            border-color: #3e3e3e;
+                        }
 /* Listing blocks - full-width content blocks */
 .Listing--block {}
+.Listing--block .Listing-screenshot {
+                border-width: 5px;
+            }
 .Listing--block .Listing-screenshot--mobile {
                 bottom: -2rem;
             }
@@ -1560,8 +1640,8 @@ input[type="radio"],
                 font-style: normal;
                 color: #232323;
             }
-.PageTitle-heading a:after {
-                    display: none; /* override default */
+.PageTitle-heading a:before {
+                    display: none;  /* override default link hover */
                 }
 /* page title - home modifier */
 .PageTitle-heading--home {
@@ -1684,8 +1764,8 @@ input[type="radio"],
                 color: rgba(255, 153, 0, 1);
                 text-decoration: none;
             }
-.SiteNav-link:after {
-                display: none; /* remove default */
+.SiteNav-link:before {
+                display: none;  /* override default link hover */
             }
 /* site nav - arrows */
 @media  (min-width: 25rem) {
@@ -1727,8 +1807,8 @@ input[type="radio"],
                 font-size: 1rem;
             }
         }
-.SiteTitle-link:after {
-            display: none;
+.SiteTitle-link:before {
+            display: none; /* override default link hover */
         }
 .SiteTitle-link:hover {
             background: rgba(230, 128, 0, 1);

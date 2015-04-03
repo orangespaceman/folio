@@ -26,8 +26,8 @@
             }
         }
 
-        .SiteTitle-link:after {
-            display: none;
+        .SiteTitle-link:before {
+            display: none; /* override default link hover */
         }
 
         .SiteTitle-link:hover {

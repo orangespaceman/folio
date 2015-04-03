@@ -8,7 +8,7 @@ images:
   featured: featured.jpg
   thumbs:
     desktop: thumb-arduino.jpg
-  desktop:
+  photos:
     - arduino-1.jpg
     - arduino-2.jpg
     - arduino-3.jpg

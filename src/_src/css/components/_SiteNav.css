@@ -39,8 +39,8 @@
                 text-decoration: none;
             }
 
-            .SiteNav-link:after {
-                display: none; /* remove default */
+            .SiteNav-link:before {
+                display: none;  /* override default link hover */
             }
 
 

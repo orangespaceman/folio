@@ -7,7 +7,15 @@
 
 .Editorial {
     line-height: 1.5;
+    margin: 1rem 0;
 }
+
+    .Editorial h1,
+    .Editorial h2,
+    .Editorial h3,
+    .Editorial h4 {
+        margin: 2rem 0 1rem 0;
+    }
 
     .Editorial p {
         margin: 1rem 0;
@@ -17,4 +25,23 @@
         margin: 1rem 0;
     }
 
-    .Editorial li {}
+    /* duplicate bulleted list styles */
+        .Editorial ul li {
+            list-style: none;
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .Editorial ul li:before {
+            content: " \0003E"; /* > */
+            position: absolute;
+            left: 0.5rem;
+            top: -0.15rem;
+            font-family: var(--font-headings);
+            color: var(--colour-orange);
+        }
+
+    .Editorial a:before {
+         display: none; /* override default link hover */
+    }

@@ -4,6 +4,7 @@
 
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
+var mincss = require('gulp-minify-css');
 
 module.exports = function () {
 
@@ -14,5 +15,8 @@ module.exports = function () {
             require('postcss-custom-media')(),
             require('autoprefixer-core')()
         ]))
+        .pipe(mincss({
+            noAdvanced: true
+        }))
         .pipe(gulp.dest(global.config.compiledDir + '/css'));
 };

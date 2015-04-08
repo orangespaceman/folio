@@ -6,7 +6,11 @@
                         <div class="grid__item one-whole medium--one-third">
 
                             <div class="Listing-information">
-                                <h3 class="Listing-title">{{include.item.title}}</h3>
+                                <h3 class="Listing-title">
+                                    <a class="Listing-titleLink is-arrowless" href="{% if include.link %}{{ include.link }}{% else %}{{ include.item.url }}{% endif %}">
+                                        {{include.item.title}}
+                                    </a>
+                                </h3>
                                 <div class="Listing-description">
                                     <div class="Editorial">
                                         {{include.item.excerpt}}
@@ -24,7 +28,7 @@
                         </div><!--
 
                         --><div class="grid__item one-whole medium--two-thirds">
-                            <div class="Listing-imagery">
+                            <a class="Listing-imagery is-arrowless" href="{% if include.link %}{{ include.link }}{% else %}{{ include.item.url }}{% endif %}">
                                 <div class="Listing-screenshots Listing-screenshots--desktop">
                                     {% if include.item.images.thumbs.desktop %}
                                     <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.desktop]}}" alt="" class="Listing-screenshot Listing-screenshot--desktop">
@@ -35,7 +39,7 @@
                                     <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.mobile]}}" alt="" class="Listing-screenshot Listing-screenshot--mobile">
                                     {% endif %}
                                 </div>
-                            </div>
+                            </a>
 
                         </div>
 

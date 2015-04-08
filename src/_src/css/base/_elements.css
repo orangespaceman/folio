@@ -91,6 +91,17 @@
             opacity: 1;
         }
 
+        /* remove default link styles */
+        a.is-arrowless {
+            border: none;
+        }
+            a.is-arrowless:before {
+                display: none;
+            }
+
+
+
+
 
 /* forms */
     form {}

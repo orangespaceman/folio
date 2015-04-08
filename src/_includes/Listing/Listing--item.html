@@ -1,8 +1,13 @@
 
 
                         <div class="Listing Listing--item">
-                            <h3 class="Listing-title">{{include.item.title}}</h3>
-                            <div class="Listing-imagery">
+                            <h3 class="Listing-title">
+                                <a class="Listing-titleLink is-arrowless" href="{% if include.link %}{{ include.link }}{% else %}{{ include.item.url }}{% endif %}">
+                                    {{include.item.title}}
+                                </a>
+                            </h3>
+
+                            <a class="Listing-imagery is-arrowless" href="{% if include.link %}{{ include.link }}{% else %}{{ include.item.url }}{% endif %}">
                                 <div class="Listing-screenshots Listing-screenshots--desktop">
                                     <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.desktop]}}" alt="" class="Listing-screenshot Listing-screenshot--desktop">
                                 </div>
@@ -11,7 +16,8 @@
                                     <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.mobile]}}" alt="" class="Listing-screenshot Listing-screenshot--mobile">
                                     {% endif %}
                                 </div>
-                            </div>
+                            </a>
+
                             <div class="Listing-information">
                                 <div class="Listing-description">
                                     <div class="Editorial">

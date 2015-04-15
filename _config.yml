@@ -2,7 +2,7 @@
 source: src
 
 # Global config settings
-destination: build
+destination: public
 
 # Build settings
 permalink: /:categories/:title/

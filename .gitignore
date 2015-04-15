@@ -15,4 +15,7 @@ npm-debug.log
 /bower_components/
 
 # Jekyll
-/build
+/public
+
+# Deploy
+deploy.sh

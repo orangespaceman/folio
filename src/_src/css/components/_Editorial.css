@@ -45,3 +45,7 @@
     .Editorial a:before {
          display: none; /* override default link hover */
     }
+
+    .Editorial img.is-full {
+        width: 100%;
+    }

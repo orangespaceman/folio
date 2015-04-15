@@ -1,10 +1,10 @@
-# Site settings
+# Jekyll settings
 source: src
-
-# Global config settings
 destination: public
+include:
+  - .htaccess
 
-# Build settings
+# Site settings
 permalink: /:categories/:title/
 
 # custom data - site details

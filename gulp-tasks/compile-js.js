@@ -1,33 +1,41 @@
 /**
  * Compile the JS with Browserify.
- *
- * See:
- * https://github.com/gulpjs/gulp/blob/master/docs/
-    recipes/fast-browserify-builds-with-watchify.md
  */
 
+var fs = require('fs');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
-var watchify = require('watchify');
 var browserify = require('browserify');
+var uglify = require('gulp-uglify');
+var header = require('gulp-header');
 
 module.exports = function () {
 
-    var indexJs = global.config.jsDir + '/index.js';
-    var bundler = watchify(browserify(indexJs, watchify.args));
+    // add readable header to minified source
+    var head = [
+        '/*!',
+        '* Hello there!',
+        '*',
+        '* If you are keen to see the source JS files, take a look on github:',
+        '*',
+        '* https://github.com/thegingerbloke/folio',
+        '*',
+        '*/'
+    ].join('\n');
 
-    bundler.transform('brfs');
+    // set entry point + paths
+    var filename = 'site.js';
+    var src = global.config.jsDir + '/' + filename;
+    var dest = global.config.compiledDir + '/js';
 
-    function bundle () {
-        return bundler.bundle()
-            .on('error', gutil.log.bind(gutil, 'Browserify Error'))
-            .pipe(source('bundle.js'))
-            .pipe(gulp.dest(global.config.compiledDir + '/js'));
-    }
-
-    bundler.on('update', bundle);
-
-    return bundle;
+    // compile
+    return browserify(src).bundle()
+        .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+        .pipe(source(filename))
+        .pipe(buffer())
+        .pipe(uglify())
+        .pipe(header(head))
+        .pipe(gulp.dest(dest));
 };

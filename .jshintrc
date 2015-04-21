@@ -6,5 +6,10 @@
     "nonbsp": true,
     "quotmark": "single",
     "undef": true,
-    "maxlen": 80
+    "maxlen": 80,
+    "browser": true,
+    "browserify": true,
+    "globals": {
+        "console": true
+    }
 }

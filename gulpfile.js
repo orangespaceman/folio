@@ -5,9 +5,9 @@ var util = require('util');
 
 var c = global.config = {};
 
-c.srcDir = './src/_src/';
+c.srcDir = './src/_src';
 c.buildDir = './build';
-c.compiledDir = './src/assets/';
+c.compiledDir = './src/assets';
 c.bowerDir = './bower_components';
 
 c.jsDir = util.format('%s/js', c.srcDir);

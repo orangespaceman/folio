@@ -19,9 +19,6 @@ c.sassFiles = util.format('%s/**/*.scss', c.sassDir);
 c.cssDir = util.format('%s/css', c.srcDir);
 c.cssFiles = util.format('%s/**/*.css', c.cssDir);
 
-//c.imagesDir = util.format('%s/images', c.srcDir);
-//c.fontsDir = util.format('%s/fonts', c.srcDir);
-
 Object.keys(tasks).forEach(function (name) {
     gulp.task(name, tasks[name]);
 });
@@ -36,10 +33,6 @@ gulp.task('lint-js', function (cb) {
 
 gulp.task('compile', function (cb) {
     seq(['bower', 'compile-css', 'compile-js'], cb);
-});
-
-gulp.task('build', function (cb) {
-    //seq('compile', ['minify', 'optimise-images', 'static-files'], cb);
 });
 
 gulp.task('watch', function () {

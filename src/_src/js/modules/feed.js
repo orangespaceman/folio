@@ -7,7 +7,7 @@
 /**
  * Module imports
  */
-var http = require('http');
+var superagent = require('superagent');
 var moment = require('moment');
 
 /**
@@ -36,7 +36,7 @@ Feed.prototype.init = function () {
     this.createLoader(loadingMessage);
 
     // request data
-    this.requestData(this.options.host, uri);
+    this.requestData(this.options.protocol, this.options.host, uri);
 };
 
 /**
@@ -66,37 +66,73 @@ Feed.prototype.createLoader = function (loadingMessage) {
 /**
  * Request data
  *
+ * @param {string} protocol - the API protocol
  * @param {string} host - the API host
  * @param {string} uri - the API request uri
  */
-Feed.prototype.requestData = function (host, uri) {
+Feed.prototype.requestData = function (protocol, host, uri) {
     var self = this;
 
-    http.get({
-        host: host,
-        path: uri
-    }, function (res) {
-        var buffer = '';
-        res.on('data', function (data) {
-            buffer += data;
+    superagent
+        .get(protocol + host + uri)
+        .set('Accept', 'application/json')
+        .end(function (err, res) {
+            if (err) {
+                self.handleError(err, res);
+            } else {
+                self.parseData(res.body);
+            }
         });
-        res.on('end', function () {
-            self.parseData(buffer);
-        });
-    });
+};
+
+/**
+ * Handle API Error
+ *
+ * @param {object} err - the error object
+ * @param {object} res - the API response
+ */
+Feed.prototype.handleError = function (err, res) {
+
+    this.hideLoader();
+
+    // add error message
+    var error = document.createElement('em');
+    error.classList.add('Feed-error');
+
+    var errorMessage = [
+        'Sorry, there was an error with this feed. ',
+        'But don\'t worry, you\'re probably not missing much...',
+        '(The technical error is: ',
+        res.status,
+        res.text,
+        ')'
+    ].join('\n');
+
+    var errorText = document.createTextNode(errorMessage);
+    error.appendChild(errorText);
+    this.feedEl.insertBefore(error, this.feedEl.firstChild);
+
+    // log error
+    console.log('FEED ERROR: ', err, res);
+};
+
+/**
+ * Hide loader
+ */
+Feed.prototype.hideLoader = function () {
+    this.feedEl.querySelector('.Feed-loader').classList.add('u-Hidden');
 };
 
 /**
  * Parse API data
  *
- * @param {string} data - the raw API response
+ * @param {json} items - the API response json
  */
-Feed.prototype.parseData = function (data) {
+Feed.prototype.parseData = function (items) {
     var self = this;
 
-    this.feedEl.querySelector('.Feed-loader').classList.add('u-Hidden');
+    this.hideLoader();
 
-    var items = JSON.parse(data);
     var templateEl = this.feedEl.querySelector('.js-feed-template');
     var template;
 

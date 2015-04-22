@@ -62,9 +62,9 @@
         }
 
             .SiteTitle-line--left-top       { left: 15%;  top: 35%;    transform: rotate(-35deg); }
-            .SiteTitle-line--left-bottom    { left: 15%;  bottom: 35%; transform: rotate(35deg); }
+            .SiteTitle-line--left-bottom    { left: 15%;  bottom: 37%; transform: rotate(35deg); }
             .SiteTitle-line--right-top      { right: 15%; top: 35%;    transform: rotate(35deg); }
-            .SiteTitle-line--right-bottom   { right: 15%; bottom: 35%; transform: rotate(-35deg); }
+            .SiteTitle-line--right-bottom   { right: 15%; bottom: 37%; transform: rotate(-35deg); }
 
             .SiteTitle-link:hover .SiteTitle-line--left-top       { width: 45%; left: 12%;  top: 40%;    transform: rotate(-45deg); }
             .SiteTitle-link:hover .SiteTitle-line--left-bottom    { width: 20%; left: 20%;  bottom: 30%; transform: rotate(90deg); }

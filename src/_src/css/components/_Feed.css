@@ -50,6 +50,12 @@
         color: var(--colour-grey-mid);
     }
 
+    /* errors */
+    .Feed-error {
+        color: red;
+        font-size: 0.8rem;
+    }
+
 /*
  * Styles for specific feed types
  */

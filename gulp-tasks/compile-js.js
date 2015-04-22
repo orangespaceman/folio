@@ -35,7 +35,7 @@ module.exports = function () {
         .on('error', gutil.log.bind(gutil, 'Browserify Error'))
         .pipe(source(filename))
         .pipe(buffer())
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(header(head))
         .pipe(gulp.dest(dest));
 };

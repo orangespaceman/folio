@@ -14,7 +14,6 @@ images:
     - mobile-home.jpg
     - mobile-question.jpg
     - mobile-answer.jpg
-    - mobile-results.jpg
   desktop:
     - desktop-home.jpg
     - desktop-question.jpg

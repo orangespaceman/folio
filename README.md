@@ -50,7 +50,7 @@ gulp compile-sass
 
 ### JS
 
-TBC
+The JS uses Browserify to keep files separated and to protect scope
 
 JSHint and JSCS rules are used to keep JS consistent
 
@@ -65,6 +65,18 @@ Gulp tasks have been separated into individual files using [node-require-directo
 The main heading font is [Raleway](https://www.theleagueofmoveabletype.com/raleway)
 
 Webfont versions have been downloaded from [fontpro](http://fontpro.com/raleway-font-16024)
+
+### SVG Sprite
+
+The site uses an Icomoon SVG Sprite for certain icons
+
+To update:
+
+1. Visit the [icomoon app](https://icomoon.io/)
+2. Upload the json file - `src/_src/images/icomoon/selection.json`
+3. Select new icons, download new SVG zip
+4. Overwrite files in `src/_src/images/icomoon` with zip contents
+5. Copy sprite.svg file to `src/assets/images/sprite.svg`
 
 
 ## Back-end

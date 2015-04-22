@@ -7,4 +7,6 @@ var feeds = require('./modules/feeds.js');
 
 comment.init();
 relExternal.init();
-//feeds.init();
+feeds.init({
+    host: 'api.petegoodman.com'
+});

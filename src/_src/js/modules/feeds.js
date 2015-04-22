@@ -4,26 +4,28 @@
 
 'use strict';
 
-var http = require('http');
+/**
+ * Module imports
+ */
+var Feed = require('./feed.js');
 
-function init () {
+/**
+ * Initialisation method - find all Feed elements
+ *
+ * @param {object} options - initialisation options
+ */
+function init (options) {
+    var feedEls = document.querySelectorAll('.js-feed');
 
-    http.get({path: '/403'}, function (res) {
-        //var div = document.getElementById('result');
-        //div.innerHTML += 'GET /beep<br>';
-
-        res.on('data', function (buf) {
-            console.log('data', buf);
-            //div.innerHTML += buf;
-        });
-
-        res.on('end', function () {
-            console.log('end');
-            //div.innerHTML += '<br>__END__';
-        });
+    Array.prototype.forEach.call(feedEls, function (feedEl) {
+        var feed = new Feed(feedEl, options);
+        feed.init();
     });
 }
 
+/**
+ * Return public methods
+ */
 module.exports = {
     init: init
 };

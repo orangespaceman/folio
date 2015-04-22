@@ -34,6 +34,7 @@
     "main-bower-files": "~2.4.1",
     "map-stream": "0.0.5",
     "merge-stream": "~0.1.6",
+    "moment": "^2.10.2",
     "postcss": "~3.0.1",
     "postcss-custom-media": "~1.2.1",
     "postcss-custom-properties": "~2.0.0",

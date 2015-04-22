@@ -23,6 +23,7 @@
 /* third party */
 @import "src/_src/css/third-party/_grid.css";
 @import "src/_src/css/third-party/_syntax-highlighting.css";
+@import "src/_src/css/third-party/_icomoon-svg-sprite.css";
 
 /* components */
 @import "src/_src/css/components/_Article.css";
@@ -33,8 +34,10 @@
 @import "src/_src/css/components/_Comrades.css";
 @import "src/_src/css/components/_CV.css";
 @import "src/_src/css/components/_Editorial.css";
+@import "src/_src/css/components/_Feed.css";
 @import "src/_src/css/components/_Listing.css";
 @import "src/_src/css/components/_Main.css";
+@import "src/_src/css/components/_NumericList.css";
 @import "src/_src/css/components/_PageTitle.css";
 @import "src/_src/css/components/_SiteFooter.css";
 @import "src/_src/css/components/_SiteHeader.css";

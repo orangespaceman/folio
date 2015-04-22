@@ -18,7 +18,47 @@ title: Home
 
             <div class="grid">
 
-                <div class="grid__item one-whole medium--one-half">
+                <div class="grid__item one-whole medium--one-third">
+
+                    <section class="Block" aria-labelledby="about">
+
+                        {% include Block/Block-header.html title="About me" slug="about" %}
+
+                        <div class="Editorial">
+                            {% capture about %}{% include About/About-home.md %}{% endcapture %}
+                            {{ about | markdownify }}
+                        </div>
+
+                        <p><a href="./about/">See a bit more about me</a></p>
+                    </section>
+
+                </div><!--
+
+                --><div class="grid__item one-whole medium--one-third">
+
+                    <section class="Block" aria-labelledby="recent">
+
+                        {% include Block/Block-header.html title="Recent updates" slug="recent" %}
+
+                        <div class="Editorial">
+                            <p>Elsewhere on the internet&hellip;</p>
+                        </div>
+
+                        <div class="Feed">
+
+                            {% include Feed/Feed-item--flickr.html %}
+                            {% include Feed/Feed-item--spotify.html %}
+                            {% include Feed/Feed-item--lastfm.html %}
+                            {% include Feed/Feed-item--goodreads.html %}
+                            {% include Feed/Feed-item--github.html %}
+
+                        </div>
+
+                    </section>
+
+                </div><!--
+
+                --><div class="grid__item one-whole medium--one-third">
 
                     <section class="Block" aria-labelledby="recent-labs">
 
@@ -27,55 +67,6 @@ title: Home
                         {% assign featuredLab = site.tags["featured-lab"][0] %}
                         {% include Listing/Listing--item.html item=featuredLab url="/labs/" link="See more of my lab projects" %}
 
-                    </section>
-
-                </div><!--
-
-                --><div class="grid__item one-whole medium--one-half">
-
-                    <section class="Block" aria-labelledby="about">
-
-                        {% include Block/Block-header.html title="About me" slug="about" %}
-
-                        <div class="Editorial">
-
-                            {% capture about %}{% include About/About-home.md %}{% endcapture %}
-                            {{ about | markdownify }}
-
-                            <ul class="BulletedList">
-                                <li class="BulletedList-item">
-                                    <span class="js-api-hook" data-service="last-fm" data-method="" data-limit="1">
-                                        See what I've been listening to recently
-                                        &mdash; via <a href="http://last.fm/user/thegingerbloke" rel="external">Last.fm</a>
-                                    </span>
-                                </li>
-                                <li class="BulletedList-item">
-                                    <span class="js-api-hook" data-service="" data-method="" data-limit="1">
-                                        See my latest photos
-                                        &mdash; via <a href="https://flickr.com/photos/thegingerbloke" rel="external">Flickr</a>
-                                    </span>
-                                </li>
-                                <li class="BulletedList-item">
-                                    <span class="js-api-hook" data-service="" data-method="" data-limit="1">
-                                        See my latest playlists
-                                        &mdash; via <a href="https://open.spotify.com/user/thegingerbloke" rel="external">Spotify</a>
-                                    </span>
-                                </li>
-                                <li class="BulletedList-item">
-                                    <span class="js-api-hook" data-service="" data-method="" data-limit="1">
-                                        See what I've been reading recently
-                                        &mdash; via <a href="https://www.goodreads.com/review/list/67843" rel="external">Goodreads</a>
-                                    </span>
-                                </li>
-                                <li class="BulletedList-item">
-                                    <span class="js-api-hook" data-service="" data-method="" data-limit="1">
-                                        See my latest commits
-                                        &mdash; via <a href="https://github.com/thegingerbloke" rel="external">GitHub</a>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                        <p><a href="./about/">See a bit more about me</a></p>
                     </section>
 
                 </div><!-- .grid__item -->

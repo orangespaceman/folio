@@ -33,12 +33,16 @@ section: Portfolio
                                                 Date: {{ page.date | date: '%B %Y' }}
                                             </li>
 
-                                            {% if page.client %}
+                                            {% if page.client and site.data.clients[page.client].link  %}
                                                 <li class="BulletedList-item">
                                                     Built for:
                                                     <a href="{{site.data.clients[page.client].link}}" rel="external">
                                                         {{site.data.clients[page.client].name}}
                                                     </a>
+                                                </li>
+                                            {% else if page.client %}
+                                                <li class="BulletedList-item">
+                                                    Built for {{site.data.clients[page.client].name}}
                                                 </li>
                                             {% endif %}
 

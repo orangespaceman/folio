@@ -79,7 +79,7 @@ gulp compile-sass
 
 ### JavaScript
 
-The JS uses Browserify to keep files separated and to protect scope.
+The JS uses [Browserify](http://browserify.org/) to keep files separated and to protect scope.
 
 JSHint and JSCS rules are used to keep JS consistent.
 

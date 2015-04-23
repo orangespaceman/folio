@@ -1,5 +1,6 @@
 /**
- * @define u-VisuallyHidden; use strict
+ * define utilities;
+ * (pseudo-selectors causes linter issues)
  *
  * via H5BP
  */
@@ -9,7 +10,7 @@
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
-.u-VisuallyHidden {
+.u-visuallyHidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -21,13 +22,13 @@
 }
 
 /*
- * Extends the .u-VisuallyHidden class to allow the element
+ * Extends the .u-visuallyHidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.u-VisuallyHidden.is-focusable:active,
-.u-VisuallyHidden.is-focusable:focus {
+.u-visuallyHidden.is-focusable:active,
+.u-visuallyHidden.is-focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;

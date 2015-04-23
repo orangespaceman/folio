@@ -1,8 +1,10 @@
 /**
- * @define Editorial; use strict
+ * @define Editorial; weak
  *
  * Opt-in text content, see:
  * https://css-tricks.com/opt-in-typography/
+ *
+ * weak linting to stop the need for classes on all formatting
  */
 
 .Editorial {

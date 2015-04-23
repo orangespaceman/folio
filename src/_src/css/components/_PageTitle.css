@@ -1,7 +1,9 @@
 /**
- * @define PageTitle; use strict
+ * @define PageTitle; weak
  *
  * Page title blocks
+ * weak linting due to <strong> element being injected by markdown, therefore
+ * it can't have any classes added
  */
 
 .PageTitle {

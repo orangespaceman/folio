@@ -45,11 +45,11 @@
 @import "src/_src/css/components/_SiteTitle.css";
 
 /* util classes */
-@import "src/_src/css/utils/_u-Clearfix.css";
-@import "src/_src/css/utils/_u-ContentWrap.css";
-@import "src/_src/css/utils/_u-Hidden.css";
-@import "src/_src/css/utils/_u-Invisible.css";
-@import "src/_src/css/utils/_u-VisuallyHidden.css";
+@import "src/_src/css/utils/_u-clearfix.css";
+@import "src/_src/css/utils/_u-contentWrap.css";
+@import "src/_src/css/utils/_u-hidden.css";
+@import "src/_src/css/utils/_u-invisible.css";
+@import "src/_src/css/utils/_u-visuallyHidden.css";
 
 /* print */
 @import "src/_src/css/base/_print.css";

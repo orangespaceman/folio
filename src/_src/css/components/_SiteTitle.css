@@ -35,7 +35,7 @@
         }
 
 
-    .SiteTitle strong {
+    .SiteTitle-name {
         font-family: var(--font-headings-bold);
     }
 
@@ -61,12 +61,12 @@
             transition: all 0.1s;
         }
 
-            .SiteTitle-line--left-top       { left: 15%;  top: 35%;    transform: rotate(-35deg); }
-            .SiteTitle-line--left-bottom    { left: 15%;  bottom: 37%; transform: rotate(35deg); }
-            .SiteTitle-line--right-top      { right: 15%; top: 35%;    transform: rotate(35deg); }
-            .SiteTitle-line--right-bottom   { right: 15%; bottom: 37%; transform: rotate(-35deg); }
+            .SiteTitle-lineLeftTop       { left: 15%;  top: 35%;    transform: rotate(-35deg); }
+            .SiteTitle-lineLeftBottom    { left: 15%;  bottom: 37%; transform: rotate(35deg); }
+            .SiteTitle-lineRightTop      { right: 15%; top: 35%;    transform: rotate(35deg); }
+            .SiteTitle-lineRightBottom   { right: 15%; bottom: 37%; transform: rotate(-35deg); }
 
-            .SiteTitle-link:hover .SiteTitle-line--left-top       { width: 45%; left: 12%;  top: 40%;    transform: rotate(-45deg); }
-            .SiteTitle-link:hover .SiteTitle-line--left-bottom    { width: 20%; left: 20%;  bottom: 30%; transform: rotate(90deg); }
-            .SiteTitle-link:hover .SiteTitle-line--right-top      { width: 45%; right: 12%; top: 40%;    transform: rotate(45deg); }
-            .SiteTitle-link:hover .SiteTitle-line--right-bottom   { width: 20%; right: 20%; bottom: 30%; transform: rotate(-90deg); }
+            .SiteTitle-link:hover .SiteTitle-lineLeftTop       { width: 45%; left: 12%;  top: 40%;    transform: rotate(-45deg); }
+            .SiteTitle-link:hover .SiteTitle-lineLeftBottom    { width: 20%; left: 20%;  bottom: 30%; transform: rotate(90deg); }
+            .SiteTitle-link:hover .SiteTitle-lineRightTop      { width: 45%; right: 12%; top: 40%;    transform: rotate(45deg); }
+            .SiteTitle-link:hover .SiteTitle-lineRightBottom   { width: 20%; right: 20%; bottom: 30%; transform: rotate(-90deg); }

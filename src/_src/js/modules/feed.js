@@ -45,7 +45,7 @@ Feed.prototype.init = function () {
 Feed.prototype.hideMessage = function () {
     var feedMessage = this.feedEl.querySelector('.Feed-message');
     if (feedMessage) {
-        feedMessage.classList.add('u-Hidden');
+        feedMessage.classList.add('u-hidden');
     }
 };
 
@@ -120,7 +120,7 @@ Feed.prototype.handleError = function (err, res) {
  * Hide loader
  */
 Feed.prototype.hideLoader = function () {
-    this.feedEl.querySelector('.Feed-loader').classList.add('u-Hidden');
+    this.feedEl.querySelector('.Feed-loader').classList.add('u-hidden');
 };
 
 /**
@@ -194,7 +194,7 @@ Feed.prototype.displayData = function (item, template) {
     }
 
     // append to DOM
-    template.classList.remove('u-Hidden');
+    template.classList.remove('u-hidden');
     this.feedEl.insertBefore(template, this.feedEl.firstChild);
 };
 

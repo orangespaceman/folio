@@ -22,15 +22,19 @@
         padding-bottom: 2rem;
     }
 
-        .SiteFooter-contact {
+
+    /* contact block */
+        .SiteFooter-email {
             color: var(--colour-orange);
         }
 
-        @media (--medium) {
-            .SiteFooter-contact {
-                float: left;
-            }
+        .SiteFooter-email,
+        .SiteFooter-copy {
+            margin-bottom: 0.5rem;
+        }
 
+    /* responsive layout */
+        @media (--medium) {
             .SiteFooter-copy {
                 float: right;
             }

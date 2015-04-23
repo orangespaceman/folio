@@ -8,48 +8,48 @@
  */
 
 /* fonts */
-@import "src/_src/css/fonts/_raleway.css";
+@import "fonts/_raleway.css";
 
 /* resets */
-@import "src/_src/css/third-party/_normalize.css";
-@import "src/_src/css/third-party/_suit.css";
+@import "third-party/_normalize.css";
+@import "third-party/_suit.css";
 
 /* variables */
-@import "src/_src/css/base/_variables.css";
+@import "base/_variables.css";
 
 /* base element styles */
-@import "src/_src/css/base/_elements.css";
+@import "base/_elements.css";
 
 /* third party */
-@import "src/_src/css/third-party/_grid.css";
-@import "src/_src/css/third-party/_syntax-highlighting.css";
-@import "src/_src/css/third-party/_icomoon-svg-sprite.css";
+@import "third-party/_grid.css";
+@import "third-party/_syntax-highlighting.css";
+@import "third-party/_icomoon-svg-sprite.css";
 
 /* components */
-@import "src/_src/css/components/_Article.css";
-@import "src/_src/css/components/_ArticleIframe.css";
-@import "src/_src/css/components/_Back.css";
-@import "src/_src/css/components/_Block.css";
-@import "src/_src/css/components/_BulletedList.css";
-@import "src/_src/css/components/_Comrades.css";
-@import "src/_src/css/components/_CV.css";
-@import "src/_src/css/components/_Editorial.css";
-@import "src/_src/css/components/_Feed.css";
-@import "src/_src/css/components/_Listing.css";
-@import "src/_src/css/components/_Main.css";
-@import "src/_src/css/components/_NumericList.css";
-@import "src/_src/css/components/_PageTitle.css";
-@import "src/_src/css/components/_SiteFooter.css";
-@import "src/_src/css/components/_SiteHeader.css";
-@import "src/_src/css/components/_SiteNav.css";
-@import "src/_src/css/components/_SiteTitle.css";
+@import "components/_Article.css";
+@import "components/_ArticleIframe.css";
+@import "components/_Back.css";
+@import "components/_Block.css";
+@import "components/_BulletedList.css";
+@import "components/_Comrades.css";
+@import "components/_CV.css";
+@import "components/_Editorial.css";
+@import "components/_Feed.css";
+@import "components/_Listing.css";
+@import "components/_Main.css";
+@import "components/_NumericList.css";
+@import "components/_PageTitle.css";
+@import "components/_SiteFooter.css";
+@import "components/_SiteHeader.css";
+@import "components/_SiteNav.css";
+@import "components/_SiteTitle.css";
 
 /* util classes */
-@import "src/_src/css/utils/_u-clearfix.css";
-@import "src/_src/css/utils/_u-contentWrap.css";
-@import "src/_src/css/utils/_u-hidden.css";
-@import "src/_src/css/utils/_u-invisible.css";
-@import "src/_src/css/utils/_u-visuallyHidden.css";
+@import "utils/_u-clearfix.css";
+@import "utils/_u-contentWrap.css";
+@import "utils/_u-hidden.css";
+@import "utils/_u-invisible.css";
+@import "utils/_u-visuallyHidden.css";
 
 /* print */
-@import "src/_src/css/base/_print.css";
+@import "base/_print.css";

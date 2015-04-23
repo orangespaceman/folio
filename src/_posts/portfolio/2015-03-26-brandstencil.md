@@ -38,12 +38,12 @@ collaborators:
 
 ## Project overview
 
-Brandstencil is a web app that allows charities to manage how their staff communicate their brand.
+Brandstencil is a web app that allows charities to manage how their staff communicate their brand, by creating customised versions of print material.
 
 
 ## Technical solution
 
-The app is based on Laravel, with PDFs and images generated using wkhtmltopdf
+The app uses the Laravel PHP framework, with PDFs and images generated using wkhtmltopdf.
 
 ## My role
 

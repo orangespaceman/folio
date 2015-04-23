@@ -22,5 +22,7 @@ technologies:
 
 In the last few years I have taught web development at many places, including City University and Kingston University.
 
-I have presented a number of theoretical and practical lectures across a range of web development topics. I have been responsible for writing, teaching and assessing a postgraduate module on Web Development.
+I have presented a number of theoretical and practical lectures across a range of web development topics.
+
+I have also been responsible for writing, teaching and assessing a postgraduate module on Web Development.
 

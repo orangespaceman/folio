@@ -44,7 +44,9 @@ The home page of the website contains clips of every track from the album, with 
 
 ## Technical solution
 
-A custom Wordpress theme was created for the site, with custom content types used to populate content each section.
+A new Wordpress theme was created for the site, with custom content types used to populate content each section.
+
+Track previews are embedded via bandcamp.
 
 Big Cartel was used for the shop section of the site.
 

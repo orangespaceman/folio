@@ -37,7 +37,7 @@ The app was built with Backbone to allow easy separation of view logic and compl
 
 It allowed users to search through olympic events and athletes to find relevant information.
 
-Events and athletes could be remembered by the app for easy future access.
+A user's favourite events and athletes could be remembered by the app for ease of access in future.
 
 In addition to the main app, a Node.js application was built to retrieve and consolidate data on athletes and events provided by a third-party vendor.
 

@@ -49,7 +49,7 @@ Website for a social network start-up promoting ethical ideas and initiatives fr
 
 The website is a single-page JavaScript web app.
 
-It features a number of social networking features: infinite scrolling of posts, searching and filtering of content, user accounts with followers, geolocation of posts.
+It has a number of social networking features: infinite scrolling of posts, searching and filtering of content, user accounts with followers, geolocation of posts.
 
 The in-house development team provided a REST API using Pyramid.
 

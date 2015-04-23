@@ -10,10 +10,11 @@
  * 5. Copy sprite.svg file to src/assets/images/sprite.svg
  */
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
     display: inline-block;
     fill: currentColor;
-    background-image: url(../images/sprite.svg) !important;
+    background-image: url("../images/sprite.svg") !important;
     zoom: 0.75;
 }
 

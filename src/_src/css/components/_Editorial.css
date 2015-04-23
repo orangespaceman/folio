@@ -21,7 +21,8 @@
         margin: 1rem 0;
     }
 
-    .Editorial ul, ol {
+    .Editorial ul,
+    .Editorial ol {
         margin: 1rem 0;
     }
 
@@ -43,7 +44,7 @@
         }
 
     .Editorial a:before {
-         display: none; /* override default link hover */
+        display: none; /* override default link hover */
     }
 
     .Editorial img.is-full {

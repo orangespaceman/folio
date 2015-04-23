@@ -7,7 +7,9 @@
         box-sizing: border-box;
     }
 
-    *, *:before, *:after {
+    *,
+    *:before,
+    *:after {
         box-sizing: inherit;
     }
 
@@ -19,11 +21,21 @@
 
 
 /* headings */
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: var(--font-headings);
     }
 
-    h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+    h1 strong,
+    h2 strong,
+    h3 strong,
+    h4 strong,
+    h5 strong,
+    h6 strong {
         font-family: var(--font-headings-bold);
     }
 
@@ -38,7 +50,9 @@
 
 
 /* lists */
-    ul, ol { }
+    ul,
+    ol { }
+
     li { }
 
 
@@ -93,14 +107,12 @@
 
         /* remove default link styles */
         a.is-arrowless {
-            border: none;
+            border: 0;
         }
+
             a.is-arrowless:before {
                 display: none;
             }
-
-
-
 
 
 /* forms */

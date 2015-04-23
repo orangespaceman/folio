@@ -20,6 +20,7 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
+
             .Listing-titleLink {
                 color: var(--colour-grey-dark);
             }
@@ -81,6 +82,7 @@
             .Listing--block .Listing-screenshot {
                 border-width: 5px;
             }
+
                 @media (--medium) {
                     .Listing--block .Listing-screenshot {
                         margin-bottom: 2rem;

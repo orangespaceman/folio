@@ -31,13 +31,13 @@
         --gutter: 2rem;
 
     /* content widths */
-        --width-small:  25rem; /* 400px */
+        --width-small: 25rem; /* 400px */
         --width-medium: 45rem; /* 720px */
-        --width-large:  75rem; /* 1200px */
+        --width-large: 75rem; /* 1200px */
 
     /* media queries */
-        @custom-media --small  (min-width: 25rem);
+        @custom-media --small (min-width: 25rem);
         @custom-media --medium (min-width: 45rem);
-        @custom-media --large  (min-width: 75rem);
+        @custom-media --large (min-width: 75rem);
 
 }

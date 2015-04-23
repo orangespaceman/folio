@@ -19,7 +19,7 @@
             display: block;
             padding: 1rem 1rem 0 0.25rem;
             background: var(--colour-white);
-            border: none; /* remove default */
+            border: 0; /* remove default */
             border-top: 0.1rem solid var(--colour-grey-light);
             color: var(--colour-green);
         }

@@ -17,6 +17,7 @@
 /* containers */
     body {
         font-family: var(--font-body);
+        color: var(--colour-black);
     }
 
 

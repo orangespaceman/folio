@@ -18,25 +18,30 @@
             position: relative;
             display: block;
             padding: 1rem 1rem 0 0.25rem;
-            background: var(--colour-white);
+            background: var(--colour-grey-light);
             border: 0; /* remove default */
-            border-top: 0.1rem solid var(--colour-grey-light);
+            border-top: 0 solid var(--colour-grey-light);
             color: var(--colour-green);
         }
 
             @media (--small) {
                 .SiteNav-link {
-                    padding: 2rem 1.5rem 0 0.4rem;
+                    padding: 1.75rem 1.5rem 0.25rem 0.4rem;
                 }
             }
 
             .SiteNav-link:hover,
             .SiteNav-link:focus,
             .SiteNav-link.is-active {
+                background: var(--colour-white);
                 border-top-width: 0.3rem;
+                border-top-color: var(--colour-green);
+                text-decoration: none;
+            }
+
+            .SiteNav-link.is-active {
                 border-top-color: var(--colour-orange);
                 color: var(--colour-orange);
-                text-decoration: none;
             }
 
             .SiteNav-link:before {

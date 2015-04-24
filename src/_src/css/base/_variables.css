@@ -10,7 +10,7 @@
 
     /* colours */
         --colour-white: #fff;
-        --colour-black: #232323;
+        --colour-black: #333;
         --colour-grey-dark: #3e3e3e;
         --colour-grey-mid: #999;
         --colour-grey-light: #eee;
@@ -29,6 +29,7 @@
     /* margins and spacing */
         --gutter-small: 1rem;
         --gutter: 2rem;
+        --border-width: 2px;
 
     /* content widths */
         --width-small: 25rem; /* 400px */

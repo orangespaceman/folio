@@ -60,7 +60,7 @@
                 /* listing - images */
                     .Listing-screenshot {
                         width: 100%;
-                        border: 2px solid var(--colour-grey-mid);
+                        border: var(--border-width) solid var(--colour-grey-mid);
                         transition: border var(--transition-time);
                     }
 
@@ -78,8 +78,8 @@
     /* Listing blocks - full-width content blocks */
         .Listing--block {}
 
-            .Listing--block .Listing-screenshot {
-                border-width: 5px;
+            .Listing--block .Listing-imagery {
+                margin-top: -var(--border-width);
             }
 
                 @media (--medium) {

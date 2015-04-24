@@ -18,7 +18,14 @@
         .Listing-title {
             margin-top: 1rem;
             margin-bottom: 1rem;
+            font-size: 1.2rem;
         }
+
+            @media (--medium) {
+                .Listing-title {
+                    font-size: 1.6rem;
+                }
+            }
 
             .Listing-titleLink {
                 color: var(--colour-grey-dark);
@@ -36,6 +43,7 @@
         .Listing-imagery {
             display: block;
             position: relative;
+            margin-bottom: 1.5rem;
         }
 
             .Listing-screenshots {}
@@ -50,6 +58,13 @@
                     max-width: 40%;
                     transition: all var(--transition-time);
                 }
+
+                    @media (--medium) {
+                        .Listing-screenshots--mobile {
+                            bottom: -1rem;
+                            right: -1rem;
+                        }
+                    }
 
                 .Listing-imagery:hover .Listing-screenshots--mobile {
                     transform: perspective(600) rotateY(-20deg) rotateX(10deg);
@@ -78,6 +93,10 @@
     /* Listing blocks - full-width content blocks */
         .Listing--block {}
 
+            .Listing--block .Listing-title {
+                font-size: 2rem;
+            }
+
             .Listing--block .Listing-imagery {
                 margin-top: -var(--border-width);
             }
@@ -88,9 +107,19 @@
                     }
                 }
 
-            .Listing--block .Listing-screenshot--mobile {
-                bottom: -2rem;
-            }
+                @media (--medium) {
+                    .Listing--block .Listing-screenshots--mobile {
+                        bottom: -1.5rem;
+                        right: -1.5rem;
+                    }
+                }
+
+                @media (--large) {
+                    .Listing--block .Listing-screenshots--mobile {
+                        bottom: -2rem;
+                        right: -2rem;
+                    }
+                }
 
             .Listing--block .Listing-screenshot--desktop {
                 right: -1rem;

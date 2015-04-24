@@ -29,7 +29,7 @@
     /* margins and spacing */
         --gutter-small: 1rem;
         --gutter: 2rem;
-        --border-width: 2px;
+        --border-width: 1px;
 
     /* content widths */
         --width-small: 25rem; /* 400px */

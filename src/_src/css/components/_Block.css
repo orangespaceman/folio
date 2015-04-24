@@ -9,7 +9,7 @@
 }
 
     .Block-header {
-        border-bottom: var(--border-width) solid var(--colour-grey-mid);
+        border-bottom: var(--border-width) solid var(--colour-grey-dark);
         padding-bottom: 0.25rem;
     }
 

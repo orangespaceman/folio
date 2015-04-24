@@ -75,7 +75,7 @@
                 /* listing - images */
                     .Listing-screenshot {
                         width: 100%;
-                        border: var(--border-width) solid var(--colour-grey-mid);
+                        border: var(--border-width) solid var(--colour-grey-dark);
                         transition: border var(--transition-time);
                     }
 
@@ -109,15 +109,16 @@
 
                 @media (--medium) {
                     .Listing--block .Listing-screenshots--mobile {
-                        bottom: -1.5rem;
-                        right: -1.5rem;
+                        max-width: 30%;
+                        bottom: -1rem;
+                        right: -1rem;
                     }
                 }
 
                 @media (--large) {
                     .Listing--block .Listing-screenshots--mobile {
-                        bottom: -2rem;
-                        right: -2rem;
+                        bottom: -1.5rem;
+                        right: -1.5rem;
                     }
                 }
 

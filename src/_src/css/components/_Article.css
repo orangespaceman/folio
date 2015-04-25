@@ -45,7 +45,6 @@
                 /* Article - images */
                     .Article-screenshot {
                         width: 100%;
-                        border: var(--border-width) solid var(--colour-grey-mid);
                         margin-bottom: 2rem;
                     }
 
@@ -57,9 +56,7 @@
 
                         .Article-screenshot--photo {}
 
-                        .Article-screenshot--mobile {
-                            border-color: var(--colour-grey-dark);
-                        }
+                        .Article-screenshot--mobile {}
 
                         @media (--small) {
                             .Article-screenshot--mobile {

@@ -68,7 +68,6 @@
 
                 .Listing-imagery:hover .Listing-screenshots--mobile {
                     transform: perspective(600) rotateY(-15deg) rotateX(8deg);
-                    transform-style: preserve-3d;
                 }
 
 
@@ -88,7 +87,7 @@
                         }
 
                         .Listing-imagery:hover .Listing-screenshot--desktop {
-                            transform: scale(1.02);
+                            /*transform: scale(1.02);*/
                             box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
                         }
 

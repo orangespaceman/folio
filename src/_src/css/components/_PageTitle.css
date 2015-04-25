@@ -20,7 +20,7 @@
 
     /* page title with a bg image rather than text */
     .PageTitle--featured {
-        border-top: 1px solid var(--colour-white);
+        /*border-top: 1px solid var(--colour-white);*/
         background-position: 50% 50%;
         background-size: cover;
         background-repeat: no-repeat;

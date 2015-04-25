@@ -21,7 +21,7 @@ technologies:
   - PHP
 ---
 
-# Boris: Localhost Browser
+## Overview
 
 For years I have had a simple PHP script sitting in my site root, listing all of the numerous web projects I have on my computer.  I often make small updates to this file, to increase the amount of information it offers, and make browsing around the various projects more simple.
 

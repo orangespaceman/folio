@@ -20,9 +20,7 @@ collaborators:
   - scottboyle
 ---
 
-# McLaren Applied Technologies
-
-## Project overview
+## Overview
 
 Website for McLaren Applied Technologies.
 

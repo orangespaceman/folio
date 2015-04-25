@@ -12,7 +12,7 @@ technologies:
   - JavaScript
 ---
 
-# HTML forms - Select all checkbox
+## Overview
 
 When a long form is necessary on a page, it can be daunting (not to mention time-intensive) for a user to fill it out completely.  This script allows a 'parent' checkbox to control the input value of many child checkboxes, potentially saving time and energy clicking each one individually.
 

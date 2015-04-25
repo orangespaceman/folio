@@ -21,7 +21,7 @@ technologies:
   - Applescript
 ---
 
-# Mac PHP/JS Spotify Remote Control - Spotimote
+## Overview
 
 Another pointless project along the lines of the [Mac Volume Control](http://petegoodman.com/labs/mac-php-js-volume-control/) thing I put together a while ago.  As ever, the source for this is available from github.
 

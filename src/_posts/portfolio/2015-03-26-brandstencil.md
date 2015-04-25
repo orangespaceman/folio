@@ -34,9 +34,7 @@ collaborators:
   - tomjuby
 ---
 
-# Brandstencil
-
-## Project overview
+## Overview
 
 Brandstencil is a web app that allows charities to manage how their staff communicate their brand, by creating customised versions of print material.
 

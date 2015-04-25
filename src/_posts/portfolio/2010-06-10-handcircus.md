@@ -19,9 +19,7 @@ technologies:
   - Wordpress
 ---
 
-# HandCircus
-
-## Project overview
+## Overview
 
 A website for HandCircus, an indie games developer who makes mobile and console games including Rolando and Okabu.
 

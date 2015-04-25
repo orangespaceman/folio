@@ -20,7 +20,7 @@ collaborators:
   - premasagarrose
 ---
 
-# ISS Tracker
+## Overview
 
 A web app that tracks the position of the International Space Station (ISS), and plots this on a map of the world.
 

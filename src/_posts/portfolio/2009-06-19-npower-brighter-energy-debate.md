@@ -14,9 +14,7 @@ technologies:
   - JavaScript
 ---
 
-# Npower Brighter Energy Debate
-
-## Project overview
+## Overview
 
 An interactive debate website allowing members of the public the chance to ask questions about npower and the energy industry.
 

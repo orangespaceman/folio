@@ -24,7 +24,7 @@ technologies:
   - Applescript
 ---
 
-# Ghetto blaster - a PHP/JavaScript soundboard
+## Overview
 
 To play music at [Pirata](http://piratalondon.com/), we use [Spotify](http://spotify.com) & iTunes running on an old macbook connected to a pair of speakers - our very own 21st century ghetto blaster.  Anyone can log in to this machine using VNC or screen sharing and change the music from their own computer.
 

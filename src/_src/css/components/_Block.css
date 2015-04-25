@@ -5,8 +5,14 @@
  */
 
 .Block {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
+
+    @media (--medium) {
+        .Block {
+            margin-bottom: 1rem;
+        }
+    }
 
     .Block-header {
         border-bottom: var(--border-width) solid var(--colour-grey-dark);
@@ -15,5 +21,6 @@
 
         .Block-title {
             font-size: 1.2rem;
+            letter-spacing: 0.5px;
             color: var(--colour-orange);
         }

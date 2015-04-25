@@ -21,7 +21,7 @@ collaborators:
   - adrianrowbotham
 ---
 
-# XVMB: XVMB Vault of Marketing Bollocks
+## Overview
 
 A site that features some of the 'best' bits of marketing bollocks that we've experienced in recent years.
 

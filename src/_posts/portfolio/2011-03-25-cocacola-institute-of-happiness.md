@@ -23,9 +23,7 @@ collaborators:
   - adrianrowbotham
 ---
 
-# Coca-Cola Institute of Happiness
-
-## Project overview
+## Overview
 
 Website for Coca-Cola Institute of Happiness in Spain.
 

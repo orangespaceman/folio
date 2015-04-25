@@ -9,6 +9,7 @@
     color: var(--colour-white);
     font-family: var(--font-headings);
     text-align: center;
+    position: relative;
 }
 
     @media (--medium) {
@@ -16,6 +17,36 @@
             text-align: left;
         }
     }
+
+
+    /* Site Footer - zig zag top */
+        .SiteFooter:after {
+            position: absolute;
+            z-index: 1;
+            content: "";
+            display: block;
+            top: 0;
+            width: 100%;
+            height: 1rem;
+            background:
+                linear-gradient(
+                    45deg,
+                    var(--colour-grey-light) 33.333%,
+                    transparent 33.333%,
+                    transparent 66.667%,
+                    var(--colour-grey-light) 66.667%
+                ),
+                linear-gradient(
+                    -45deg,
+                    var(--colour-grey-light) 33.333%,
+                    transparent 33.333%,
+                    transparent 66.667%,
+                    var(--colour-grey-light) 66.667%
+                );
+            background-size: 10px 30px;
+        }
+
+
 
     .SiteFooter-inner {
         padding-top: 2.5rem;

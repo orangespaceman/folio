@@ -14,8 +14,7 @@ technologies:
   - Canvas
 ---
 
-# JavaScript Canvas Letters Banner
-
+## Overview
 
 Here's a variation on the original  [Canvas Letters](../javascript-canvas-letters) experiment.
 

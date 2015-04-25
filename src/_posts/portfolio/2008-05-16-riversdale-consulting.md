@@ -26,9 +26,7 @@ collaborators:
   - danielhutchinson
 ---
 
-# Riversdale Consulting
-
-## Project overview
+## Overview
 
 Website for a firm of financial recruitment consultants based in Farringdon. Their target was to place applicants in high positions within firms, rather than going for a high quantity turnover.
 

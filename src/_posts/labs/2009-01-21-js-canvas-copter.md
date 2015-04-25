@@ -14,7 +14,7 @@ technologies:
   - Canvas
 ---
 
-# JavaScript Copter, with Canvas
+## Overview
 
 As a big fan of both the [original flash copter game](http://www.coptergame.net/) and the various phone conversions, I decided to try to recreate the game using Javascript and the canvas element.  A few evenings of tinkering later, I've managed to come up with this:
 

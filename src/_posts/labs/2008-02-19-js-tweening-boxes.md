@@ -14,7 +14,7 @@ technologies:
   - JavaScript
 ---
 
-# JS Tweening boxes
+## Overview
 
 I don't know if this will ever come in useful, but i created this a year or so ago as a proof-of-concept.  It uses a parent html element in a similar way to a Photoshop or Flash mask, shifting the position of the 'stage' below to move and display child elements based on user interaction.
 

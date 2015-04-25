@@ -9,9 +9,16 @@
     /* Article - text */
 
         .Article-title {
-            margin-top: 1rem;
+            text-align: center;
             margin-bottom: 1rem;
         }
+
+            @media (--medium) {
+                .Article-title {
+                    margin-bottom: 2rem;
+                    font-size: 3rem;
+                }
+            }
 
         .Article-description {}
 

@@ -22,7 +22,7 @@ technologies:
   - PHP
 ---
 
-# Flickr Gallery
+## Overview
 
 A proof-of-concept simple single-page responsive HTML/CSS/JS image gallery, with a PHP script to generate this HTML from data retrieved from flickr.
 

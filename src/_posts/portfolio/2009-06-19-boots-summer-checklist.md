@@ -18,9 +18,7 @@ collaborators:
   - simwishlade
 ---
 
-# Boots Summer Checklist
-
-## Project overview
+## Overview
 
 A microsite aimed at providing holidaymakers with a checklist of items they might need for their summer holiday.
 

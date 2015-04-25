@@ -14,7 +14,7 @@ technologies:
   - Canvas
 ---
 
-# Playing with Canvas - Pie Timer
+## Overview
 
 The html canvas element offers an enormous potential for scripting graphics.
 

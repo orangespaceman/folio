@@ -19,9 +19,7 @@ collaborators:
   - jakeprime
 ---
 
-# Samsung Future of TV
-
-## Project overview
+## Overview
 
 A website for Samsung, to allow them to collate tweets from users with ideas for TV apps.
 

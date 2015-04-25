@@ -1,5 +1,5 @@
 ---
-title: "Kingston: Creative Economy"
+title: "Kingston University: Creative Economy"
 excerpt: Kingston University Microsite highlighting their Creative Masters courses
 client: tonic
 link:
@@ -22,9 +22,7 @@ collaborators:
   - ronsiemerink
 ---
 
-# Kingston University - Creative Economy
-
-## Project overview
+## Overview
 
 A microsite for Kingston University to highlight their courses aimed at the Creative Industry
 

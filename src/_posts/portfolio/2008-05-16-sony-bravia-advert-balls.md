@@ -20,9 +20,7 @@ collaborators:
   - simwishlade
 ---
 
-# Sony Bravia Advert - Balls
-
-## Project overview
+## Overview
 
 Website providing information about Sony's "bouncing balls" advert for their BRAVIA television range.
 

@@ -15,7 +15,7 @@ technologies:
   - JavaScript
 ---
 
-# JS Particles
+## Overview
 
 An old experiment playing with interacting particles...
 

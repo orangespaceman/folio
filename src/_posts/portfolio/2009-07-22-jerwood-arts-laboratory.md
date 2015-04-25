@@ -24,9 +24,7 @@ collaborators:
   - michaelallanson
 ---
 
-# Jerwood Arts Laboratory
-
-## Project overview
+## Overview
 
 An experimental website for the Jerwood Visual Arts group.
 

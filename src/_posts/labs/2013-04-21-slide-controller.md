@@ -22,7 +22,7 @@ technologies:
   - Websockets
 ---
 
-# Slide Controller
+## Overview
 
 When teaching, it helps to be able to control the main slideshow when away from the keyboard.
 

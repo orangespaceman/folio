@@ -26,9 +26,7 @@ technologies:
   - AngularJS
 ---
 
-# National Housing Federation - Home Truths
-
-## Project overview
+## Overview
 
 An interactive quiz for the National Housing Federation to support the publication of a new report.
 

@@ -101,10 +101,23 @@
         .Listing--block {}
 
             .Listing--block .Listing-title {
-                font-size: 2rem;
+                margin-top: 0;
+                font-size: 1.6rem;
             }
 
-            .Listing--block .Listing-imagery {
+            @media (--medium) {
+                .Listing--block .Listing-title {
+                    font-size: 2rem;
+                }
+            }
+
+            /* add space between block title and first listing title */
+            .Listing--block:nth-child(2) .Listing-title {
+                margin-top: 1rem;
+            }
+
+            /* bring first listing block image up in line with block title */
+            .Listing--block:nth-child(2) .Listing-imagery {
                 margin-top: -var(--border-width);
             }
 

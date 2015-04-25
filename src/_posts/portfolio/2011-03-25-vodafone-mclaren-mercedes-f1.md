@@ -24,9 +24,7 @@ collaborators:
   - petegraham
 ---
 
-# Vodafone McLaren Mercedes F1
-
-## Project overview
+## Overview
 
 The 2011 Vodafone Mclaren Mercedes formula one website.
 

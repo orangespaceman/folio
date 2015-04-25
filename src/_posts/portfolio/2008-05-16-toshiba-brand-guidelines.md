@@ -18,9 +18,7 @@ collaborators:
   - danielhutchinson
 ---
 
-# Toshiba Brand Guidelines
-
-## Project overview
+## Overview
 
 Site created for employees and agencies working for Toshiba, allowing them to access the latest brand guidelines.
 

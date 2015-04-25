@@ -20,9 +20,7 @@ collaborators:
   - richardhallows
 ---
 
-# BBC Celebrity Scissorhands
-
-## Project overview
+## Overview
 
 Website for the BBC Celebrity Scissorhands television show microsite
 

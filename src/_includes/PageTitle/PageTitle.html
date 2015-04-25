@@ -1,8 +1,12 @@
 
+        {% if include.featured %}
+        <div class="PageTitle PageTitle--featured" style="background-image: url(/assets/images{{include.id}}/{{include.featured}})">
+        {% else %}
         <div class="PageTitle">
             <div class="PageTitle-inner u-contentWrap">
                 <h1 class="PageTitle-heading {% if include.modifier %}PageTitle-heading--{{ include.modifier }}{% endif %}">
                     {{ include.title | markdownify | replace:'<p>','' | replace:'</p>','' }}
                 </h1>
             </div>
+        {% endif %}
         </div><!-- .PageTitle -->

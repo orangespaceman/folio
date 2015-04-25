@@ -20,7 +20,7 @@ technologies:
   - JavaScript
 ---
 
-# Video slideshow
+## Overview
 
 A proof-of-concept full-screen HTML slideshow (using fading transitions) with mixed video and image content
 

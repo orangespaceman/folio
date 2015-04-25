@@ -39,9 +39,7 @@ collaborators:
   - sergiogarcez
 ---
 
-# Conscious Me
-
-## Project overview
+## Overview
 
 Website for a social network start-up promoting ethical ideas and initiatives from around the world.
 

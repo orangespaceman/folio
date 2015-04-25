@@ -12,7 +12,7 @@ technologies:
   - JavaScript
 ---
 
-# HTML forms - default text filler
+## Overview
 
 Here are a couple of useful functions to have handy when working with html forms.
 

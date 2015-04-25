@@ -13,7 +13,7 @@ technologies:
   - JavaScript
 ---
 
-# Konami Code
+## Overview
 
 Using three different JavaScript files I have added the [Konami Code](http://en.wikipedia.org/wiki/Konami_Code) to a website:
 

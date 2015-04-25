@@ -24,9 +24,7 @@ collaborators:
   - robinhodges
 ---
 
-# Royal Free
-
-## Project overview
+## Overview
 
 Website for London-based hospital the Royal Free.
 

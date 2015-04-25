@@ -12,7 +12,7 @@ technologies:
   - Twitter
 ---
 
-# Tweet Munger Custom Translations
+## Overview
 
 Along the lines of the original [Tweet Munger](../tweet-munger/) project, this version of the Tweet Munger takes the Twitter feed from a specified user, translates it and then re-posts the results to a new twitter account.  The difference with this version is that instead of using an external translation service, you can define your own translations.
 

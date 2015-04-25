@@ -29,9 +29,7 @@ collaborators:
   - julioruiz
 ---
 
-# London Fashion Week
-
-## Project overview
+## Overview
 
 Website for London Fashion Week, 'refreshed' every 6 months between September 2005 and September 2007 to take into account each new season.
 

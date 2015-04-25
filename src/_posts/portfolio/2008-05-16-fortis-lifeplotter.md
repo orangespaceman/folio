@@ -23,9 +23,7 @@ collaborators:
   - hayleywatchorn
 ---
 
-# Fortis Lifeplotter
-
-## Project overview
+## Overview
 
 A flash application that saved any number of datapoints relating to a line graph charting a user's life events.
 

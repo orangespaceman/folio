@@ -21,9 +21,7 @@ collaborators:
   - finbarrnotte
 ---
 
-# Best Buy UK
-
-## Project overview
+## Overview
 
 HTML templates for the Best Buy UK website to support their launch in Britain.
 

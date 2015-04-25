@@ -12,7 +12,7 @@ technologies:
   - JavaScript
 ---
 
-# JS Cookies
+## Overview
 
 There are a plethora of cookie scripts on the web, each offering similar functionality.  Over the years I have built up a short cookie library that I use whenever the need arises.  It offers a couple of extra functions that are sometimes useful, although you don't always find them in other libraries.
 

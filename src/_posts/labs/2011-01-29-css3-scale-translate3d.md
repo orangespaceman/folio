@@ -13,7 +13,7 @@ technologies:
   - CSS
 ---
 
-# CSS3 Scale Translate3d
+## Overview
 
 This is an update to my [original JavaScript tweening boxes experiment](../js-tweening-boxes/) from several years ago.  This time, instead of using JavaScript to change values, the example below uses the [CSS3 animation](http://www.w3.org/TR/css3-animations/) properties Scale and Translate 3d.  (Because of this it currently only works with Firefox, Google Chrome, Safari and iOS.  It may also work on Android but I can't test this...)
 

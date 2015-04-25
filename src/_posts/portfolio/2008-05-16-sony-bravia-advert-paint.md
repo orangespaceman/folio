@@ -24,9 +24,7 @@ collaborators:
   - ronsiemerink
 ---
 
-# Sony Bravia Advert - Paint
-
-## Project overview
+## Overview
 
 A *blog-fodder* site for the 'paint' Sony BRAVIA advert, to follow on from the successful 'bouncing balls' site we created the year before.
 

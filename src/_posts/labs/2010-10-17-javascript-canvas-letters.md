@@ -16,7 +16,7 @@ technologies:
   - Canvas
 ---
 
-# Javascript Canvas Letters
+## Overview
 
 Here's a little JavaScript experiment with canvas to animate letters.
 

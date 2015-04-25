@@ -34,9 +34,7 @@ collaborators:
   - danielhutchinson
 ---
 
-# A-Sagittariun
-
-## Project overview
+## Overview
 
 Website for a musician to promote the release of his new album.
 

@@ -33,9 +33,7 @@ collaborators:
   - hayleywatchorn
 ---
 
-# Sarah Lindsay
-
-## Project overview
+## Overview
 
 Website and shop for jewellery designer Sarah Lindsay.
 

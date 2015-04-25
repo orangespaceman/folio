@@ -15,7 +15,7 @@ technologies:
   - PHP
 ---
 
-# PHP Delete Files and Folders
+## Overview
 
 I've just had to write a quick PHP script to allow the easy deletion of files and folders within a specific directory.
 

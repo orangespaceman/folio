@@ -22,7 +22,7 @@ technologies:
   - MySQL
 ---
 
-# Single Editable Page
+## Overview
 
 I had the requirement a while back to create a simple single page website that could editable through a simple web form. It needed simple formatting, and the ability to review old changes. This lab is the proof of concept that I quickly put together.
 

@@ -15,9 +15,7 @@ technologies:
   - JavaScript
 ---
 
-# DigitalUK Postcode Checker
-
-## Project overview
+## Overview
 
 A website aimed at providing UK citizens with information regarding their switchover dates for digital television services
 

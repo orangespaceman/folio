@@ -20,9 +20,7 @@ collaborators:
   - jamesbooth
 ---
 
-# Nokia Push Snowboarding
-
-## Project overview
+## Overview
 
 Website for Nokia Push Snowboarding, aimed at promoting the use of live data captured by professional snowboarders using sensors, an arduino and a nokia phone.
 

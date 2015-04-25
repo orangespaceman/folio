@@ -25,9 +25,7 @@ collaborators:
   - johnlund
 ---
 
-# Team GB Dashboard
-
-## Project overview
+## Overview
 
 A web and mobile app displaying live updates for Team GB athletes throughout the Olympics.
 

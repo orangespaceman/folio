@@ -14,7 +14,7 @@ technologies:
   - CSS
 ---
 
-# Horizontal Navigation List
+## Overview
 
 This code quickly turns any unordered list of links into horizontal navigation.  These lists of links should semantically be marked up as an unordered list `UL` element.  The following example shows this is possible simply by adding the class of `horiznavlist` to the parent list element.
 

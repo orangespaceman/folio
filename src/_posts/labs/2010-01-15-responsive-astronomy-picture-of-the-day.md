@@ -16,7 +16,7 @@ technologies:
   - Twitter
 ---
 
-# Responsive Astronomy Picture of the Day
+## Overview
 
 Space is great. Every day the [Astronomy Picture of the Day](http://apod.nasa.gov/apod/) website is updated with a new image showcasing just how incredible the universe is.
 

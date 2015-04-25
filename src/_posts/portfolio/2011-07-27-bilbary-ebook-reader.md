@@ -27,9 +27,7 @@ collaborators:
   - scottboyle
 ---
 
-# Bilbary ebook Reader
-
-## Project overview
+## Overview
 
 A prototype responsive ebook-reading web app for Bilbary.
 

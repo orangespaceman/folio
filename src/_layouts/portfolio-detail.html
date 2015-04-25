@@ -3,21 +3,17 @@ layout: page
 section: Portfolio
 ---
 
-            {% include PageTitle/PageTitle.html title=page.title %}
+            {% include PageTitle/PageTitle.html title=page.title id=page.id featured=page.images.featured %}
 
             {% include Main/Main-open.html %}
-
-            {% include Back/Back.html link="Back to all projects" %}
 
             <section class="Block" aria-labelledby="project-detail">
 
                 <div class="Article">
 
-                    <div class="Article-imagery">
-                        <div class="Article-screenshots Article-screenshots--featured">
-                            {% if page.images.featured %}
-                            <img src="/assets/images{{page.id}}/{{page.images.featured}}" alt="" class="Article-screenshot Article-screenshot--featured">
-                            {% endif %}
+                    <div class="grid grid--center">
+                        <div class="grid__item one-whole medium--two-thirds">
+                            <h1 class="Article-title">{{page.title}}</h1>
                         </div>
                     </div>
 
@@ -27,7 +23,7 @@ section: Portfolio
                             <div class="Article-information">
                                 <div class="Article-description">
                                     <div class="Editorial">
-                                        <h3>Project details</h3>
+                                        <h3>Details</h3>
                                         <ul class="BulletedList">
                                             <li class="BulletedList-item">
                                                 Date: {{ page.date | date: '%B %Y' }}

@@ -24,7 +24,7 @@ collaborators:
   - remishergold
 ---
 
-# Arduino Waving
+## Overview
 
 An attempt to build something with an Arduino, along with a few friends.
 

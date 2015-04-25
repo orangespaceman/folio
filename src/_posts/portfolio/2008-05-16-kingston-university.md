@@ -25,9 +25,7 @@ collaborators:
   - danielhutchinson
 ---
 
-# Kingston University
-
-## Project overview
+## Overview
 
 A redesign of the Kingston University site, aimed to raise the profile of the university in time for the next academic year.
 

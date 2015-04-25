@@ -14,7 +14,7 @@ technologies:
   - JavaScript
 ---
 
-# One-click Resize Chrome Extension
+## Overview
 
 A Chrome extension that resizes your browser to a default size with a single click
 

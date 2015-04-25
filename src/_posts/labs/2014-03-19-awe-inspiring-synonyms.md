@@ -13,7 +13,7 @@ technologies:
   - JavaScript
 ---
 
-# Awe-inspring Synonyms - Chrome extension
+## Overview
 
 A Chrome extension that automatically replaces the word 'awesome' with a random (but superior) synonym
 

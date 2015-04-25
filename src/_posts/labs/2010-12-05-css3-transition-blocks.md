@@ -13,7 +13,7 @@ technologies:
   - CSS
 ---
 
-# CSS3 Transition Blocks
+## Overview
 
 CSS3 transitions allow you to create animations without needing to use JavaScript.  After reading an [article on A List Apart](http://www.alistapart.com/articles/understanding-css3-transitions/) I created a little experiment to test this.
 

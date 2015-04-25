@@ -23,9 +23,7 @@ collaborators:
   - danielhutchinson
 ---
 
-# Cupboard Under the Stairs
-
-## Project overview
+## Overview
 
 The Cupboard Under the Stairs are a design collective who make things, a "multi-disciplinary art and design practice devoted to telling stories in 2D and 3D". They create sculptures, collages, installations, illustrations, and much more.
 

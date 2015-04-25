@@ -22,9 +22,7 @@ collaborators:
   - ronsiemerink
 ---
 
-# Linklaters
-
-## Project overview
+## Overview
 
 An intranet web application for law firm Linklaters.
 

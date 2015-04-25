@@ -8,15 +8,9 @@
 
 .PageTitle {
     background: var(--colour-white);
-    padding: 1rem 0;
-    position: relative;
+    padding: 2rem 0;
+    margin-bottom: 0.5rem; /* space taken up by zig-zag */
 }
-
-    @media (--small) {
-        .PageTitle {
-            padding: 2rem 0;
-        }
-    }
 
     @media (--medium) {
         .PageTitle {
@@ -24,33 +18,46 @@
         }
     }
 
+    /* page title with a bg image rather than text */
+    .PageTitle--featured {
+        border-top: 1px solid var(--colour-white);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 40%;
+        position: relative;
+        transition: padding var(--transition-time);
+    }
 
-    /* page title - zig zag foot */
-        .PageTitle:after {
-            position: absolute;
-            z-index: 1;
+        @media (--small) {
+            .PageTitle--featured {
+                padding-bottom: 30%;
+            }
+        }
+
+        @media (--medium) {
+            .PageTitle--featured {
+                padding-bottom: 15%;
+            }
+        }
+
+        .PageTitle--featured:after {
             content: "";
             display: block;
-            bottom: -1rem;
-            width: 100%;
-            height: 1rem;
-
-            background:
-                linear-gradient(
-                    45deg,
-                    var(--colour-white) 33.333%,
-                    transparent 33.333%,
-                    transparent 66.667%,
-                    var(--colour-white) 66.667%
-                ),
-                linear-gradient(
-                    -45deg,
-                    var(--colour-white) 33.333%,
-                    transparent 33.333%,
-                    transparent 66.667%,
-                    var(--colour-white) 66.667%
-                );
-            background-size: 10px 30px;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                -45deg,
+                transparent 0%,
+                transparent 25%,
+                rgba(0, 0, 0, 0.1) 25%,
+                rgba(0, 0, 0, 0.1) 50%
+            );
+            background-size: 20px 20px;
         }
 
 
@@ -87,9 +94,7 @@
 
 
         /* page title - home modifier */
-            .PageTitle-heading--home {
-
-            }
+            .PageTitle-heading--home { }
 
                 .PageTitle-heading--home em {
                     display: inline;

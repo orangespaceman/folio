@@ -24,9 +24,7 @@ collaborators:
   - robinhodges
 ---
 
-# Ovarian Cancer Action
-
-## Project overview
+## Overview
 
 Website for Ovarian Cancer Action.
 

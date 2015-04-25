@@ -17,7 +17,7 @@ technologies:
   - Canvas
 ---
 
-# Browser Breakout
+## Overview
 
 This is a little experiment using JavaScript and canvas to create a bookmarklet that could turn any web page into a game.  Games like [this](http://erkie.github.io/) are fun examples of how to detect specific elements in a web page and interact with them.  I've tried creating something similar called Browser Breakout.
 

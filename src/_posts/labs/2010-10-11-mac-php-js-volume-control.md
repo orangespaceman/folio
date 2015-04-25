@@ -23,7 +23,7 @@ technologies:
   - Applescript
 ---
 
-# Mac PHP/JS Volume Control
+## Overview
 
 Probably the best (or most useful) part of the [Ghetto Blaster](http://petegoodman.com/labs/ghetto-blaster-php-js-soundboard/) thing I put together is the ability to control the Mac system volume remotely.  This is a simple mobile-optimised site that contains just this functionality.
 

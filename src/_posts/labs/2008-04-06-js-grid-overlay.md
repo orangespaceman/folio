@@ -15,7 +15,7 @@ collaborators:
   - michaelallanson
 ---
 
-# JS Grid Overlay
+## Overview
 
 When working with layouts demanding cross browser pixel perfection, it is often beneficial to be able to underlay or overlay the design grid or a graphic to check alignment.
 

@@ -20,7 +20,7 @@ collaborators:
   - gabrielbucknall
 ---
 
-# A Load of Bollocks
+## Overview
 
 A site to display animated gifs full-screen in 'modern' browsers that support [CSS background-size](https://developer.mozilla.org/en/CSS/background-size).  This new property means it's possible to automatically scale a background image as large as possible within an available area.
 

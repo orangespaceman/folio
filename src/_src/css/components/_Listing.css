@@ -67,7 +67,7 @@
                     }
 
                 .Listing-imagery:hover .Listing-screenshots--mobile {
-                    transform: perspective(600) rotateY(-20deg) rotateX(10deg);
+                    transform: perspective(600) rotateY(-15deg) rotateX(8deg);
                     transform-style: preserve-3d;
                 }
 
@@ -75,18 +75,25 @@
                 /* listing - images */
                     .Listing-screenshot {
                         width: 100%;
-                        border: var(--border-width) solid var(--colour-grey-dark);
-                        transition: border var(--transition-time);
+                        transition: transform var(--transition-time) ease-in-out,
+                                    box-shadow 0.1s ease-in-out;
                     }
 
-                        .Listing-screenshot--desktop {}
-
-                        .Listing-screenshot--mobile {
-                            border-color: var(--colour-grey-dark);
+                        .Listing-screenshot--desktop {
+                            box-shadow: 0 0 1px 0 rgba(0,0,0,0.1);
                         }
 
-                        .Listing-imagery:hover .Listing-screenshot {
-                            border-color: var(--colour-orange);
+                        .Listing-screenshot--mobile {
+                            box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+                        }
+
+                        .Listing-imagery:hover .Listing-screenshot--desktop {
+                            transform: scale(1.02);
+                            box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+                        }
+
+                        .Listing-imagery:hover .Listing-screenshot--mobile {
+                            box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
                         }
 
 

@@ -58,6 +58,9 @@
         .PageTitle-heading {
             color: var(--colour-grey-mid);
             font-size: 1.5rem;
+            margin: 0 auto;
+            text-align: center;
+            max-width: var(--width-medium);
         }
 
             @media (--small) {
@@ -85,17 +88,10 @@
 
         /* page title - home modifier */
             .PageTitle-heading--home {
-                margin: 0 auto;
-                text-align: center;
-                max-width: var(--width-medium);
+
             }
 
                 .PageTitle-heading--home em {
                     display: inline;
                 }
 
-                .PageTitle-heading--home:before {
-                    content: "\0003C  \0003E"; /* < > */
-                    display: block;
-                    color: var(--colour-orange);
-                }

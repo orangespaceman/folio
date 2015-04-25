@@ -1,22 +1,10 @@
 
                 <div class="Comrades">
                     <div class="Editorial">
-                        <p>If you are looking for experienced freelance developers, I can recommend the <em><a href="http://madebycomrades.com" rel="external">Comrades!</a></em></p>
+                        <p>If you are looking for experienced developers, I can recommend the <em>Comrades!</em></p>
 
-                        <p>Over the years I've worked with lots of people I'd recommend:</p>
+                        <p>We’re a small group of freelance developers who often work together on projects. We try to keep our eyes open for interesting contracts with nice people that could involve at least a few of us.</p>
 
-                        <ul class="Comrades-list">
-
-                            {% assign comrades = site.data.comrades %}
-                            {% for comrade in comrades %}
-
-                            <li class="Comrades-item">
-                                <a href="{{comrade[1].link}}" class="Comrades-link {{ comrade[1].tags | join: ' ' | prepend: 'js--'}}" rel="external">{{comrade[1].name}}</a>
-                                <span class="Comrades-skills">({{ comrade[1].skills}})</span>
-                            </li>
-
-                            {% endfor %}
-
-                        </ul>
+                        <p>You can read more about our collective on the <em><a href="http://madebycomrades.com" rel="external">Comrades!</a></em> website</p>
                     </div>
                 </div>

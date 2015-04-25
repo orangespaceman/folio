@@ -18,11 +18,18 @@
         font-size: 0.8rem;
         color: var(--colour-white);
         background: var(--colour-orange);
+        margin-bottom: 0.25rem;
     }
 
         @media (--small) {
             .SiteTitle-link {
                 font-size: 1rem;
+            }
+        }
+
+        @media (--medium) {
+            .SiteTitle-link {
+                margin-bottom: 0;
             }
         }
 

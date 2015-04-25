@@ -35,12 +35,35 @@ title: About
 
             <section class="Block" aria-labelledby="comrades">
 
-                {% include Block/Block-header.html title="Comrades" slug="comrades" width="medium--one-third" %}
+                {% include Block/Block-header.html title="Comrades!" slug="comrades" width="medium--one-third" %}
+
+                <div class="grid">
+                    <div class="grid__item one-whole medium--two-thirds">
+
+                        {% include Comrades/Comrades.html %}
+
+                    </div><!--
+
+                    --><div class="grid__item one-whole medium--one-third">
+                        <div class="Editorial">
+                            <a href="http://madebycomrades.com" rel="external" class="is-arrowless">
+                                <img src="/assets/images/comrades.jpg" alt="Comrades">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="Block" aria-labelledby="people">
+
+                {% include Block/Block-header.html title="People I recommend" slug="people" width="medium--one-third" %}
 
                 <div class="grid">
                     <div class="grid__item one-whole">
 
-                        {% include Comrades/Comrades.html %}
+                        {% include Comrades/Comrades-people.html %}
 
                     </div>
                 </div>

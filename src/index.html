@@ -6,12 +6,12 @@ title: Home
 
             {% include Main/Main-open.html %}
 
-            <section class="Block" aria-labelledby="recent-work">
+            <section class="Block" aria-labelledby="latest-work">
 
-                {% include Block/Block-header.html title="Recent work" slug="recent-work" width="medium--one-third" %}
+                {% include Block/Block-header.html title="Latest work" slug="latest-work" width="medium--one-third" %}
 
                 {% assign featuredProject = site.tags["featured-project"][0] %}
-                {% include Listing/Listing--block.html item=featuredProject url="/portfolio/" link="See more of my projects" %}
+                {% include Listing/Listing--block.html item=featuredProject %}
 
             </section>
 
@@ -36,12 +36,12 @@ title: Home
 
                 --><div class="grid__item one-whole medium--one-third">
 
-                    <section class="Block" aria-labelledby="recent">
+                    <section class="Block" aria-labelledby="latest">
 
-                        {% include Block/Block-header.html title="Recent updates" slug="recent" %}
+                        {% include Block/Block-header.html title="Latest updates" slug="latest" %}
 
                         <div class="Editorial">
-                            <p>My latest updates from elsewhere on the internet&hellip;</p>
+                            <p>Updates from elsewhere on the internet&hellip;</p>
                         </div>
 
                         <div class="Feed">
@@ -60,12 +60,12 @@ title: Home
 
                 --><div class="grid__item one-whole medium--one-third">
 
-                    <section class="Block" aria-labelledby="recent-labs">
+                    <section class="Block" aria-labelledby="latest-labs">
 
-                        {% include Block/Block-header.html title="Recent labs" slug="recent-labs" %}
+                        {% include Block/Block-header.html title="Latest labs" slug="latest-labs" %}
 
                         {% assign featuredLab = site.tags["featured-lab"][0] %}
-                        {% include Listing/Listing--item.html item=featuredLab url="/labs/" link="See more of my lab projects" %}
+                        {% include Listing/Listing--item.html item=featuredLab %}
 
                     </section>
 

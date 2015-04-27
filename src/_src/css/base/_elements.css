@@ -1,0 +1,127 @@
+/**
+ * HTML - basic reset for main element styles
+ */
+
+/* box model: http://goo.gl/quQpCV */
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+
+/* containers */
+    body {
+        font-family: var(--font-body);
+        color: var(--colour-black);
+    }
+
+
+/* headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-headings);
+    }
+
+    h1 strong,
+    h2 strong,
+    h3 strong,
+    h4 strong,
+    h5 strong,
+    h6 strong {
+        font-family: var(--font-headings-bold);
+    }
+
+
+/* text */
+    p { }
+
+    blockquote {
+        padding: 0 1rem;
+        border-left: 10px solid var(--colour-grey-mid);
+    }
+
+
+/* lists */
+    ul,
+    ol { }
+
+    li { }
+
+
+/* media */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    video { }
+
+
+/* links */
+    a {
+        position: relative;
+        transition: all var(--transition-time);
+        color: var(--colour-green);
+        text-decoration: none;
+        border-bottom: 1px solid var(--colour-green);
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        /*color: var(--colour-green-dark);*/
+        border-bottom-color: var(--colour-orange);
+    }
+
+    a:visited {
+        /*color: var(--colour-green-dark);*/
+    }
+
+        a:before {
+            content: " \0003E"; /* > */
+            position: absolute;
+            right: -0.3rem;
+            bottom: 0;
+            border-bottom: 1px solid transparent; /* alignment */
+            opacity: 0;
+            line-height: 1;
+            font-family: var(--font-headings);
+            color: var(--colour-orange);
+            transition: all var(--transition-time);
+        }
+
+        a:hover:before,
+        a:focus:before,
+        a:active:before {
+            right: -0.7rem;
+            opacity: 1;
+        }
+
+        /* remove default link styles */
+        a.is-arrowless {
+            border: 0;
+        }
+
+            a.is-arrowless:before {
+                display: none;
+            }
+
+
+/* forms */
+    form {}
+    fieldset {}
+    legend {}
+    label {}
+
+    /* radio/checkboxes */
+        input[type="radio"],
+        input[type="checkbox"] { }

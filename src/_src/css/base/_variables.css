@@ -1,0 +1,44 @@
+/**
+ * Site-wide variables
+ */
+
+:root {
+    /* fonts */
+        --font-headings: "Raleway-Light", Helvetica, sans-serif;
+        --font-headings-bold: "Raleway-Medium", Helvetica, sans-serif;
+        --font-body: Helvetica, sans-serif;
+
+    /* colours */
+        --colour-white: #fff;
+        --colour-black: #333;
+        --colour-grey-dark: #3e3e3e;
+        --colour-grey-mid: #999;
+        --colour-grey-light: #eee;
+
+        --colour-orange: rgba(255, 153, 0, 1); /* f90 */
+        --colour-orange-dark: rgba(230, 128, 0, 1); /* e68000 */
+
+        --colour-green: rgba(122, 204, 142, 1); /* 7acc8e */
+        --colour-green-dark: rgba(97, 179, 117, 1); /* 61b375 */
+
+    /* transitions */
+        --transition-time: 0.25s;
+
+    /* Buttons & Forms*/
+
+    /* margins and spacing */
+        --gutter-small: 1rem;
+        --gutter: 2rem;
+        --border-width: 1px;
+
+    /* content widths */
+        --width-small: 25rem; /* 400px */
+        --width-medium: 45rem; /* 720px */
+        --width-large: 75rem; /* 1200px */
+
+    /* media queries */
+        @custom-media --small (min-width: 25rem);
+        @custom-media --medium (min-width: 45rem);
+        @custom-media --large (min-width: 75rem);
+
+}

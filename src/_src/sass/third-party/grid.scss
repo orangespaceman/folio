@@ -1,0 +1,16 @@
+/*
+ * CSS Wizardary Grid
+ * Via: http://csswizardry.com/csswizardry-grids/
+ */
+    // config
+        $gutter: 2rem;
+
+        $breakpoints: (
+            'small'  '(--small)',
+            'medium' '(--medium)'
+        );
+
+        $breakpoint-has-widths: ('small', 'medium');
+
+    // generate
+        @import "bower_components/csswizardry-grids/csswizardry-grids";

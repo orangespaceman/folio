@@ -1,0 +1,140 @@
+/**
+ * @define Feed; use strict
+ *
+ * Feed elements - API data
+ */
+
+.Feed {}
+
+.Feed-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    line-height: 1.5;
+}
+
+    /* element icon + label */
+    .Feed-icon {
+        position: absolute;
+        left: 0;
+        top: 3px;
+        text-align: center;
+        line-height: 1;
+    }
+
+        .Feed-iconLabel {
+            display: block;
+            font-size: 0.5rem;
+            color: var(--colour-grey-mid);
+        }
+
+    /* element displayed before JS inits */
+    .Feed-message {}
+
+    /* element displayed during API request */
+    .Feed-loader {
+        background: url("../images/loading.svg") transparent no-repeat right center;
+        padding-right: 2rem;
+    }
+
+    /* element containing date */
+    .Feed-date {
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    /* element containing name of data provider */
+    .Feed-source {
+        display: block;
+        font-size: 0.8rem;
+        color: var(--colour-grey-mid);
+    }
+
+    /* errors */
+    .Feed-error {
+        color: #f00;
+        font-size: 0.8rem;
+    }
+
+/*
+ * Styles for specific feed types
+ */
+    /* playlist list */
+        .Feed-item--playlist {
+            margin-bottom: 0.5rem;
+            padding: 0;
+        }
+
+
+    /* artist list */
+        .Feed-item--artist {
+            position: relative;
+            margin-bottom: 0.5rem;
+            padding: 0;
+        }
+
+            .Feed-item--artist .Feed-fill {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: var(--colour-grey-mid);
+            }
+
+                .Feed-item--artist .Feed-filler {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50%;
+                    height: 1px;
+                    background: var(--colour-orange);
+                }
+
+            .Feed-item--artist .Feed-playcount {
+                font-size: 0.8rem;
+                color: var(--colour-grey-mid);
+            }
+
+
+    /* photo list */
+        .Feed-item--photo {
+            margin-bottom: 0.5rem;
+            padding: 0;
+            overflow: hidden;
+        }
+
+            .Feed-item--photo .Feed-link {
+                position: relative;
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                border: 0 solid var(--colour-orange);
+                transition: all var(--transition-time);
+            }
+
+                .Feed-item--photo .Feed-link:hover {
+                    border-width: 5px;
+                    border-bottom-width: 3px;
+                }
+
+            .Feed-item--photo .Feed-img {
+                width: 100%;
+                display: block;
+            }
+
+            .Feed-item--photo .Feed-caption {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -100%;
+                color: #fff;
+                padding: 0.5rem;
+                background: var(--colour-orange);
+                transition: all var(--transition-time);
+            }
+
+                .Feed-item--photo .Feed-link:hover .Feed-caption {
+                    bottom: 0;
+                }

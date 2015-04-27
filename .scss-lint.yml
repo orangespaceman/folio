@@ -1,0 +1,61 @@
+# Custom SCSS-lint styles
+#
+# permissive styles for ongoing error checking
+
+linters:
+
+  # allow PostCSS colour variables
+  ColorVariable:
+    enabled: false
+
+  # stop complaining about using // everywhere
+  Comment:
+    enabled: false
+
+  # allow empty .selectors { }
+  EmptyRule:
+    enabled: false
+
+  # allow !important
+  ImportantRule:
+    enabled: false
+
+  # indentation widths, allow custom indentation
+  Indentation:
+    enabled: false
+
+  # force leading zeros
+  LeadingZero:
+    style: include_zero
+
+  # stop trying to merge unrelated styles
+  MergeableSelector:
+    enabled: false
+
+  # allow custom property ordering
+  PropertySortOrder:
+    enabled: false
+
+  # allow element qualifiers
+  QualifyingElement:
+    enabled: false
+
+  # allow PostCSS naming conventions
+  SelectorFormat:
+    enabled: false
+
+  # allow four-declaration properties
+  Shorthand:
+    enabled: false
+
+  # allow related indentations to line up vertically
+  SpaceBeforeBrace:
+    enabled: false
+
+  # allow style definitions to start on a new line
+  SpaceAfterPropertyColon:
+    enabled: false
+
+  # force double quotes around strings
+  StringQuotes:
+    style: double_quotes

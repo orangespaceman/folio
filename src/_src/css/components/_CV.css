@@ -1,0 +1,40 @@
+/**
+ * @define CV; weak
+ */
+
+.CV {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+    .CV h1,
+    .CV h2,
+    .CV h3,
+    .CV h4 {
+        margin-bottom: 1rem;
+    }
+
+    .CV h4 {
+        font-style: italic;
+    }
+
+    .CV p,
+    .CV ul {
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+
+        .CV li {
+            list-style: none;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .CV li:before {
+            content: " \0003E"; /* > */
+            position: absolute;
+            left: 0.5rem;
+            top: -0.15rem;
+            font-family: var(--font-headings);
+            color: var(--colour-orange);
+        }

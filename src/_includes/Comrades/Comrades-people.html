@@ -1,0 +1,21 @@
+
+                <div class="Comrades">
+                    <div class="Editorial">
+
+                        <p>Over the years I've worked with lots of people I'd recommend:</p>
+
+                        <ul class="Comrades-list">
+
+                            {% assign comrades = site.data.comrades %}
+                            {% for comrade in comrades %}
+
+                            <li class="Comrades-item">
+                                <a href="{{comrade[1].link}}" class="Comrades-link {{ comrade[1].tags | join: ' ' | prepend: 'js--'}}" rel="external">{{comrade[1].name}}</a>
+                                <span class="Comrades-skills">({{ comrade[1].skills}})</span>
+                            </li>
+
+                            {% endfor %}
+
+                        </ul>
+                    </div>
+                </div>

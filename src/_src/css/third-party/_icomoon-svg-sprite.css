@@ -1,0 +1,21 @@
+/**
+ * Icomoon SVG Sprite
+ *
+ * To update:
+ *
+ * 1. Visit the icomoon app
+ * 2. Upload the json file - src/_src/images/icomoon/selection.json
+ * 3. Select new icons, download new SVG zip
+ * 4. Overwrite files in src/_src/images/icomoon with zip contents
+ * 5. Copy sprite.svg file to src/assets/images/sprite.svg
+ */
+
+[class^="icon-"],
+[class*=" icon-"] {
+    display: inline-block;
+    fill: currentColor;
+    background-image: url("../images/sprite.svg") !important;
+    zoom: 0.75;
+}
+
+@import "../../images/icomoon/sprite/sprite.css";

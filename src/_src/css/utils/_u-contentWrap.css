@@ -1,0 +1,21 @@
+/**
+ * @define utilities;
+ *
+ * Enforce max-width across site
+ */
+
+.u-contentWrap {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gutter-small);
+    padding-right: var(--gutter-small);
+    max-width: var(--width-large);
+}
+
+    @media (--medium) {
+        .u-contentWrap {
+            padding-left: var(--gutter);
+            padding-right: var(--gutter);
+        }
+    }

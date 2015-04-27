@@ -1,0 +1,50 @@
+/**
+ * @define SiteHeader; use strict
+ *
+ * Site Header
+ */
+
+.SiteHeader {
+    background: var(--colour-grey-dark);
+    text-align: center;
+}
+
+    @media (--medium) {
+        .SiteHeader {
+            text-align: left;
+        }
+    }
+
+    .SiteHeader-inner {
+        padding-top: 1.5rem;
+    }
+
+        @media (--medium) {
+            .SiteHeader-inner {
+                padding-bottom: 1.5rem;
+            }
+        }
+
+
+    /* site header - title */
+        .SiteHeader-title {
+            margin: 0 auto 1rem auto;
+        }
+
+            @media (--medium) {
+                .SiteHeader-title {
+                    margin-bottom: 0;
+                }
+            }
+
+
+    /* site header - nav */
+        .SiteHeader-nav { }
+
+            @media (--medium) {
+                .SiteHeader-nav {
+                    position: absolute;
+                    right: var(--gutter);
+                    bottom: 0;
+                }
+            }

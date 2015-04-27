@@ -1,0 +1,76 @@
+---
+title: Home
+---
+
+            {% include PageTitle/PageTitle.html modifier="home" title="__Pete Goodman__ - freelance _web developer_ and _teacher_ based in Brighton, UK" %}
+
+            {% include Main/Main-open.html %}
+
+            <section class="Block" aria-labelledby="latest-work">
+
+                {% include Block/Block-header.html title="Latest work" slug="latest-work" width="medium--one-third" %}
+
+                {% assign featuredProject = site.tags["featured-project"][0] %}
+                {% include Listing/Listing--block.html item=featuredProject %}
+
+            </section>
+
+
+            <div class="grid">
+
+                <div class="grid__item one-whole medium--one-third">
+
+                    <section class="Block" aria-labelledby="about">
+
+                        {% include Block/Block-header.html title="About me" slug="about" %}
+
+                        <div class="Editorial">
+                            {% capture about %}{% include About/About-home.md %}{% endcapture %}
+                            {{ about | markdownify }}
+                        </div>
+
+                        <p><a href="./about/">See a bit more about me</a></p>
+                    </section>
+
+                </div><!--
+
+                --><div class="grid__item one-whole medium--one-third">
+
+                    <section class="Block" aria-labelledby="latest">
+
+                        {% include Block/Block-header.html title="Latest updates" slug="latest" %}
+
+                        <div class="Editorial">
+                            <p>Updates from elsewhere on the internet&hellip;</p>
+                        </div>
+
+                        <div class="Feed">
+
+                            {% include Feed/Feed-item--flickr.html %}
+                            {% include Feed/Feed-item--spotify.html %}
+                            {% include Feed/Feed-item--lastfm.html %}
+                            {% include Feed/Feed-item--goodreads.html %}
+                            {% include Feed/Feed-item--github.html %}
+
+                        </div>
+
+                    </section>
+
+                </div><!--
+
+                --><div class="grid__item one-whole medium--one-third">
+
+                    <section class="Block" aria-labelledby="latest-labs">
+
+                        {% include Block/Block-header.html title="Latest labs" slug="latest-labs" %}
+
+                        {% assign featuredLab = site.tags["featured-lab"][0] %}
+                        {% include Listing/Listing--item.html item=featuredLab %}
+
+                    </section>
+
+                </div><!-- .grid__item -->
+
+            </div><!-- .grid -->
+
+            {% include Main/Main-close.html %}

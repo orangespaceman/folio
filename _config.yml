@@ -1,0 +1,33 @@
+# Jekyll settings
+source: src
+destination: public
+include:
+  - .htaccess
+
+# Site settings
+permalink: /:categories/:title/
+
+# custom data - site details
+sitehost: http://petegoodman.com
+sitetitle: Pete Goodman - Brighton-based Web Developer
+sitedescription: Online portfolio for Pete Goodman, freelance web developer and teacher based in Brighton, UK
+sitehandle: thegingerbloke
+
+# defaults
+defaults:
+    - scope:
+        path: ""
+      values:
+        layout: "page"
+
+    - scope:
+        path: "portfolio"
+      values:
+        layout: "portfolio-detail"
+        category: "portfolio"
+
+    - scope:
+        path: "labs"
+      values:
+        layout: "labs-detail"
+        category: "labs"

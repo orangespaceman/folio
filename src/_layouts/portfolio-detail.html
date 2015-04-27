@@ -1,0 +1,131 @@
+---
+layout: page
+section: Portfolio
+---
+
+            {% include PageTitle/PageTitle.html title=page.title id=page.id featured=page.images.featured %}
+
+            {% include Main/Main-open.html %}
+
+            <section class="Block" aria-labelledby="project-detail">
+
+                <div class="Article">
+
+                    <div class="grid grid--center">
+                        <div class="grid__item one-whole medium--two-thirds">
+                            <h1 class="Article-title">{{page.title}}</h1>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="grid__item one-whole medium--one-third">
+
+                            <div class="Article-information">
+                                <div class="Article-description">
+                                    <div class="Editorial">
+                                        <h3>Details</h3>
+                                        <ul class="BulletedList">
+                                            <li class="BulletedList-item">
+                                                Date: {{ page.date | date: '%B %Y' }}
+                                            </li>
+
+                                            {% if page.client %}
+                                                {% if site.data.clients[page.client].link %}
+                                                    <li class="BulletedList-item">
+                                                        Built for:
+                                                        <a href="{{site.data.clients[page.client].link}}" rel="external">
+                                                            {{site.data.clients[page.client].name}}
+                                                        </a>
+                                                    </li>
+                                                {% else %}
+                                                    <li class="BulletedList-item">
+                                                        Built for {{site.data.clients[page.client].name}}
+                                                    </li>
+                                                {% endif %}
+                                            {% endif %}
+
+                                            {% if page.link %}
+                                                <li class="BulletedList-item">
+                                                    <a href="{{page.link}}" rel="external">
+                                                        Visit site
+                                                    </a>
+                                                </li>
+                                            {% endif %}
+                                        </ul>
+
+                                        {% if page.technologies %}
+                                            <h3>Technologies/Skills</h3>
+                                            <ul class="BulletedList">
+                                                {% for technology in page.technologies %}
+                                                    <li class="BulletedList-item">{{technology}}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+
+                                        {% if page.collaborators %}
+                                            <h3>Collaborators</h3>
+                                            <ul class="BulletedList">
+                                                {% for collaborator in page.collaborators %}
+                                                    <li class="BulletedList-item">
+                                                        <a href="{{site.data.comrades[collaborator].link}}" rel="external">
+                                                            {{site.data.comrades[collaborator].name}}
+                                                        </a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--
+
+                        --><div class="grid__item one-whole medium--two-thirds">
+
+                            <div class="Article-information">
+                                <div class="Article-description">
+                                    <div class="Editorial">
+                                        {{ content }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Article-imagery">
+                                {% if page.images.desktop %}
+                                <div class="Article-screenshots Article-screenshots--desktop">
+                                    <div class="Editorial">
+                                        <h2>Desktop Screenshots</h2>
+                                    </div>
+                                    {% for screenshot in page.images.desktop %}
+                                    <img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Article-screenshot Article-screenshot--desktop">
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+
+                                {% if page.images.mobile %}
+                                <div class="Article-screenshots Article-screenshots--mobile">
+                                    <div class="Editorial">
+                                        <h2>Mobile Screenshots</h2>
+                                    </div><!--
+                                    {% for screenshot in page.images.mobile %}
+                                    --><img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Article-screenshot Article-screenshot--mobile"><!--
+                                    {% endfor %}
+                                --></div>
+                                {% endif %}
+
+                                {% if page.images.photos %}
+                                <div class="Article-screenshots Article-screenshots--photos">
+                                    <div class="Editorial">
+                                        <h2>Photos</h2>
+                                    </div>
+                                    {% for photo in page.images.photos %}
+                                    <img src="/assets/images{{page.id}}/{{photo}}" alt="" class="Article-screenshot Article-screenshot--photo">
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.Article -->
+            </section>
+
+            {% include Main/Main-close.html %}

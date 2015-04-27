@@ -1,0 +1,151 @@
+/**
+ * @define Listing; use strict
+ *
+ * Listing block styles
+ */
+
+.Listing {
+    margin-bottom: 2rem;
+}
+
+    @media (--medium) {
+        .Listing {
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* listing - text */
+        .Listing-title {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+            @media (--medium) {
+                .Listing-title {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .Listing-titleLink {
+                color: var(--colour-grey-dark);
+            }
+
+        .Listing-description {}
+
+        .Listing-link {
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+
+    /* listing - image comtainer */
+        .Listing-imagery {
+            display: block;
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+            .Listing-screenshots {}
+
+                .Listing-screenshots--desktop {}
+
+                .Listing-screenshots--mobile {
+                    position: absolute;
+                    right: -0.5rem;
+                    bottom: -0.5rem;
+                    z-index: 1;
+                    max-width: 40%;
+                    transition: all var(--transition-time);
+                }
+
+                    @media (--medium) {
+                        .Listing-screenshots--mobile {
+                            bottom: -1rem;
+                            right: -1rem;
+                        }
+                    }
+
+                .Listing-imagery:hover .Listing-screenshots--mobile {
+                    transform: perspective(600) rotateY(-15deg) rotateX(8deg);
+                }
+
+
+                /* listing - images */
+                    .Listing-screenshot {
+                        width: 100%;
+                        transition: transform var(--transition-time) ease-in-out,
+                                    box-shadow 0.1s ease-in-out;
+                    }
+
+                        .Listing-screenshot--desktop {
+                            box-shadow: 0 0 1px 0 rgba(0,0,0,0.1);
+                        }
+
+                        .Listing-screenshot--mobile {
+                            box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+                        }
+
+                        .Listing-imagery:hover .Listing-screenshot--desktop {
+                            /*transform: scale(1.02);*/
+                            box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
+                        }
+
+                        .Listing-imagery:hover .Listing-screenshot--mobile {
+                            box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+                        }
+
+
+    /* Listing blocks - full-width content blocks */
+        .Listing--block {}
+
+            .Listing--block .Listing-title {
+                margin-top: 0;
+                font-size: 1.6rem;
+            }
+
+            @media (--medium) {
+                .Listing--block .Listing-title {
+                    font-size: 2rem;
+                }
+            }
+
+            /* add space between block title and first listing title */
+            .Listing--block:nth-child(2) .Listing-title {
+                margin-top: 1rem;
+            }
+
+            /* bring first listing block image up in line with block title */
+            .Listing--block:nth-child(2) .Listing-imagery {
+                margin-top: -var(--border-width);
+            }
+
+                @media (--medium) {
+                    .Listing--block .Listing-screenshot {
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                @media (--medium) {
+                    .Listing--block .Listing-screenshots--mobile {
+                        max-width: 30%;
+                        bottom: -1rem;
+                        right: -1rem;
+                    }
+                }
+
+                @media (--large) {
+                    .Listing--block .Listing-screenshots--mobile {
+                        bottom: -1.5rem;
+                        right: -1.5rem;
+                    }
+                }
+
+            .Listing--block .Listing-screenshot--desktop {
+                right: -1rem;
+            }
+
+
+
+    /* Listing items - smaller list items with less detail */
+        .Listing--item {}

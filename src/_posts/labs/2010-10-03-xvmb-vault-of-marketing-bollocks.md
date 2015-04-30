@@ -4,7 +4,6 @@ excerpt: A site that features some of the 'best' bits of marketing bollocks that
 tag: featured-lab
 links:
  code: https://github.com/thegingerbloke/xvmb
- demo: http://xvmb.seo-master.me.uk/
 images:
   featured: featured.jpg
   thumbs:

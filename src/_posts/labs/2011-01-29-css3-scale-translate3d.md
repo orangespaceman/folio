@@ -19,7 +19,7 @@ This is an update to my [original JavaScript tweening boxes experiment](../js-tw
 
 {% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/css3-scale-translate3d/" ratio="75" %}
 
-The example uses percentages for all block sizes and transformations, meaning everything scales to the size of the container element.  This can be seen in the [full-screen](http://labs.petegoodman.com/css3-scale-translate3d/) example. The only difference in the code between that version and the inline version above is that a width and height has been added to the containing HTML element.
+The example uses percentages for all block sizes and transformations, meaning everything scales to the size of the container element.  This can be seen in the [full-screen](http://thegingerbloke.github.io/css3-scale-translate3d/) example. The only difference in the code between that version and the inline version above is that a width and height has been added to the containing HTML element.
 
 It's a simple proof-of-concept example, and as such all positioning and animations are hardcoded.  It would be possible to control these dynamically with JavaScript.
 

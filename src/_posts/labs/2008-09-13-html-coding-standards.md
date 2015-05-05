@@ -200,7 +200,7 @@ The combination of classes and IDs on individual elements is useful where generi
 
 My preferred method to correctly clear floated elements is to use a class of [clearfix](http://www.positioniseverything.net/easyclearing.html) on the parent element.  It should only be applied to this parent element, and not the floated elements within (unless they too require it).
 
-I prefer this method to the [float nearly everything](http://orderedlist.com/articles/clearing-floats-the-fne-method) technique.
+I prefer this method to the _float nearly everything_ technique.
 
 
 ### hr

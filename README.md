@@ -111,6 +111,17 @@ To update:
 5. Copy sprite.svg file to `src/assets/images/sprite.svg`
 
 
+## Posts
+
+When adding a new portfolio project or lab, the following images need prepping:
+
+ - featured.jpg - ratio 5:1 - roughly 2000x400
+ - thumb-desktop.jpg - ratio 8:6 - roughy 1024x768
+ - thumb-mobile.jpg - ratio 4:6 - roughly 400x600
+ - desktop images
+ - mobile images
+
+
 ## Back-end
 
 The site uses [Jekyll](http://jekyllrb.com/) to build static templates, so the first step is to install it (see their website for instructions):

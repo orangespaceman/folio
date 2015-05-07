@@ -49,4 +49,4 @@ deactivate
 
 The Python script is responsible for accessing files on the watch, and interacting with the Strava API.
 
-Full setup notes are on [Github](https://github.com/thegingerbloke/pi-python-garmin-strava)
+Full setup notes are on [Github](https://github.com/thegingerbloke/pi-python-garmin-strava) and my Strava account is [here](https://www.strava.com/athletes/thegingerbloke)

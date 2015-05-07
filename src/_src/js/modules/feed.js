@@ -104,7 +104,6 @@ Feed.prototype.handleError = function (err, res) {
         'But don\'t worry, you\'re probably not missing much...',
         '(The technical error is: ',
         res.status,
-        res.text,
         ')'
     ].join('\n');
 

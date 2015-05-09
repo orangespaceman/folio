@@ -21,9 +21,9 @@
 # http://enable-cors.org/
 # http://www.w3.org/TR/cors/
 
-#
+# <IfModule mod_headers.c>
 #     Header set Access-Control-Allow-Origin "*"
-#
+# </IfModule>
 
 # ----------------------------------------------------------------------
 # | Cross-origin images                                                |
@@ -34,14 +34,14 @@
 # https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image
 # https://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html
 
-
-
-
+<IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+        <FilesMatch "\.(bmp|cur|gif|ico|jpe?g|png|svgz?|webp)$">
             SetEnvIf Origin ":" IS_CORS
             Header set Access-Control-Allow-Origin "*" env=IS_CORS
-
-
-
+        </FilesMatch>
+    </IfModule>
+</IfModule>
 
 # ----------------------------------------------------------------------
 # | Cross-origin web fonts                                             |
@@ -49,11 +49,11 @@
 
 # Allow cross-origin access to web fonts.
 
-
-
+<IfModule mod_headers.c>
+    <FilesMatch "\.(eot|otf|tt[cf]|woff2?)$">
         Header set Access-Control-Allow-Origin "*"
-
-
+    </FilesMatch>
+</IfModule>
 
 # ----------------------------------------------------------------------
 # | Cross-origin resource timing                                       |
@@ -69,9 +69,9 @@
 # http://www.w3.org/TR/resource-timing/
 # http://www.stevesouders.com/blog/2014/08/21/resource-timing-practical-tips/
 
-#
+# <IfModule mod_headers.c>
 #     Header set Timing-Allow-Origin: "*"
-#
+# </IfModule>
 
 
 # ######################################################################
@@ -124,7 +124,7 @@ Options -MultiViews
 # https://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode
 # http://blogs.msdn.com/b/ie/archive/2014/04/02/stay-up-to-date-with-enterprise-mode-for-internet-explorer-11.aspx
 
-
+<IfModule mod_headers.c>
 
     Header set X-UA-Compatible "IE=edge"
 
@@ -132,11 +132,11 @@ Options -MultiViews
     # the `X-UA-Compatible` response header should be send only for
     # HTML documents and not for the other resources.
 
-
+    <FilesMatch "\.(appcache|atom|bbaw|bmp|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|webapp|web[mp]|webmanifest|woff2?|xloc|xml|xpi)$">
         Header unset X-UA-Compatible
+    </FilesMatch>
 
-
-
+</IfModule>
 
 # ----------------------------------------------------------------------
 # | Iframes cookies                                                    |
@@ -147,9 +147,9 @@ Options -MultiViews
 # https://msdn.microsoft.com/en-us/library/ms537343.aspx
 # http://www.w3.org/TR/2000/CR-P3P-20001215/
 
-#
+# <IfModule mod_headers.c>
 #     Header set P3P "policyref=\"/w3c/p3p.xml\", CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\""
-#
+# </IfModule>
 
 
 # ######################################################################
@@ -165,7 +165,7 @@ Options -MultiViews
 # https://www.iana.org/assignments/media-types/media-types.xhtml
 # https://httpd.apache.org/docs/current/mod/mod_mime.html#addtype
 
-
+<IfModule mod_mime.c>
 
   # Data interchange
 
@@ -241,7 +241,7 @@ Options -MultiViews
     AddType text/vtt                                    vtt
     AddType text/x-component                            htc
 
-
+</IfModule>
 
 # ----------------------------------------------------------------------
 # | Character encodings                                                |
@@ -261,7 +261,7 @@ AddDefaultCharset utf-8
 #
 # https://httpd.apache.org/docs/current/mod/mod_mime.html#addcharset
 
-
+<IfModule mod_mime.c>
     AddCharset utf-8 .atom \
                      .bbaw \
                      .css \
@@ -278,7 +278,7 @@ AddDefaultCharset utf-8
                      .webmanifest \
                      .xloc \
                      .xml
-
+</IfModule>
 
 
 # ######################################################################
@@ -319,7 +319,7 @@ AddDefaultCharset utf-8
 # (6) Set %{ENV:PROTO} variable, to allow rewrites to redirect with the
 #     appropriate schema automatically (http or https).
 
-
+<IfModule mod_rewrite.c>
 
     # (1)
     RewriteEngine On
@@ -334,7 +334,7 @@ AddDefaultCharset utf-8
     # RewriteBase /
 
     # (5)
-    # RewriteOptions
+    # RewriteOptions <options>
 
     # (6)
     RewriteCond %{HTTPS} =on
@@ -342,7 +342,7 @@ AddDefaultCharset utf-8
     RewriteCond %{HTTPS} !=on
     RewriteRule ^ - [env=proto:http]
 
-
+</IfModule>
 
 # ----------------------------------------------------------------------
 # | Forcing `https://`                                                 |
@@ -351,11 +351,11 @@ AddDefaultCharset utf-8
 # Redirect from the `http://` to the `https://` version of the URL.
 # https://wiki.apache.org/httpd/RewriteHTTPToHTTPS
 
-#
+# <IfModule mod_rewrite.c>
 #    RewriteEngine On
 #    RewriteCond %{HTTPS} !=on
 #    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-#
+# </IfModule>
 
 # ----------------------------------------------------------------------
 # | Suppressing / Forcing the `www.` at the beginning of URLs          |
@@ -379,12 +379,12 @@ AddDefaultCharset utf-8
 
 # Option 1: rewrite www.example.com → example.com
 
-
+<IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTPS} !=on
     RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
     RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
-
+</IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -393,14 +393,14 @@ AddDefaultCharset utf-8
 # Be aware that the following might not be a good idea if you use "real"
 # subdomains for certain parts of your website.
 
-#
+# <IfModule mod_rewrite.c>
 #     RewriteEngine On
 #     RewriteCond %{HTTPS} !=on
 #     RewriteCond %{HTTP_HOST} !^www\. [NC]
 #     RewriteCond %{SERVER_ADDR} !=127.0.0.1
 #     RewriteCond %{SERVER_ADDR} !=::1
 #     RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-#
+# </IfModule>
 
 
 # ######################################################################
@@ -441,7 +441,7 @@ AddDefaultCharset utf-8
 # http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx
 # https://www.owasp.org/index.php/Clickjacking
 
-#
+# <IfModule mod_headers.c>
 
 #     Header set X-Frame-Options "DENY"
 
@@ -449,11 +449,11 @@ AddDefaultCharset utf-8
 #     # the `X-Frame-Options` response header should be send only for
 #     # HTML documents and not for the other resources.
 
-#
+#     <FilesMatch "\.(appcache|atom|bbaw|bmp|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|webapp|web[mp]|webmanifest|woff2?|xloc|xml|xpi)$">
 #         Header unset X-Frame-Options
-#
+#     </FilesMatch>
 
-#
+# </IfModule>
 
 # ----------------------------------------------------------------------
 # | Content Security Policy (CSP)                                      |
@@ -470,13 +470,13 @@ AddDefaultCharset utf-8
 # That almost certainly won't work as-is for your website!
 #
 # To make things easier, you can use an online CSP header generator
-# such as: http://cspisincredible.com/.
+# such as: http://cspismarginally improved.com/.
 #
 # http://content-security-policy.com/
 # http://www.html5rocks.com/en/tutorials/security/content-security-policy/
 # http://www.w3.org/TR/CSP11/).
 
-#
+# <IfModule mod_headers.c>
 
 #     Header set Content-Security-Policy "script-src 'self'; object-src 'self'"
 
@@ -484,11 +484,11 @@ AddDefaultCharset utf-8
 #     # the `Content-Security-Policy` response header should be send
 #     # only for HTML documents and not for the other resources.
 
-#
+#     <FilesMatch "\.(appcache|atom|bbaw|bmp|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|webapp|web[mp]|webmanifest|woff2?|xloc|xml|xpi)$">
 #         Header unset Content-Security-Policy
-#
+#     </FilesMatch>
 
-#
+# </IfModule>
 
 # ----------------------------------------------------------------------
 # | File access                                                        |
@@ -500,9 +500,9 @@ AddDefaultCharset utf-8
 # anyone to surf through every directory on your server (which may
 # includes rather private places such as the CMS's directories).
 
-
+<IfModule mod_autoindex.c>
     Options -Indexes
-
+</IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -521,13 +521,13 @@ AddDefaultCharset utf-8
 # https://www.mnot.net/blog/2010/04/07/well-known
 # https://tools.ietf.org/html/rfc5785
 
-
+<IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{REQUEST_URI} "!(^|/)\.well-known/([^./]+./?)+$" [NC]
     RewriteCond %{SCRIPT_FILENAME} -d [OR]
     RewriteCond %{SCRIPT_FILENAME} -f
     RewriteRule "(^|/)\." - [F]
-
+</IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -539,27 +539,27 @@ AddDefaultCharset utf-8
 #
 # http://feross.org/cmsploit/
 #
-# (!) Update the `` regular expression from below to
+# (!) Update the `<FilesMatch>` regular expression from below to
 # include any files that might end up on your production server and
 # can expose sensitive information about your website. These files may
 # include: configuration files, files that contain metadata about the
 # project (e.g.: project dependencies), build scripts, etc..
 
-
+<FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
 
     # Apache < 2.3
-
-#        Order allow,deny
-#        Deny from all
-#        Satisfy All
-
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+        Satisfy All
+    </IfModule>
 
     # Apache ≥ 2.3
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
 
-#        Require all denied
-
-
-
+</FilesMatch>
 
 # ----------------------------------------------------------------------
 # | HTTP Strict Transport Security (HSTS)                              |
@@ -583,9 +583,9 @@ AddDefaultCharset utf-8
 # https://tools.ietf.org/html/draft-ietf-websec-strict-transport-sec-14#section-6.1
 # http://blogs.msdn.com/b/ieinternals/archive/2014/08/18/hsts-strict-transport-security-attacks-mitigations-deployment-https.aspx
 
-#
+# <IfModule mod_headers.c>
 #     Header always set Strict-Transport-Security "max-age=16070400; includeSubDomains"
-#
+# </IfModule>
 
 # ----------------------------------------------------------------------
 # | Reducing MIME type security risks                                  |
@@ -603,9 +603,9 @@ AddDefaultCharset utf-8
 # https://msdn.microsoft.com/en-us/library/ie/gg622941.aspx
 # https://mimesniff.spec.whatwg.org/
 
-
+<IfModule mod_headers.c>
     Header set X-Content-Type-Options "nosniff"
-
+</IfModule>
 
 # ----------------------------------------------------------------------
 # | Reflected Cross-Site Scripting (XSS) attacks                       |
@@ -643,7 +643,7 @@ AddDefaultCharset utf-8
 # http://blogs.msdn.com/b/ieinternals/archive/2011/01/31/controlling-the-internet-explorer-xss-filter-with-the-x-xss-protection-http-header.aspx
 # https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29
 
-#
+# <IfModule mod_headers.c>
 
 #     #                           (1)    (2)
 #     Header set X-XSS-Protection "1; mode=block"
@@ -652,11 +652,11 @@ AddDefaultCharset utf-8
 #     # the `X-XSS-Protection` response header should be send only for
 #     # HTML documents and not for the other resources.
 
-#
+#     <FilesMatch "\.(appcache|atom|bbaw|bmp|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|webapp|web[mp]|webmanifest|woff2?|xloc|xml|xpi)$">
 #         Header unset X-XSS-Protection
-#
+#     </FilesMatch>
 
-#
+# </IfModule>
 
 # ----------------------------------------------------------------------
 # | Server-side technology information                                 |
@@ -678,9 +678,9 @@ AddDefaultCharset utf-8
 #
 # https://php.net/manual/en/ini.core.php#ini.expose-php
 
-
+<IfModule mod_headers.c>
     Header unset X-Powered-By
-
+</IfModule>
 
 # ----------------------------------------------------------------------
 # | Server software information                                        |
@@ -716,64 +716,64 @@ ServerSignature Off
 # | Compression                                                        |
 # ----------------------------------------------------------------------
 
-
+<IfModule mod_deflate.c>
 
     # Force compression for mangled `Accept-Encoding` request headers
     # https://developer.yahoo.com/blogs/ydn/pushing-beyond-gzipping-25601.html
 
-
-
+    <IfModule mod_setenvif.c>
+        <IfModule mod_headers.c>
             SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
             RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
-
-
+        </IfModule>
+    </IfModule>
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     # Compress all output labeled with one of the following media types.
     #
     # (!) For Apache versions below version 2.3.7 you don't need to
-    # enable `mod_filter` and can remove the ``
-    # and `` lines as `AddOutputFilterByType` is still in
+    # enable `mod_filter` and can remove the `<IfModule mod_filter.c>`
+    # and `</IfModule>` lines as `AddOutputFilterByType` is still in
     # the core directives.
     #
     # https://httpd.apache.org/docs/current/mod/mod_filter.html#addoutputfilterbytype
 
+    <IfModule mod_filter.c>
+        AddOutputFilterByType DEFLATE "application/atom+xml" \
+                                      "application/javascript" \
+                                      "application/json" \
+                                      "application/ld+json" \
+                                      "application/manifest+json" \
+                                      "application/rdf+xml" \
+                                      "application/rss+xml" \
+                                      "application/schema+json" \
+                                      "application/vnd.geo+json" \
+                                      "application/vnd.ms-fontobject" \
+                                      "application/x-font-ttf" \
+                                      "application/x-javascript" \
+                                      "application/x-web-app-manifest+json" \
+                                      "application/xhtml+xml" \
+                                      "application/xml" \
+                                      "font/eot" \
+                                      "font/opentype" \
+                                      "image/bmp" \
+                                      "image/svg+xml" \
+                                      "image/vnd.microsoft.icon" \
+                                      "image/x-icon" \
+                                      "text/cache-manifest" \
+                                      "text/css" \
+                                      "text/html" \
+                                      "text/javascript" \
+                                      "text/plain" \
+                                      "text/vcard" \
+                                      "text/vnd.rim.location.xloc" \
+                                      "text/vtt" \
+                                      "text/x-component" \
+                                      "text/x-cross-domain-policy" \
+                                      "text/xml"
 
-        # AddOutputFilterByType DEFLATE "application/atom+xml" \
-        #                               "application/javascript" \
-        #                               "application/json" \
-        #                               "application/ld+json" \
-        #                               "application/manifest+json" \
-        #                               "application/rdf+xml" \
-        #                               "application/rss+xml" \
-        #                               "application/schema+json" \
-        #                               "application/vnd.geo+json" \
-        #                               "application/vnd.ms-fontobject" \
-        #                               "application/x-font-ttf" \
-        #                               "application/x-javascript" \
-        #                               "application/x-web-app-manifest+json" \
-        #                               "application/xhtml+xml" \
-        #                               "application/xml" \
-        #                               "font/eot" \
-        #                               "font/opentype" \
-        #                               "image/bmp" \
-        #                               "image/svg+xml" \
-        #                               "image/vnd.microsoft.icon" \
-        #                               "image/x-icon" \
-        #                               "text/cache-manifest" \
-        #                               "text/css" \
-        #                               "text/html" \
-        #                               "text/javascript" \
-        #                               "text/plain" \
-        #                               "text/vcard" \
-        #                               "text/vnd.rim.location.xloc" \
-        #                               "text/vtt" \
-        #                               "text/x-component" \
-        #                               "text/x-cross-domain-policy" \
-        #                               "text/xml"
-
-
+    </IfModule>
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -790,11 +790,11 @@ ServerSignature Off
     #
     # https://httpd.apache.org/docs/current/mod/mod_mime.html#addencoding
 
-
+    <IfModule mod_mime.c>
         AddEncoding gzip              svgz
+    </IfModule>
 
-
-
+</IfModule>
 
 # ----------------------------------------------------------------------
 # | Content transformation                                             |
@@ -814,9 +814,9 @@ ServerSignature Off
 #
 # https://developers.google.com/speed/pagespeed/module/configuration#notransform
 
-#
+# <IfModule mod_headers.c>
 #     Header merge Cache-Control "no-transform"
-#
+# </IfModule>
 
 # ----------------------------------------------------------------------
 # | ETags                                                              |
@@ -828,9 +828,9 @@ ServerSignature Off
 # https://tools.ietf.org/html/rfc7232#section-2.3
 
 # `FileETag None` doesn't work in all cases.
-
+<IfModule mod_headers.c>
     Header unset ETag
-
+</IfModule>
 
 FileETag None
 
@@ -845,7 +845,6 @@ FileETag None
 # to something like one week.
 #
 # https://httpd.apache.org/docs/current/mod/mod_expires.html
-
 
 <IfModule mod_expires.c>
 
@@ -934,13 +933,7 @@ FileETag None
 
     ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 
-
-  <IfModule mod_headers.c>
-    Header append Cache-Control "public"
-  </IfModule>
-
 </IfModule>
-
 
 # ----------------------------------------------------------------------
 # | File concatenation                                                 |
@@ -953,26 +946,26 @@ FileETag None
 #   If you have the following lines in a file called, for
 #   example, `main.combined.js`:
 #
-#
-#
+#       <!--#include file="js/jquery.js" -->
+#       <!--#include file="js/jquery.timer.js" -->
 #
 #   Apache will replace those lines with the content of the
 #   specified files.
 
-#
-#
+# <IfModule mod_include.c>
+#     <FilesMatch "\.combined\.js$">
 #         Options +Includes
 #         AddOutputFilterByType INCLUDES application/javascript \
 #                                        application/x-javascript \
 #                                        text/javascript
 #         SetOutputFilter INCLUDES
-#
-#
+#     </FilesMatch>
+#     <FilesMatch "\.combined\.css$">
 #         Options +Includes
 #         AddOutputFilterByType INCLUDES text/css
 #         SetOutputFilter INCLUDES
-#
-#
+#     </FilesMatch>
+# </IfModule>
 
 # ----------------------------------------------------------------------
 # | Filename-based cache busting                                       |
@@ -986,44 +979,8 @@ FileETag None
 # using something like `*.css?v231`, please see:
 # http://www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
 
-#
+# <IfModule mod_rewrite.c>
 #     RewriteEngine On
 #     RewriteCond %{REQUEST_FILENAME} !-f
 #     RewriteRule ^(.+)\.(\d+)\.(bmp|css|cur|gif|ico|jpe?g|js|png|svgz?|webp|webmanifest)$ $1.$3 [L]
-#
-
-
-
-
-##########
-# EXTRAS #
-##########
-
-
-# ----------------------------------------------------------------------
-# gzip compression
-# ----------------------------------------------------------------------
-
-<IfModule mod_deflate.c>
-
-  # force deflate for mangled headers developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
-  <IfModule mod_setenvif.c>
-    <IfModule mod_headers.c>
-      SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s,?\s(gzip|deflate)?|X{4,13}|~{4,13}|-{4,13})$ HAVE_Accept-Encoding
-      RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
-    </IfModule>
-  </IfModule>
-
-  # html, txt, css, js, json, xml, htc:
-  <FilesMatch "\.(js|css|html|php)$">
-    SetOutputFilter DEFLATE
-  </FilesMatch>
-
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/x-js text/javascript text/css
-  AddOutputFilterByType DEFLATE application/xml application/xhtml+xml application/x-javascript application/javascript application/json
-
-  # webfonts and svg:
-  <FilesMatch "\.(ttf|otf|eot|svg)$" >
-    SetOutputFilter DEFLATE
-  </FilesMatch>
-</IfModule>
+# </IfModule>

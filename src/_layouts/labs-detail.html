@@ -80,6 +80,25 @@ section: Labs
                                     <div class="Editorial">
                                         {{ content }}
                                     </div>
+                                    {% if page.links %}
+                                        <ul class="Button">
+                                        {% if page.links.demo %}
+                                            <li class="Button-item">
+                                                <a class="Button-link" href="{{page.links.demo}}" rel="external">
+                                                    See demo
+                                                </a>
+                                            </li>
+                                        {% endif %}
+
+                                        {% if page.links.code %}
+                                            <li class="Button-item">
+                                                <a class="Button-link Button-link--alt" href="{{page.links.code}}" rel="external">
+                                                    View code
+                                                </a>
+                                            </li>
+                                        {% endif %}
+                                        </ul>
+                                    {% endif %}
                                 </div>
                             </div>
 

@@ -86,6 +86,16 @@ section: Portfolio
                                     <div class="Editorial">
                                         {{ content }}
                                     </div>
+
+                                    {% if page.link %}
+                                        <ul class="Button">
+                                            <li class="Button-item">
+                                                <a class="Button-link" href="{{page.link}}" rel="external">
+                                                    Visit site
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    {% endif %}
                                 </div>
                             </div>
 

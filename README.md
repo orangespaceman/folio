@@ -97,6 +97,11 @@ The main heading font is [Raleway](https://www.theleagueofmoveabletype.com/ralew
 
 Webfont versions have been downloaded from [fontpro](http://fontpro.com/raleway-font-16024)
 
+...apart from the WOFF and WOFF2 files that have been manually converted:
+
+ - [https://everythingfonts.com/ttf-to-woff](https://everythingfonts.com/ttf-to-woff)
+ - [https://everythingfonts.com/ttf-to-woff2](https://everythingfonts.com/ttf-to-woff2)
+
 
 ### SVG Sprite
 

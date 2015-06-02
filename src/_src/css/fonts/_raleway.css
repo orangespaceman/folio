@@ -10,6 +10,7 @@
   font-style: normal;
   src: url("../fonts/raleway/raleway-light.eot?#iefix");
   src: url("../fonts/raleway/raleway-light.eot?#iefix") format("eot"),
+       url("../fonts/raleway/raleway-light.woff2") format("woff2"),
        url("../fonts/raleway/raleway-light.woff") format("woff"),
        url("../fonts/raleway/raleway-light.ttf") format("truetype"),
        url("../fonts/raleway/raleway-light.svg#DINnext500") format("svg");
@@ -21,6 +22,7 @@
   font-style: normal;
   src: url("../fonts/raleway/raleway-medium.eot?#iefix");
   src: url("../fonts/raleway/raleway-medium.eot?#iefix") format("eot"),
+       url("../fonts/raleway/raleway-medium.woff2") format("woff2"),
        url("../fonts/raleway/raleway-medium.woff") format("woff"),
        url("../fonts/raleway/raleway-medium.ttf") format("truetype"),
        url("../fonts/raleway/raleway-medium.svg#DINnext500") format("svg");

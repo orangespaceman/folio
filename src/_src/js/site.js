@@ -8,6 +8,6 @@ var feeds = require('./modules/feeds.js');
 comment.init();
 relExternal.init();
 feeds.init({
-    host: 'api.petegoodman.com',
-    protocol: 'http://'
+    host: 'petegoodman.com/api',
+    protocol: 'https://'
 });

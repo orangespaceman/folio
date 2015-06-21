@@ -25,7 +25,7 @@ technologies:
 
 ## Overview
 
-Probably the best (or most useful) part of the [Ghetto Blaster](http://petegoodman.com/labs/ghetto-blaster-php-js-soundboard/) thing I put together is the ability to control the Mac system volume remotely.  This is a simple mobile-optimised site that contains just this functionality.
+Probably the best (or most useful) part of the [Ghetto Blaster](https://petegoodman.com/labs/ghetto-blaster-php-js-soundboard/) thing I put together is the ability to control the Mac system volume remotely.  This is a simple mobile-optimised site that contains just this functionality.
 
 The technology behind it is quite straightforward - JavaScript intercepting a click on an HTML link, sends an Ajax call to a PHP script that executes a command line call via [shell_exec](http://php.net/manual/en/function.shell-exec.php) to trigger an applescript.
 

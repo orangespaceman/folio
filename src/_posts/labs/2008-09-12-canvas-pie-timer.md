@@ -3,7 +3,7 @@ title: Canvas Pie Timer
 excerpt: A small experiment to test the basic animation potential of canvas, and potentially create a working visual timer system.
 links:
  code: https://github.com/thegingerbloke/canvas-pie-timer
- demo: http://thegingerbloke.github.io/canvas-pie-timer/
+ demo: https://thegingerbloke.github.io/canvas-pie-timer/
 images:
   featured: featured.jpg
   thumbs:
@@ -20,7 +20,7 @@ The html canvas element offers an enormous potential for scripting graphics.
 
 A while ago I put together a small experiment to test the (very!) basic animation potential of canvas.  I wanted to see whether it would be possible to create a circular timer, to count down X number of seconds, and trigger a function call when complete.
 
-{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/canvas-pie-timer/" ratio="60" %}
+{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/canvas-pie-timer/" ratio="60" %}
 
 The javascript for this test is fairly basic, although I found it difficult to find much helpful documentation online.
 

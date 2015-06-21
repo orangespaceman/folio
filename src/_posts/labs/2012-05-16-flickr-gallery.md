@@ -4,7 +4,7 @@ excerpt: A simple single-page responsive HTML/CSS/JS image gallery, with a PHP s
 tag: featured-lab
 links:
  code: https://github.com/thegingerbloke/flickr-gallery
- demo: http://thegingerbloke.github.io/flickr-gallery
+ demo: https://thegingerbloke.github.io/flickr-gallery
 images:
   featured: featured.jpg
   thumbs:
@@ -34,4 +34,4 @@ The page is reponsive, the images resize to fill the available space.
 
 The interactions for moving between slides are swipe-enabled, and can also be controlled via the keyboard arrow keys.
 
-{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/flickr-gallery/" ratio="100" %}
+{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/flickr-gallery/" ratio="100" %}

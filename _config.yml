@@ -8,7 +8,7 @@ include:
 permalink: /:categories/:title/
 
 # custom data - site details
-sitehost: http://petegoodman.com
+sitehost: https://petegoodman.com
 sitetitle: Pete Goodman - Brighton-based Web Developer
 sitedescription: Online portfolio for Pete Goodman, freelance web developer and teacher based in Brighton, UK
 sitehandle: thegingerbloke

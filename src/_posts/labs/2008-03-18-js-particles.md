@@ -3,7 +3,7 @@ title: JS Particles
 excerpt: An old experiment playing with interacting particles
 links:
  code: https://github.com/thegingerbloke/js-particles
- demo: http://thegingerbloke.github.io/js-particles/
+ demo: https://thegingerbloke.github.io/js-particles/
 images:
   featured: featured.png
   thumbs:
@@ -19,4 +19,4 @@ technologies:
 
 An old experiment playing with interacting particles...
 
-{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/js-particles/" ratio="50" %}
+{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/js-particles/" ratio="50" %}

@@ -3,7 +3,7 @@ title: JS Tweening boxes
 excerpt: Experiments with a JavaScript tweening class that allows smooth scrolling of html elements
 links:
  code: https://github.com/thegingerbloke/js-tweening-boxes
- demo: http://thegingerbloke.github.io/js-tweening-boxes/
+ demo: https://thegingerbloke.github.io/js-tweening-boxes/
 images:
   featured: featured.png
   thumbs:
@@ -22,7 +22,7 @@ I used the [jstween library](http://jstween.blogspot.com/) to handle the movemen
 
 Click on one of the links to move the content...
 
-{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/js-tweening-boxes/" ratio="50" %}
+{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/js-tweening-boxes/" ratio="50" %}
 
 The html is pretty simple, just a number of div elements with a class of 'box', within a parent container.
 

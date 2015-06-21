@@ -2,7 +2,6 @@
 title: Jerwood Arts Laboratory
 excerpt: An experimental website for the Jerwood Visual Arts group. The site is an attempt to document the process of exhibiting art at Jerwood Space in London Bridge
 client:
-link: http://
 tag: featured-project
 images:
   featured: featured.jpg

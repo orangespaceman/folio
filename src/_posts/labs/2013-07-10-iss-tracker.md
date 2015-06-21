@@ -4,7 +4,7 @@ excerpt: See the location of the International Space Station, and when it'll be 
 tag: featured-lab
 links:
  code: https://github.com/thegingerbloke/iss-tracker
- demo: http://thegingerbloke.github.io/iss-tracker/
+ demo: https://thegingerbloke.github.io/iss-tracker/
 images:
   featured: featured.jpg
   thumbs:
@@ -26,7 +26,7 @@ A web app that tracks the position of the International Space Station (ISS), and
 
 It also locates the user's current position, and calculates when the ISS will next fly overhead.
 
-{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/iss-tracker/" ratio="90" %}
+{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/iss-tracker/" ratio="90" %}
 
 The clever bits come from the [open notify API](http://open-notify.org/) - this provides both the current position of the ISS and when it'll next fly overhead based on the user's location.
 

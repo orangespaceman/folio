@@ -23,7 +23,7 @@ technologies:
 
 ## Overview
 
-Another pointless project along the lines of the [Mac Volume Control](http://petegoodman.com/labs/mac-php-js-volume-control/) thing I put together a while ago.  As ever, the source for this is available from github.
+Another pointless project along the lines of the [Mac Volume Control](https://petegoodman.com/labs/mac-php-js-volume-control/) thing I put together a while ago.  As ever, the source for this is available from github.
 
 In a similar vein to the iTunes remote iOS app, this lets you (partially) control Spotify remotely.
 
@@ -33,7 +33,7 @@ A couple of evenings of tinkering, and I have managed to knock together a basic 
 
 Installation is really simple, if you have PHP running on your Mac just grab the code for the spotify remote from Github, put it somewhere on your local web server, and visit it in a browser.
 
-It uses the same principles as my [Volume Control](http://petegoodman.com/labs/mac-php-js-volume-control/) and [Ghetto Blaster](http://petegoodman.com/labs/ghetto-blaster-php-js-soundboard/) labs - JavaScript intercepting a click on an HTML link, sends an Ajax call to a PHP script that executes a command line call via shell_exec to trigger an Applescript.
+It uses the same principles as my [Volume Control](https://petegoodman.com/labs/mac-php-js-volume-control/) and [Ghetto Blaster](https://petegoodman.com/labs/ghetto-blaster-php-js-soundboard/) labs - JavaScript intercepting a click on an HTML link, sends an Ajax call to a PHP script that executes a command line call via shell_exec to trigger an Applescript.
 
 Most of the Applescript files are very simple:
 

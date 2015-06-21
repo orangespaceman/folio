@@ -4,7 +4,7 @@ excerpt: A bookmarklet that lets you play breakout with the images on any webpag
 tag: featured-lab
 links:
  code: https://github.com/thegingerbloke/browser-breakout
- demo: http://thegingerbloke.github.io/browser-breakout/
+ demo: https://thegingerbloke.github.io/browser-breakout/
 images:
   featured: featured.jpg
   thumbs:
@@ -25,7 +25,7 @@ Drag the link below to your bookmarks toolbar or to a tab to start browser break
 
 ***
 
-{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/browser-breakout/bookmarklet/" ratio="30" %}
+{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/browser-breakout/bookmarklet/" ratio="30" %}
 
 ***
 

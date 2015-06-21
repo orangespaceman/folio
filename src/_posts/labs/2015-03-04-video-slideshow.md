@@ -4,7 +4,7 @@ excerpt: Proof-of-concept full-screen HTML slideshow (using fading transitions) 
 tag: featured-lab
 links:
  code: https://github.com/thegingerbloke/video-slides-fading
- demo: http://thegingerbloke.github.io/video-slides-fading/
+ demo: https://thegingerbloke.github.io/video-slides-fading/
 images:
   featured: featured.jpg
   thumbs:

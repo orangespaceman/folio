@@ -4,7 +4,7 @@ excerpt: Playing around with CSS3 transitions
 tag: featured-lab
 links:
  code: https://github.com/thegingerbloke/css3-transition-blocks
- demo: http://thegingerbloke.github.io/css3-transition-blocks/
+ demo: https://thegingerbloke.github.io/css3-transition-blocks/
 images:
   featured: featured.jpg
   thumbs:
@@ -21,7 +21,7 @@ The example below contains 25 blocks of different dimensions.  Various CSS value
 
 (At the moment this only works in Safari/Chrome, but these transitions will soon be available to most modern browsers.)
 
-{% include ArticleIframe/ArticleIframe.html src="http://thegingerbloke.github.io/css3-transition-blocks/" ratio="80" %}
+{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/css3-transition-blocks/" ratio="80" %}
 
 The code is straightforward, each block is a simple HTML element:
 

@@ -2,7 +2,7 @@
 title: The Robertson Trust
 excerpt: A website for the Robertson trust, a Scottish organisation responsible for providing funding to people and communities in Scotland
 client: electricputty
-link: https://brandstencil.com
+link: http://www.therobertsontrust.org.uk/
 tag: featured-project
 images:
   featured: featured.jpg
@@ -51,4 +51,3 @@ The website uses Expression Engine for a CMS, with a modular system of front-end
 I was responsible for building the front-end of the website.
 
 In addition, I also wrote backend code to extract and manipulate complex datasets from a Salesforce backend.
-

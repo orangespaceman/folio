@@ -112,6 +112,12 @@ eduardodefelipe:
   skills: Design
   tags: [design]
 
+emileswarts:
+  name: Emile Swarts
+  link: http://emileswarts.github.io/
+  skills: Ruby, Rails
+  tags: [ruby, rails]
+
 emmasmith:
   name: Emma Smith
   link: http://thisishatch.co.uk/

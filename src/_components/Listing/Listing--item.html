@@ -9,11 +9,11 @@
 
                 <a class="Listing-imagery is-arrowless" href="{% if include.url %}{{ include.url }}{% else %}{{ include.item.url }}{% endif %}">
                   <div class="Listing-screenshots Listing-screenshots--desktop">
-                    <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.desktop]}}" alt="" class="Listing-screenshot Listing-screenshot--desktop">
+                    <img data-normal="/assets/images{{include.item.id}}/{{include.item.images.thumbs.desktop]}}" alt="" class="Listing-screenshot Listing-screenshot--desktop">
                   </div>
                   <div class="Listing-screenshots Listing-screenshots--mobile">
                     {% if include.item.images.thumbs.mobile %}
-                      <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.mobile]}}" alt="" class="Listing-screenshot Listing-screenshot--mobile">
+                      <img data-normal="/assets/images{{include.item.id}}/{{include.item.images.thumbs.mobile]}}" alt="" class="Listing-screenshot Listing-screenshot--mobile">
                     {% endif %}
                   </div>
                 </a>

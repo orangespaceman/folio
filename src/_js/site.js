@@ -1,11 +1,14 @@
 /*
  * Site JS entry point
  */
-var console = require('./console')
+
+var lazyload = require('./lazyload-images')
+var consoleMessage = require('./console')
 var relExternal = require('./rel-external')
 var feeds = require('../_components/Feed/Feeds')
 
-console.init()
+lazyload.init()
+consoleMessage.init()
 relExternal.init()
 feeds.init({
   host: 'petegoodman.com/api',

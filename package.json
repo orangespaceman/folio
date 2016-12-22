@@ -17,6 +17,7 @@
     "watch": "npm-run-all --parallel watch:*"
   },
   "dependencies": {
+    "layzr.js": "^2.2.1",
     "moment": "^2.17.1",
     "normalize.css": "^5.0.0",
     "suitcss-base": "^2.0.0",

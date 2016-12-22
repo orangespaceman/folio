@@ -88,7 +88,7 @@ section: Portfolio
                     <h2>Desktop Screenshots</h2>
                   </div>
                   {% for screenshot in page.images.desktop %}
-                  <img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Article-screenshot Article-screenshot--desktop">
+                  <img data-normal="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Article-screenshot Article-screenshot--desktop">
                   {% endfor %}
                 </div>
                 {% endif %}
@@ -99,7 +99,7 @@ section: Portfolio
                     <h2>Mobile Screenshots</h2>
                   </div><!--
                   {% for screenshot in page.images.mobile %}
-                    --><img src="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Article-screenshot Article-screenshot--mobile"><!--
+                    --><img data-normal="/assets/images{{page.id}}/{{screenshot}}" alt="" class="Article-screenshot Article-screenshot--mobile"><!--
                   {% endfor %}
                 --></div>
                 {% endif %}
@@ -110,7 +110,7 @@ section: Portfolio
                     <h2>Photos</h2>
                   </div>
                   {% for photo in page.images.photos %}
-                    <img src="/assets/images{{page.id}}/{{photo}}" alt="" class="Article-screenshot Article-screenshot--photo">
+                    <img data-normal="/assets/images{{page.id}}/{{photo}}" alt="" class="Article-screenshot Article-screenshot--photo">
                   {% endfor %}
                 </div>
                 {% endif %}

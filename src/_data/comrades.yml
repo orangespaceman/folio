@@ -322,6 +322,12 @@ kenzomayamakramarz:
   skills: Design
   tags: [design]
 
+kierangoodary:
+  name: Kieran Goodary
+  link: https://github.com/iamkio
+  skills: Development
+  tags: [development, html, css, js, Android]
+
 krystalwu:
   name: Krystal Wu
   link: http://essencious.com/
@@ -465,6 +471,12 @@ remishergold:
   link: http://remi-shergold.com/
   skills: Development
   tags: [development, html, css, js, php, ruby, iOS]
+
+rhysstansfield:
+  name: Rhys Stansfield
+  link: https://github.com/RhysStansfield
+  skills: Development
+  tags: [development, html, css, js, ruby]
 
 richsage:
   name: Rich Sage

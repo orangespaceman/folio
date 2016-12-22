@@ -4,30 +4,26 @@ title: 404
 ---
 
             {% include PageTitle/PageTitle.html title="Oops! _404_" %}
-
             {% include Main/Main-open.html %}
 
             <section class="Block">
-
-                <div class="grid">
-
-                    <div class="grid__item one-whole medium--one-third">
-                        <div class="Editorial">
-                            <p>Oh.</p>
-                            <p>I don't think that was meant to happen.</p>
-                            <p>This is awkward.</p>
-                        </div>
-                        <ul class="BulletedList">
-                            <li class="BulletedList-item">Return to the <a href="../">home page</a></li>
-                        </ul>
-                    </div><!--
-
-                    --><div class="grid__item one-whole medium--two-thirds">
-                        <div class="Editorial">
-                            <img class="is-full" src="/assets/images/404.gif" alt="404!">
-                        </div>
-                    </div>
-
+              <div class="Block-columns">
+                <div class="Block-column">
+                  <div class="Editorial">
+                    <p>Oh.</p>
+                    <p>I don't think that was meant to happen.</p>
+                    <p>This is awkward.</p>
+                  </div>
+                  <ul class="BulletedList">
+                    <li class="BulletedList-item">Return to the <a href="../">home page</a></li>
+                  </ul>
+                </div><!--
+                --><div class="Block-column Block-column--double">
+                  <div class="Editorial">
+                    <img class="is-full" src="/assets/images/404.gif" alt="403!">
+                  </div>
+                </div>
+              </div>
             </section>
 
             {% include Main/Main-close.html %}

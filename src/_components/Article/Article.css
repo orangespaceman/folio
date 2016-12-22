@@ -1,0 +1,74 @@
+/**
+ * @define Article; use strict
+ *
+ * Article block styles
+ */
+
+/* Article - text */
+
+.Article-title {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (--medium) {
+
+  .Article-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Article - columns */
+
+@media (--medium) {
+
+  .Article {
+    margin-left: -var(--gutter);
+  }
+
+  .Article-information {
+    display: inline-block;
+    padding-left: var(--gutter);
+    vertical-align: top;
+    width: 33.33%;
+  }
+
+  .Article-content {
+    display: inline-block;
+    padding-left: var(--gutter);
+    vertical-align: top;
+    width: 66.66%;
+  }
+}
+
+/* Article - image container */
+
+.Article-imagery {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* Article - images */
+
+.Article-screenshot {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.Article-screenshot--featured {
+  margin: 0;
+}
+
+@media (--small) {
+
+  .Article-screenshot--mobile {
+    display: inline-block;
+    vertical-align: top;
+    width: 47.5%;
+  }
+
+  .Article-screenshot--mobile:nth-child(even) {
+    margin-right: 5%;
+  }
+}

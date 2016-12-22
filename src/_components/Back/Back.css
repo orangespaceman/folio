@@ -1,0 +1,32 @@
+/**
+ * @define Back; use strict
+ *
+ * <back link
+ */
+
+.Back-link {
+  margin-left: 0.7rem;
+}
+
+.Back-link::before {
+  border-bottom: 1px solid transparent; /* alignment */
+  bottom: 0;
+  color: var(--colour-orange);
+  content: " \0003C"; /* < */
+  font-family: var(--font-headings);
+  left: -0.7rem;
+  line-height: 1;
+  opacity: 1;  /* override default link hover */
+  position: absolute;
+  right: auto;  /* override default link hover */
+  transition: all var(--transition-time);
+}
+
+/* print styles */
+
+@media print {
+
+  .Back {
+    display: none;
+  }
+}

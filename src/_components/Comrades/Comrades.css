@@ -1,0 +1,45 @@
+/**
+ * @define Comrades; use strict
+ */
+
+@media (--medium) {
+
+  .Comrades-list {
+    column-count: 3;
+    column-gap: 2rem;
+    column-width: 30%;
+
+    /* fix layout issues caused by transitions elsewhere */
+    will-change: transform;
+  }
+}
+
+.Comrades-item {
+  list-style: none;
+  margin-bottom: 0.25rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.Comrades-item::before {
+  color: var(--colour-orange);
+  content: " \0003E"; /* > */
+  font-family: var(--font-headings);
+  left: 0.5rem;
+  position: absolute;
+  top: -0.15rem;
+}
+
+.Comrades-link:visited {
+  color: var(--colour-green-dark);
+}
+
+.Comrades-link::before {
+  display: none;  /* override default link hover */
+}
+
+.Comrades-skills {
+  color: var(--colour-grey-mid);
+  font-size: 0.75rem;
+  font-style: italic;
+}

@@ -14,12 +14,12 @@ I am a developer with over 10 years of professional experience. I also teach a r
 
 ### Technical Skills
 
-- HTML and CSS: SCSS, PostCSS, BEM, SUIT CSS, cross-browser/device responsive layouts
-- JavaScript: Backbone.js, Angular.js, Require.js, browserify, Node.js, jQuery, AJAX, websockets
-- PHP and MySQL: Laravel, Slim, Code Igniter, Zend Framework, Composer, APIs
-- Git, Gulp, Grunt, npm, bower
-- Agile workflow, UX
+- HTML and CSS: PostCSS, BEM, SUIT CSS, SCSS, Less, CSS Modules, cross-browser/device responsive layouts
+- JavaScript: React, Redux, Backbone.js, Angular.js, Require.js, browserify, Node.js, Express, jQuery, AJAX, websockets
+- PHP and MySQL: Laravel, Slim, Code Igniter, Zend Framework, Composer
+- Git, npm, Gulp
 - Unit testing and CI
+- Agile workflow, UX
 - Writing and teaching technical material for academic and professional courses
 
 

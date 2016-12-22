@@ -3,25 +3,19 @@ layout: page
 title: Labs
 ---
 
-            {% include PageTitle/PageTitle.html title="Here are a few experiments that I have made. _There are demos on [github](https://github.com/thegingerbloke)_" %}
+        {% include PageTitle/PageTitle.html title="Here are a few experiments that I have made. _There are demos on [github](https://github.com/thegingerbloke)_" %}
 
-            {% include Main/Main-open.html %}
+        {% include Main/Main-open.html %}
 
-            <section class="Block" aria-labelledby="labs">
+        <section class="Block" aria-labelledby="labs">
+          <h2 id="labs" class="u-visuallyHidden">Labs</h2>
+          <div class="Block-columns"><!--
+            {% for post in site.categories["labs"] %}
+            --><div class="Block-column">
+              {% include Listing/Listing--item.html item=post %}
+            </div><!--
+            {% endfor %}
+          --></div>
+        </section>
 
-                <h2 id="labs" class="u-visuallyHidden">Labs</h2>
-
-                <div class="grid"><!--
-
-                        {% for post in site.categories["labs"] %}
-
-                            --><div class="grid__item one-whole small--one-half medium--one-third">
-                                {% include Listing/Listing--item.html item=post %}
-                            </div><!--
-
-                        {% endfor %}
-
-                --></div><!-- /.grid -->
-            </section>
-
-            {% include Main/Main-close.html %}
+        {% include Main/Main-close.html %}

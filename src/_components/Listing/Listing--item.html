@@ -1,0 +1,35 @@
+
+
+              <div class="Listing Listing--item">
+                <h3 class="Listing-title">
+                  <a class="Listing-titleLink is-arrowless" href="{% if include.url %}{{ include.url }}{% else %}{{ include.item.url }}{% endif %}">
+                    {{include.item.title}}
+                  </a>
+                </h3>
+
+                <a class="Listing-imagery is-arrowless" href="{% if include.url %}{{ include.url }}{% else %}{{ include.item.url }}{% endif %}">
+                  <div class="Listing-screenshots Listing-screenshots--desktop">
+                    <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.desktop]}}" alt="" class="Listing-screenshot Listing-screenshot--desktop">
+                  </div>
+                  <div class="Listing-screenshots Listing-screenshots--mobile">
+                    {% if include.item.images.thumbs.mobile %}
+                      <img src="/assets/images{{include.item.id}}/{{include.item.images.thumbs.mobile]}}" alt="" class="Listing-screenshot Listing-screenshot--mobile">
+                    {% endif %}
+                  </div>
+                </a>
+
+                <div class="Listing-information">
+                  <div class="Listing-description">
+                    <div class="Editorial">
+                      {{include.item.excerpt | markdownify }}
+                    </div>
+                    <p class="Listing-link">
+                      {% if include.url and include.link %}
+                        <a href="{{include.url}}">{{include.link}}</a>
+                      {% else %}
+                        <a href="{{include.item.url}}">See further details about this project</a>
+                      {% endif %}
+                    </p>
+                  </div>
+                </div>
+              </div><!-- /.listing -->

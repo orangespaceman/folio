@@ -4,40 +4,27 @@ title: Portfolio
 ---
 
 
-            {% include PageTitle/PageTitle.html title="Below are some of my favourite recent projects. _For more information please [see my CV](/cv/)_" %}
+        {% include PageTitle/PageTitle.html title="Below are some of my favourite recent projects. _For more information please [see my CV](/cv/)_" %}
 
-            {% include Main/Main-open.html %}
+        {% include Main/Main-open.html %}
 
-            <section class="Block" aria-labelledby="recent-work">
-
-                {% include Block/Block-header.html title="Recent work" slug="recent-work" width="medium--one-third" %}
-
-                {% for project in site.categories.portfolio limit:3 %}
-
-                    {% include Listing/Listing--block.html item=project %}
-
-                {% endfor %}
-
-            </section>
+        <section class="Block" aria-labelledby="recent-work">
+          {% include Block/Block-header.html title="Recent work" slug="recent-work" width="third" %}
+          {% for project in site.categories.portfolio limit:3 %}
+            {% include Listing/Listing--block.html item=project %}
+          {% endfor %}
+        </section>
 
 
-            <section class="Block" aria-labelledby="older-projects">
+        <section class="Block" aria-labelledby="older-projects">
+          {% include Block/Block-header.html title="Older projects" slug="older-projects" width="third" %}
+          <div class="Block-columns"><!--
+          {% for project in site.categories.portfolio offset:3 %}
+            --><div class="Block-column">
+              {% include Listing/Listing--item.html item=project %}
+            </div><!--
+          {% endfor %}
+        --></div>
+        </section>
 
-                {% include Block/Block-header.html title="Older projects" slug="older-projects" width="medium--one-third" %}
-
-                <div class="grid"><!--
-
-                    {% for project in site.categories.portfolio offset:3 %}
-
-                        --><div class="grid__item one-whole small--one-half medium--one-third">
-                            {% include Listing/Listing--item.html item=project %}
-                        </div><!--
-
-                    {% endfor %}
-
-                --></div><!-- /.grid -->
-            </section>
-
-            {% include Main/Main-close.html %}
-
-
+        {% include Main/Main-close.html %}

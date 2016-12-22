@@ -1,0 +1,96 @@
+/**
+* @define PageTitle; weak
+ *
+ * Page title blocks
+ * weak linting due to <strong> element being injected by markdown, therefore
+ * it can't have any classes added
+ */
+
+.PageTitle {
+  background: var(--colour-white);
+  margin-bottom: 0.5rem; /* space taken up by zig-zag */
+  padding: 2rem 0;
+}
+
+@media (--medium) {
+
+  .PageTitle {
+    padding: 3rem 0;
+  }
+}
+
+/* page title with a bg image rather than text */
+
+.PageTitle--featured {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 40%;
+  position: relative;
+  transition: padding var(--transition-time);
+}
+
+@media (--small) {
+
+  .PageTitle--featured {
+    padding-bottom: 30%;
+  }
+}
+
+@media (--medium) {
+
+  .PageTitle--featured {
+    padding-bottom: 15%;
+  }
+}
+
+.PageTitle--featured::after {
+  background-image: repeating-linear-gradient(-45deg, transparent 0%, transparent 25%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.1) 50%);
+  background-size: 20px 20px;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/* page title - heading */
+
+.PageTitle-heading {
+  color: var(--colour-grey-mid);
+  font-size: 1.5rem;
+  margin: 0 auto;
+  max-width: var(--width-medium);
+  text-align: center;
+}
+
+@media (--small) {
+
+  .PageTitle-heading {
+    font-size: 2rem;
+  }
+}
+
+.PageTitle-heading strong {
+  color: var(--colour-orange);
+  font-weight: normal;
+}
+
+.PageTitle-heading em {
+  color: var(--colour-black);
+  display: block;
+  font-style: normal;
+}
+
+.PageTitle-heading a::before {
+  display: none;  /* override default link hover */
+}
+
+/* page title - home modifier */
+
+.PageTitle-heading--home em {
+  display: inline;
+}

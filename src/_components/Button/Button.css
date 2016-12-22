@@ -1,0 +1,51 @@
+/**
+ * @define Button; use strict
+ *
+ * [ button ] link
+ */
+
+.Button {
+  line-height: 1.5;
+  margin: 3rem 0;
+  padding-left: 0;
+}
+
+.Button-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 0.25rem;
+  margin-right: 1rem;
+}
+
+.Button-link {
+  background: var(--colour-orange);
+  border: none;
+  color: var(--colour-white);
+  font-family: var(--font-headings);
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  position: relative;
+}
+
+.Button-link--alt {
+  background: var(--colour-green);
+}
+
+.Button-link::before {
+  color: var(--colour-white);
+  content: " \0003E"; /* > */
+  font-family: var(--font-headings);
+  left: 1rem;
+  position: absolute;
+  top: 25%;
+  transition: all var(--transition-time);
+}
+
+/* print styles */
+
+@media print {
+
+  .Button {
+    display: none;
+  }
+}

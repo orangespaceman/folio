@@ -1,0 +1,57 @@
+/**
+ * @define Block; use strict
+ *
+ * block-level container, provides spacing
+ */
+
+.Block,
+.Block-column {
+  margin-bottom: 2rem;
+}
+
+@media (--medium) {
+
+  .Block,
+  .Block-column {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (--medium) {
+
+  .Block-header--half {
+    padding-right: var(--gutter-small);
+    width: 50%;
+  }
+
+  .Block-header--third {
+    padding-right: var(--gutter-small);
+    width: 33.33%;
+  }
+}
+
+.Block-title {
+  border-bottom: var(--border-width) solid var(--colour-grey-mid);
+  color: var(--colour-orange);
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  padding-bottom: 0.25rem;
+}
+
+@media (--medium) {
+
+  .Block-columns {
+    margin-left: -var(--gutter);
+  }
+
+  .Block-column {
+    display: inline-block;
+    padding-left: var(--gutter);
+    vertical-align: top;
+    width: 33.33%;
+  }
+
+  .Block-column--double {
+    width: 66.66%;
+  }
+}

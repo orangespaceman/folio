@@ -1,0 +1,59 @@
+/**
+ * @define SiteFooter; use strict
+ *
+ * Site Footer
+ */
+
+.SiteFooter {
+  background: var(--colour-black);
+  color: var(--colour-white);
+  font-family: var(--font-headings);
+  position: relative;
+  text-align: center;
+}
+
+@media (--medium) {
+
+  .SiteFooter {
+    text-align: left;
+  }
+}
+
+/* Site Footer - zig zag top */
+
+.SiteFooter::after {
+  background-image: linear-gradient(45deg, var(--colour-grey-light) 33.333%, transparent 33.333%, transparent 66.667%, var(--colour-grey-light) 66.667%), linear-gradient(-45deg, var(--colour-grey-light) 33.333%, transparent 33.333%, transparent 66.667%, var(--colour-grey-light) 66.667%);
+  background-size: 10px 30px;
+  content: "";
+  display: block;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.SiteFooter-inner {
+  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+}
+
+/* contact block */
+
+.SiteFooter-email {
+  color: var(--colour-orange);
+}
+
+.SiteFooter-email,
+.SiteFooter-copy {
+  margin-bottom: 0.5rem;
+}
+
+/* responsive layout */
+
+@media (--medium) {
+
+  .SiteFooter-copy {
+    float: right;
+  }
+}

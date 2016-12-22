@@ -1,0 +1,3 @@
+{% capture description %}{%if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.sitedescription }}{% endif %}{% endcapture %}
+
+    <meta name="description" content="{{description}}">

@@ -1,0 +1,34 @@
+/**
+ * @define Main; use strict
+ *
+ * Maon content area wrapper
+ */
+
+.Main {
+  background: var(--colour-grey-light);
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  position: relative;
+}
+
+@media (--medium) {
+
+  .Main {
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+  }
+}
+
+/* main - zig zag top */
+
+.Main::after {
+  background: linear-gradient(45deg, transparent 33.333%, var(--colour-grey-light) 33.333%, var(--colour-grey-light) 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, var(--colour-grey-light) 33.333%, var(--colour-grey-light) 66.667%, transparent 66.667%);
+  background-size: 10px 30px;
+  content: "";
+  display: block;
+  height: 1rem;
+  position: absolute;
+  top: -1rem;
+  width: 100%;
+  z-index: 1;
+}

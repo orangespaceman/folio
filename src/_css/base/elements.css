@@ -1,0 +1,106 @@
+/**
+ * HTML - basic reset for main element styles
+ */
+
+/* box model: http://goo.gl/quQpCV */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* containers */
+
+body {
+  color: var(--colour-black);
+  font-family: var(--font-body);
+}
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headings);
+}
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  font-family: var(--font-headings-bold);
+}
+
+/* text */
+
+blockquote {
+  border-left: 10px solid var(--colour-grey-mid);
+  padding: 0 1rem;
+}
+
+/* lists */
+
+/* media */
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* links */
+
+a {
+  border-bottom: 1px solid var(--colour-green);
+  color: var(--colour-green);
+  position: relative;
+  text-decoration: none;
+  transition: all var(--transition-time);
+}
+
+a:hover,
+a:focus,
+a:active {
+  border-bottom-color: var(--colour-orange);
+}
+
+a::before {
+  border-bottom: 1px solid transparent; /* alignment */
+  bottom: 0;
+  color: var(--colour-orange);
+  content: " \0003E"; /* > */
+  font-family: var(--font-headings);
+  line-height: 1;
+  opacity: 0;
+  position: absolute;
+  right: -0.3rem;
+  transition: all var(--transition-time);
+}
+
+a:hover::before,
+a:focus::before,
+a:active::before {
+  opacity: 1;
+  right: -0.7rem;
+}
+
+/* remove default link styles */
+
+a.is-arrowless {
+  border: 0;
+}
+
+a.is-arrowless::before {
+  display: none;
+}
+
+/* forms */

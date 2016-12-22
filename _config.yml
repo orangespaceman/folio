@@ -1,8 +1,7 @@
 # Jekyll settings
 source: src
 destination: public
-include:
-  - .htaccess
+includes_dir: _components
 
 # Site settings
 permalink: /:categories/:title/
@@ -15,19 +14,19 @@ sitehandle: thegingerbloke
 
 # defaults
 defaults:
-    - scope:
-        path: ""
-      values:
-        layout: "page"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
 
-    - scope:
-        path: "portfolio"
-      values:
-        layout: "portfolio-detail"
-        category: "portfolio"
+  - scope:
+      path: "_posts/portfolio"
+    values:
+      layout: "portfolio-detail"
+      category: "portfolio"
 
-    - scope:
-        path: "labs"
-      values:
-        layout: "labs-detail"
-        category: "labs"
+  - scope:
+      path: "_posts/labs"
+    values:
+      layout: "labs-detail"
+      category: "labs"

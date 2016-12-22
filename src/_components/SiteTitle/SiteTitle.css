@@ -1,0 +1,120 @@
+/**
+ * @define SiteTitle; use strict
+ *
+ * Site Title
+ */
+
+.SiteTitle {
+  display: inline-block;
+}
+
+.SiteTitle-link {
+  background: var(--colour-orange);
+  border: 0; /* remove default */
+  color: var(--colour-white);
+  display: inline-block;
+  font-family: var(--font-headings);
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+  padding: 0.5rem 1rem 0.5rem 4rem;
+  position: relative;
+}
+
+@media (--small) {
+
+  .SiteTitle-link {
+    font-size: 1rem;
+  }
+}
+
+@media (--medium) {
+
+  .SiteTitle-link {
+    margin-bottom: 0;
+  }
+}
+
+.SiteTitle-link::before {
+  display: none; /* override default link hover */
+}
+
+.SiteTitle-link:hover {
+  background: var(--colour-orange-dark);
+}
+
+.SiteTitle-name {
+  font-family: var(--font-headings-bold);
+}
+
+/* Site title - lines */
+
+.SiteTitle-logo {
+  background: var(--colour-green);
+  bottom: 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 3rem;
+}
+
+.SiteTitle-line {
+  background: var(--colour-white);
+  height: 1px;
+  position: absolute;
+  transition: all 0.1s;
+  width: 30%;
+}
+
+.SiteTitle-lineLeftTop {
+  left: 15%;
+  top: 35%;
+  transform: rotate(-35deg);
+}
+
+.SiteTitle-lineLeftBottom {
+  bottom: 37%;
+  left: 15%;
+  transform: rotate(35deg);
+}
+
+.SiteTitle-lineRightTop {
+  right: 15%;
+  top: 35%;
+  transform: rotate(35deg);
+}
+
+.SiteTitle-lineRightBottom {
+  bottom: 37%;
+  right: 15%;
+  transform: rotate(-35deg);
+}
+
+.SiteTitle-link:hover .SiteTitle-lineLeftTop {
+  left: 12%;
+  top: 40%;
+  transform: rotate(-45deg);
+  width: 45%;
+}
+
+.SiteTitle-link:hover .SiteTitle-lineLeftBottom {
+  bottom: 30%;
+  left: 20%;
+  transform: rotate(90deg);
+  width: 20%;
+}
+
+.SiteTitle-link:hover .SiteTitle-lineRightTop {
+  right: 12%;
+  top: 40%;
+  transform: rotate(45deg);
+  width: 45%;
+}
+
+.SiteTitle-link:hover .SiteTitle-lineRightBottom {
+  bottom: 30%;
+  right: 20%;
+  transform: rotate(-90deg);
+  width: 20%;
+}

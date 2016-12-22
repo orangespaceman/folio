@@ -1,0 +1,72 @@
+/**
+ * @define SiteNav; use strict
+ *
+ * Site Navigation
+ */
+
+.SiteNav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.SiteNav-item {
+  display: inline-block;
+}
+
+.SiteNav-link {
+  background: var(--colour-grey-light);
+  border: 0; /* remove default */
+  border-top: 0 solid var(--colour-grey-light);
+  color: var(--colour-green);
+  display: block;
+  padding: 0.75rem 1rem 0.25rem 0.25rem;
+  position: relative;
+}
+
+@media (--small) {
+
+  .SiteNav-link {
+    padding: 0.75rem 1.5rem 0.25rem 0.4rem;
+  }
+}
+
+.SiteNav-link:hover,
+.SiteNav-link:focus,
+.SiteNav-link.is-active {
+  background: var(--colour-white);
+  border-top-color: var(--colour-green);
+  border-top-width: 0.3rem;
+  text-decoration: none;
+}
+
+.SiteNav-link.is-active {
+  border-top-color: var(--colour-orange);
+  color: var(--colour-orange);
+}
+
+.SiteNav-link::before {
+  display: none;  /* override default link hover */
+}
+
+/* site nav - arrows */
+
+@media (--small) {
+
+  .SiteNav-link.is-active::before {
+    content: "\0003C  \0003E"; /* < > */
+    font-family: var(--font-headings);
+    left: 0.5rem;
+    position: absolute;
+    top: 0.1rem;
+  }
+}
+
+/* print styles */
+
+@media print {
+
+  .SiteNav {
+    display: none;
+  }
+}

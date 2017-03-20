@@ -2,6 +2,28 @@
  * @define Comrades; use strict
  */
 
+/* Comrades - filter */
+
+@media (--medium) {
+
+  .Comrades-header {
+    align-items: center;
+    display: flex;
+  }
+}
+
+/* Comrades - filter */
+
+.Comrades-filter {
+  margin-left: auto;
+}
+
+.Comrades-filterInput {
+  padding: 10px;
+}
+
+/* Comrades - list */
+
 @media (--medium) {
 
   .Comrades-list {
@@ -17,8 +39,14 @@
 .Comrades-item {
   list-style: none;
   margin-bottom: 0.25rem;
+  opacity: 1;
   padding-left: 1.5rem;
   position: relative;
+  transition: all var(--transition-time);
+}
+
+.Comrades-item.is-inactive {
+  display: none;
 }
 
 .Comrades-item::before {

@@ -1,12 +1,22 @@
 
           <div class="Comrades">
+            <div class="Comrades-header">
+              <div class="Editorial">
+                <p>Over the years I've worked with lots of people I'd recommend...</p>
+              </div>
+              <div class="Comrades-filter js-Comrades-filter u-hidden">
+                <label>
+                  Filter:
+                  <input type="text" class="Comrades-filterInput" value="" placeholder="e.g. 'design', 'javascript'" />
+                </label>
+              </div>
+            </div>
             <div class="Editorial">
-              <p>Over the years I've worked with lots of people I'd recommend:</p>
-              <ul class="Comrades-list">
+              <ul class="Comrades-list js-Comrades-list">
                 {% assign comrades = site.data.comrades %}
                 {% for comrade in comrades %}
-                  <li class="Comrades-item">
-                    <a href="{{comrade[1].link}}" class="Comrades-link {{ comrade[1].tags | join: ' ' | prepend: 'js--'}}" rel="external">
+                  <li class="Comrades-item js-Comrades-item" data-skills="{{ comrade[1].tags | join: ' '}}">
+                    <a href="{{comrade[1].link}}" class="Comrades-link" rel="external">
                       {{comrade[1].name}}
                     </a>
                     <span class="Comrades-skills">({{ comrade[1].skills}})</span>

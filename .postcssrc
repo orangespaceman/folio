@@ -1,0 +1,14 @@
+{
+  "map": false,
+  "plugins": {
+    "postcss-easy-import": {
+      "glob": true
+    },
+    "postcss-custom-media",
+    "postcss-custom-properties",
+    "autoprefixer": {
+      "browsers": "> 5%"
+    },
+    "cssnano"
+  }
+}

@@ -34,7 +34,7 @@ function clearCache () {
   return caches.keys()
     .then(function (keys) {
       return Promise.all(keys
-        .filter(function (key) { key.indexOf(cacheVersion) !== 0 })
+        .filter(function (key) { return key.indexOf(cacheVersion) !== 0 })
         .map(function (key) { caches.delete(key) })
       )
     })

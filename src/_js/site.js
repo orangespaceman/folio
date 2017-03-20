@@ -11,6 +11,6 @@ lazyload.init()
 consoleMessage.init()
 relExternal.init()
 feeds.init({
-  host: 'petegoodman.com/api',
+  host: 'api.petegoodman.com',
   protocol: 'https://'
 })

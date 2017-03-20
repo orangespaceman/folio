@@ -7,6 +7,7 @@
 .highlight {
   background: #fff;
   margin: 2rem 0;
+  overflow: scroll;
 }
 
 /* lines */

@@ -16,3 +16,9 @@ feeds.init({
   host: 'api.petegoodman.com',
   protocol: 'https://'
 })
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/service-worker.js')
+  })
+}

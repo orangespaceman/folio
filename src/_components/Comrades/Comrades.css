@@ -4,6 +4,10 @@
 
 /* Comrades - filter */
 
+.Comrades {
+  margin-bottom: var(--gutter);
+}
+
 @media (--medium) {
 
   .Comrades-header {

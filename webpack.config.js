@@ -2,9 +2,13 @@ const webpack = require('webpack')
 const comment = require('./src/_js/comment')
 
 module.exports = {
-  entry: './src/_js/site.js',
+  entry: {
+    'assets/js/site': './src/_js/site.js',
+    'service-worker': './src/_js/service-worker.js'
+  },
   output: {
-    filename: './src/assets/js/site.js'
+    path: './src',
+    filename: '[name].js'
   },
   plugins: [
     new webpack.BannerPlugin(comment),

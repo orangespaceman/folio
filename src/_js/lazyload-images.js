@@ -4,7 +4,7 @@
 
 'use strict'
 
-var layzr = require('layzr.js')
+var layzr = require('layzr.js').default
 
 function init () {
   var instance = layzr({

@@ -17,7 +17,7 @@ technologies:
   - Ajax
   - Animated GIFs
 collaborators:
-  - gabrielbucknall
+  - gabrielmak
 ---
 
 ## Overview

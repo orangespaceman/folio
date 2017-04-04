@@ -50,6 +50,11 @@
   display: none; /* override default link hover */
 }
 
+.Editorial a.is-centred {
+  display: block;
+  text-align: center;
+}
+
 .Editorial img.is-full {
   width: 100%;
 }

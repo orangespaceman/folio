@@ -49,6 +49,14 @@
   margin-bottom: 0.5rem;
 }
 
+.SiteFooter-membershipLink {
+  margin-right: 3px;
+}
+
+.SiteFooter-membershipLink::before {
+  display: none;
+}
+
 /* responsive layout */
 
 @media (--medium) {

@@ -10,6 +10,8 @@
  * 5. Copy sprite.svg file to src/assets/images/sprite.svg
  */
 
+@import "../../assets/icomoon/sprite/sprite.css";
+
 [class^="icon-"],
 [class*=" icon-"] {
   background-image: url("../icomoon/sprite/sprite.svg") !important;

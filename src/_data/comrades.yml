@@ -136,6 +136,12 @@ edharrison:
   skills: Design
   tags: [design]
 
+edisaacs:
+  name: Ed Isaacs
+  link: http://www.optimisticfox.co.uk/
+  skills: Branding and copywriting
+  tags: [branding, copywriting]
+
 eduardodefelipe:
   name: Eduardo De Felipe
   link: http://cargocollective.com/eduardodefelipe
@@ -541,8 +547,8 @@ premasagarrose:
 rebeccabailey:
   name: Rebecca Bailey
   link: http://www.optimisticfox.co.uk/
-  skills: Branding
-  tags: [branding]
+  skills: Branding and copywriting
+  tags: [branding, copywriting]
 
 remishergold:
   name: Remi Shergold

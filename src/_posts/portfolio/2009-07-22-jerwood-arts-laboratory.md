@@ -35,7 +35,9 @@ It pulled in related info from a number of sources, but if anything went wrong t
 
 The site was successful, and was featured in the 2010 D&AD book and Creative Review annual.
 
-For further information see [this article](http://www.creativereview.co.uk/cr-blog/2009/august1/the-ever-evolving-catalogue) from Creative Review.
+For further information see [this article](https://www.creativereview.co.uk/the-ever-evolving-catalogue/) from Creative Review.
+
+Apparently it won some awards from [D&amp;AD](https://www.dandad.org/awards/professional/2010/graphic-design/17957/the-real-time-art-catalogue/) and [Clio](https://clios.com/awards/winner/10249) too.
 
 
 ## Technical solution

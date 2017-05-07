@@ -7,7 +7,7 @@ module.exports = {
     'service-worker': './src/_js/service-worker.js'
   },
   output: {
-    path: './src',
+    path: `${__dirname}/src`,
     filename: '[name].js'
   },
   plugins: [

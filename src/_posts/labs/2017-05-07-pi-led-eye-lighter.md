@@ -47,7 +47,7 @@ The lights are controlled by a Raspberry Pi. The Pi runs two scripts:
 - one to detect who is in (based on data obtained from our router)
 - one to control whether the lights should be on or off
 
-Full setup notes are on [Github](https://github.com/thegingerbloke/button-basher)
+Full setup notes are on [Github](https://github.com/thegingerbloke/eye-lighter)
 
 
 ## Example video

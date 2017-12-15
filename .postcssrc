@@ -6,9 +6,7 @@
     },
     "postcss-custom-media",
     "postcss-custom-properties",
-    "autoprefixer": {
-      "browsers": "> 5%"
-    },
+    "autoprefixer",
     "cssnano"
   }
 }

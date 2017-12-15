@@ -44,7 +44,6 @@
 /* print styles */
 
 @media print {
-
   .Button {
     display: none;
   }

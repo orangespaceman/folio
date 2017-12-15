@@ -10,7 +10,6 @@
 }
 
 @media (--medium) {
-
   .Block,
   .Block-column {
     margin-bottom: 1rem;
@@ -18,7 +17,6 @@
 }
 
 @media (--medium) {
-
   .Block-header--half {
     padding-right: var(--gutter-small);
     width: 50%;
@@ -39,7 +37,6 @@
 }
 
 @media (--medium) {
-
   .Block-columns {
     margin-left: -var(--gutter);
   }

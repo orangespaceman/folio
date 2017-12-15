@@ -13,7 +13,6 @@
 }
 
 @media (--medium) {
-
   .PageTitle {
     padding: 3rem 0;
   }
@@ -31,21 +30,25 @@
 }
 
 @media (--small) {
-
   .PageTitle--featured {
     padding-bottom: 30%;
   }
 }
 
 @media (--medium) {
-
   .PageTitle--featured {
     padding-bottom: 15%;
   }
 }
 
 .PageTitle--featured::after {
-  background-image: repeating-linear-gradient(-45deg, transparent 0%, transparent 25%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.1) 50%);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0%,
+    transparent 25%,
+    rgba(0, 0, 0, 0.1) 25%,
+    rgba(0, 0, 0, 0.1) 50%
+  );
   background-size: 20px 20px;
   bottom: 0;
   content: "";
@@ -68,7 +71,6 @@
 }
 
 @media (--small) {
-
   .PageTitle-heading {
     font-size: 2rem;
   }
@@ -86,7 +88,7 @@
 }
 
 .PageTitle-heading a::before {
-  display: none;  /* override default link hover */
+  display: none; /* override default link hover */
 }
 
 /* page title - home modifier */

@@ -10,7 +10,6 @@
 }
 
 @media (--medium) {
-
   .SiteHeader {
     text-align: left;
   }
@@ -21,7 +20,6 @@
 }
 
 @media (--medium) {
-
   .SiteHeader-inner {
     padding-bottom: 1.5rem;
   }
@@ -34,7 +32,6 @@
 }
 
 @media (--medium) {
-
   .SiteHeader-title {
     margin-bottom: 0;
   }
@@ -43,7 +40,6 @@
 /* site header - nav */
 
 @media (--medium) {
-
   .SiteHeader-nav {
     bottom: 0;
     position: absolute;

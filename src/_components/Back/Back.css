@@ -16,16 +16,15 @@
   font-family: var(--font-headings);
   left: -0.7rem;
   line-height: 1;
-  opacity: 1;  /* override default link hover */
+  opacity: 1; /* override default link hover */
   position: absolute;
-  right: auto;  /* override default link hover */
+  right: auto; /* override default link hover */
   transition: all var(--transition-time);
 }
 
 /* print styles */
 
 @media print {
-
   .Back {
     display: none;
   }

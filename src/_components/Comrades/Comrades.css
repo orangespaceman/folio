@@ -9,7 +9,6 @@
 }
 
 @media (--medium) {
-
   .Comrades-header {
     align-items: center;
     display: flex;
@@ -29,7 +28,6 @@
 /* Comrades - list */
 
 @media (--medium) {
-
   .Comrades-list {
     column-count: 3;
     column-gap: 2rem;
@@ -67,7 +65,7 @@
 }
 
 .Comrades-link::before {
-  display: none;  /* override default link hover */
+  display: none; /* override default link hover */
 }
 
 .Comrades-skills {

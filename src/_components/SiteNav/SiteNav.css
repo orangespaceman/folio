@@ -25,7 +25,6 @@
 }
 
 @media (--small) {
-
   .SiteNav-link {
     padding: 0.75rem 1.5rem 0.25rem 0.4rem;
   }
@@ -46,13 +45,12 @@
 }
 
 .SiteNav-link::before {
-  display: none;  /* override default link hover */
+  display: none; /* override default link hover */
 }
 
 /* site nav - arrows */
 
 @media (--small) {
-
   .SiteNav-link.is-active::before {
     content: "\0003C  \0003E"; /* < > */
     font-family: var(--font-headings);
@@ -65,7 +63,6 @@
 /* print styles */
 
 @media print {
-
   .SiteNav {
     display: none;
   }

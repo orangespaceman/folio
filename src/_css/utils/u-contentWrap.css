@@ -14,7 +14,6 @@
 }
 
 @media (--medium) {
-
   .u-contentWrap {
     padding-left: var(--gutter);
     padding-right: var(--gutter);

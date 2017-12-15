@@ -2,21 +2,21 @@
  * Lazyload images
  */
 
-'use strict'
+"use strict";
 
-var layzr = require('layzr.js').default
+var layzr = require("layzr.js").default;
 
-function init () {
+function init() {
   var instance = layzr({
     threshold: 20
-  })
+  });
 
   instance
     .update()
     .check()
-    .handlers(true)
+    .handlers(true);
 }
 
 module.exports = {
   init: init
-}
+};

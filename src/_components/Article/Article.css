@@ -12,7 +12,6 @@
 }
 
 @media (--medium) {
-
   .Article-title {
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -22,7 +21,6 @@
 /* Article - columns */
 
 @media (--medium) {
-
   .Article {
     margin-left: -var(--gutter);
   }
@@ -61,7 +59,6 @@
 }
 
 @media (--small) {
-
   .Article-screenshot--mobile {
     display: inline-block;
     vertical-align: top;

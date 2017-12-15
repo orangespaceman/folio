@@ -21,14 +21,12 @@
 }
 
 @media (--small) {
-
   .SiteTitle-link {
     font-size: 1rem;
   }
 }
 
 @media (--medium) {
-
   .SiteTitle-link {
     margin-bottom: 0;
   }

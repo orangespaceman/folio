@@ -3,7 +3,7 @@ title: Arduino Waving
 excerpt: Making a thing do stuff with an Arduino
 tag: featured-lab
 links:
-  code: https://github.com/thegingerbloke/arduino-waving
+  code: https://github.com/making-things-club/arduino-waving
 images:
   featured: featured.jpg
   thumbs:

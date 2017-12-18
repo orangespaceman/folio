@@ -2,7 +2,6 @@
 title: Brighton Astro
 excerpt: The website for our local astronomy group
 link: https://www.brightonastro.com
-tag: featured-project
 images:
   featured: featured.jpg
   thumbs:

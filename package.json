@@ -16,8 +16,7 @@
     "watch:css":
       "chokidar 'src/_components/**/*.css' 'src/_css/**/*.css' -c 'npm run build:css'",
     "watch:js": "npm run build:js -- --watch",
-    "watch": "npm-run-all --parallel watch:*",
-    "precommit": "lint-staged"
+    "watch": "npm-run-all --parallel watch:*"
   },
   "dependencies": {
     "layzr.js": "^2.2.2",
@@ -33,7 +32,6 @@
     "eslint": "^4.13.1",
     "eslint-config-prettier": "^2.9.0",
     "husky": "^0.14.3",
-    "lint-staged": "^6.0.0",
     "npm-run-all": "^4.0.2",
     "postcss-cli": "^4.1.1",
     "postcss-custom-media": "^6.0.0",
@@ -45,8 +43,5 @@
     "stylelint-config-suitcss": "^12.0.0",
     "stylelint-selector-bem-pattern": "^2.0.0",
     "webpack": "^3.10.0"
-  },
-  "lint-staged": {
-    "*.{js,json,css,md}": ["prettier --write", "git add"]
   }
 }

@@ -3,8 +3,10 @@
  */
 
 .CV {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  background: var(--colour-white);
+  color: var(--colour-black);
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .CV h1,

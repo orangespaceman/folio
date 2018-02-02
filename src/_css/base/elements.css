@@ -17,7 +17,8 @@ html {
 /* containers */
 
 body {
-  color: var(--colour-black);
+  background: var(--colour-black);
+  color: var(--colour-white);
   font-family: var(--font-body);
 }
 

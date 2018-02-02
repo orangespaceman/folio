@@ -1,0 +1,30 @@
+/**
+* @define Samosa;
+ *
+ * Samosa links
+ */
+
+.Samosa {
+  margin-bottom: 2rem;
+}
+
+.Samosa-label {
+  margin-bottom: 0.2rem;
+}
+
+.Samosa-item {
+  display: inline-block;
+  padding: 0.2rem 0;
+}
+
+.Samosa-item::after {
+  content: "/";
+}
+
+.Samosa-item:last-child::after {
+  content: "";
+}
+
+.Samosa-link::before {
+  display: none; /* override default link hover */
+}

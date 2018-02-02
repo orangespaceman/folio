@@ -66,18 +66,6 @@ Webfont versions have been downloaded from [fontpro](http://fontpro.com/raleway-
 * [https://everythingfonts.com/ttf-to-woff](https://everythingfonts.com/ttf-to-woff)
 * [https://everythingfonts.com/ttf-to-woff2](https://everythingfonts.com/ttf-to-woff2)
 
-### SVG Sprite
-
-The site uses an Icomoon SVG Sprite for certain icons
-
-To update:
-
-1. Visit the [icomoon app](https://icomoon.io/)
-2. Upload the json file - `src/assets/icomoon/selection.json`
-3. Select new icons, download new SVG zip
-4. Overwrite files in `src/assets/icomoon` with zip contents
-5. Copy sprite.svg file to `src/assets/images/sprite.svg`
-
 ## Posts
 
 When adding a new portfolio project or lab, the following images need prepping:

@@ -9,15 +9,15 @@ layout: cv
 
 ### Personal Statement
 
-I am a developer with over 10 years of professional experience. I also teach a range of development skills, from beginners learning to code through to complex technical subjects. I have an attention to detail and an eye for perfection. I have been involved in every stage of large-scale projects, from the initial scoping to delivery and client handover. I have a broad range of practical skills and knowledge.
+I have been working in web development since 2005. I also teach a range of development skills, from beginners learning to code through to complex technical subjects. I have an attention to detail and an eye for perfection. I have been involved in every stage of large-scale projects, from the initial scoping to delivery and client handover. I have a broad range of practical skills and knowledge.
 
 
 ### Technical Skills
 
 - HTML and CSS: PostCSS, BEM, SUIT CSS, SCSS, Less, CSS Modules, cross-browser/device responsive layouts
-- JavaScript: React, Redux, Backbone.js, Angular.js, Require.js, browserify, Node.js, Express, jQuery, AJAX, websockets
+- JavaScript: React, React Native, Redux, Backbone.js, Angular.js, Require.js, Webpack, browserify, ES6, Node.js, Express, jQuery, AJAX, websockets
 - PHP and MySQL: Laravel, Slim, Code Igniter, Zend Framework, Composer
-- Git, npm, Gulp
+- Git, npm, Gulp, Grunt
 - Unit testing and CI
 - Agile workflow, UX
 - Writing and teaching technical material for academic and professional courses
@@ -27,7 +27,7 @@ I am a developer with over 10 years of professional experience. I also teach a r
 
 #### June 2011 - Present: Freelance web developer, Brighton
 
-I run my own company – f90 ltd – through which I have worked on a range of projects for numerous clients including digital design agencies based in London and Brighton. My clients have included Dare, Decoded, Bilbary and Langland, working on projects for Team GB, Sony, EE and a number of charities and not-for-profit organisations.
+I run my own company – f90 ltd – through which I have worked on a range of projects for numerous clients including digital design agencies based in London and Brighton. I have worked on projects for On Running, Team GB and Swell/Surfdome, along with a number of charities and not-for-profit organisations.
 
 #### March 2010 - Present: Visiting Lecturer, City University, London
 

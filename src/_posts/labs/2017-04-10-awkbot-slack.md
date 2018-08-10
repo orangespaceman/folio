@@ -20,7 +20,7 @@ technologies:
 
 A Slack bot written in Python that does...things.
 
-This has been created for use in our [studio](https://getawkward.co.uk/).
+This has been created for use in our studio.
 
 There are two initial pieces of functionality, but it would be simple to extend in future.
 

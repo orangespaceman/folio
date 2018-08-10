@@ -9,6 +9,7 @@ images:
   thumbs:
     desktop: thumb-desktop.jpg
   photos:
+    - front-2.jpg
     - front.jpg
     - back.jpg
     - services-1.jpg

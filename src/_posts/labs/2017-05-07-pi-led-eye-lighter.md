@@ -34,7 +34,7 @@ collaborators:
 
 ## Overview
 
-There are a group of us based in [Studio Awkward](https://getawkward.co.uk).
+There are a group of people based in Studio Awkward.
 
 A while ago, Ruth drew _[shit portraits](https://www.instagram.com/shitportraits.ruth/)_&trade; of us all, and put them in a frame on the wall.
 

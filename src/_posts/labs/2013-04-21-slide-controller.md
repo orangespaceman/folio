@@ -3,7 +3,7 @@ title: Slide Controller
 excerpt: Node.js-based controller for HTML slideshows - S5 and Google slides
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/slide-controller
+ code: https://github.com/orangespaceman/slide-controller
 images:
   featured: featured.jpg
   thumbs:

@@ -2,7 +2,7 @@
 title: Tweet Munger Custom Translations
 excerpt: Translate (mung) tweets from a specific user account through a custom set of translations, then re-tweet from a new account.
 links:
- code: https://github.com/thegingerbloke/tweet-munger-custom-translations/
+ code: https://github.com/orangespaceman/tweet-munger-custom-translations/
 images:
   featured: featured.jpg
   thumbs:

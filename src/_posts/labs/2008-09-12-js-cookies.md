@@ -3,7 +3,7 @@ title: JS Cookies
 excerpt: The script I tend to use when dealing with cookies. There are plenty out there, but this offers a couple of extra functions you don't always find.
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/js-cookies
+ code: https://github.com/orangespaceman/js-cookies
 images:
   featured: featured.jpg
   thumbs:

@@ -2,7 +2,7 @@
 title: Single Editable Page
 excerpt: A very simple HTML page, editable via the browser
 links:
- code: https://github.com/thegingerbloke/single-editable-page
+ code: https://github.com/orangespaceman/single-editable-page
 images:
   featured: featured.jpg
   thumbs:

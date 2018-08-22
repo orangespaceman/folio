@@ -3,8 +3,8 @@ title: Video slideshow
 excerpt: Proof-of-concept full-screen HTML slideshow (using fading transitions) with mixed video and image content
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/video-slides-fading
- demo: https://thegingerbloke.github.io/video-slides-fading/
+ code: https://github.com/orangespaceman/video-slides-fading
+ demo: https://orangespaceman.github.io/video-slides-fading/
 images:
   featured: featured.jpg
   thumbs:

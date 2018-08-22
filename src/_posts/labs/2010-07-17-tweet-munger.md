@@ -2,7 +2,7 @@
 title: Tweet Munger
 excerpt: Translate (mung) tweets from a specific user account through several languages and back, then re-tweet from a new account.
 links:
- code: https://github.com/thegingerbloke/tweet-munger
+ code: https://github.com/orangespaceman/tweet-munger
 images:
   featured: featured.jpg
   thumbs:
@@ -14,9 +14,9 @@ technologies:
 
 ## Overview
 
-Another project I created some time last year, [Tweet Munger](https://github.com/thegingerbloke/tweet-munger) takes the Twitter feed from a specified user, translates it through several langauges and back into its original tongue, then re-posts the results to a new twitter account.
+Another project I created some time last year, [Tweet Munger](https://github.com/orangespaceman/tweet-munger) takes the Twitter feed from a specified user, translates it through several langauges and back into its original tongue, then re-posts the results to a new twitter account.
 
-It's easy to set up a new account, [the code is available in Github](https://github.com/thegingerbloke/tweet-munger) with instructions for how to set it up.  You'll need a server running PHP, and the ability to run crontab (unless you want to hit refresh every 10 minutes).  It uses <strike>Google Translate API</strike> Bing's translate API to convert each tweet. (The Google Translate API is to be retired in December 2011).
+It's easy to set up a new account, [the code is available in Github](https://github.com/orangespaceman/tweet-munger) with instructions for how to set it up.  You'll need a server running PHP, and the ability to run crontab (unless you want to hit refresh every 10 minutes).  It uses <strike>Google Translate API</strike> Bing's translate API to convert each tweet. (The Google Translate API is to be retired in December 2011).
 
 ## Example
 

@@ -3,7 +3,7 @@ title: One-click Resize
 excerpt: A Chrome extension that resizes your browser to a default size with a single click
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/one-click-resize
+ code: https://github.com/orangespaceman/one-click-resize
 images:
   featured: featured.jpg
   thumbs:

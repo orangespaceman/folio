@@ -3,8 +3,7 @@ title: Home
 ---
 
     {% include PageTitle/PageTitle.html
-        modifier="home"
-        title="__Pete Goodman__ - freelance _web developer_ and _teacher_ based in Brighton, UK" %}
+        title="__Pete__ // f90 _Freelance developer based in Brighton, UK_" %}
 
     {% include Main/Main-open.html %}
 
@@ -22,13 +21,13 @@ title: Home
             --><div class="Block-column" aria-labelledby="latest-labs">
               {% include Block/Block-header.html title="Latest labs" slug="latest-labs" %}
               {% assign featuredLab = site.tags["featured-lab"][0] %}
-              {% include Listing/Listing--item.html item=featuredLab %}    
+              {% include Listing/Listing--item.html item=featuredLab %}
             </div><!--
 
             --><div class="Block-column" aria-labelledby="latest-work">
               {% include Block/Block-header.html title="Latest work" slug="latest-work" %}
               {% assign featuredProject = site.tags["featured-project"][0] %}
-              {% include Listing/Listing--item.html item=featuredProject %}            
+              {% include Listing/Listing--item.html item=featuredProject %}
             </div>
           </div>
         </section>

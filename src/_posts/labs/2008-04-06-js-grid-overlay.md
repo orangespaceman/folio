@@ -2,8 +2,8 @@
 title: JS Grid Overlay
 excerpt: A handy javascript tool allowing you to overlay a grid or graphic to check pixel perfection across browsers
 links:
- code: https://github.com/thegingerbloke/js-grid-overlay
- demo: https://thegingerbloke.github.io/js-grid-overlay/
+ code: https://github.com/orangespaceman/js-grid-overlay
+ demo: https://orangespaceman.github.io/js-grid-overlay/
 images:
   featured: featured.png
   thumbs:
@@ -43,7 +43,7 @@ grid.init("box", "./grid.gif", "left top", "no-repeat");
 
 Try it on the example below - click in the iframe and then press **Control** and **;**
 
-{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/js-grid-overlay/" ratio="60" %}
+{% include ArticleIframe/ArticleIframe.html src="https://orangespaceman.github.io/js-grid-overlay/" ratio="60" %}
 
 ## One function call for the entire site:
 

@@ -3,7 +3,7 @@ title: Favourite Question
 excerpt: What's your favourite idea for a pointless website?
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/favouriteQ
+ code: https://github.com/orangespaceman/favouriteQ
  demo:
 images:
   featured: featured.jpg

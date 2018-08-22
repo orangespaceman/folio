@@ -3,21 +3,23 @@ title: CV
 layout: cv
 ---
 
-# Pete Goodman
+# CV
 
-## petegoodman.com / pete@petegoodman.com
+## f90.co.uk / p@f90.co.uk
 
 ### Personal Statement
 
-I have been working in web development since 2005. I also teach a range of development skills, from beginners learning to code through to complex technical subjects. I have an attention to detail and an eye for perfection. I have been involved in every stage of large-scale projects, from the initial scoping to delivery and client handover. I have a broad range of practical skills and knowledge.
+I have been working in web development since 2005. I also teach a range of development skills, from beginners learning to code through to complex technical subjects. I have been involved in every stage of large-scale projects, from the initial scoping to delivery and client handover.
 
 
 ### Technical Skills
 
 - HTML and CSS: PostCSS, BEM, SUIT CSS, SCSS, Less, CSS Modules, cross-browser/device responsive layouts
-- JavaScript: React, React Native, Redux, Backbone.js, Angular.js, Require.js, Webpack, browserify, ES6, Node.js, Express, jQuery, AJAX, websockets
+- JavaScript: React, React Native, Redux, Backbone.js, Angular.js, Require.js, Webpack, browserify, ES6, jQuery, AJAX, websockets
+- Node, npm
+- Python, Django
 - PHP and MySQL: Laravel, Slim, Code Igniter, Zend Framework, Composer
-- Git, npm, Gulp, Grunt
+- Git
 - Unit testing and CI
 - Agile workflow, UX
 - Writing and teaching technical material for academic and professional courses

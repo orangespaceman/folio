@@ -3,7 +3,7 @@ title: Trigger warning
 excerpt: A node/websockets thing that displays a trigger warning message and plays a klaxon sound when a bad thing happens.
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/trigger-warning
+ code: https://github.com/orangespaceman/trigger-warning
 images:
   featured: featured.jpg
   thumbs:
@@ -27,7 +27,7 @@ Display a trigger warning message and play a klaxon sound when a bad thing happe
 
 It can be embedded on any web page, and triggered remotely.
 
-Brief setup notes are on [Github](https://github.com/thegingerbloke/trigger-warning)
+Brief setup notes are on [Github](https://github.com/orangespaceman/trigger-warning)
 
 
 ## Example video

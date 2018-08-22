@@ -3,7 +3,7 @@ title: Eye Lighter
 excerpt: Visual display of who is currently working in Studio Awkward, with a programmable LED strip
 tag: featured-lab
 links:
-  code: https://github.com/thegingerbloke/eye-lighter
+  code: https://github.com/orangespaceman/eye-lighter
 images:
   featured: featured.jpg
   thumbs:
@@ -34,7 +34,7 @@ collaborators:
 
 ## Overview
 
-There are a group of people based in Studio Awkward.
+There were a group of people based in Studio Awkward.
 
 A while ago, Ruth drew _[shit portraits](https://www.instagram.com/shitportraits.ruth/)_&trade; of us all, and put them in a frame on the wall.
 
@@ -47,7 +47,7 @@ The lights are controlled by a Raspberry Pi. The Pi runs two scripts:
 - one to detect who is in (based on data obtained from our router)
 - one to control whether the lights should be on or off
 
-Full setup notes are on [Github](https://github.com/thegingerbloke/eye-lighter)
+Full setup notes are on [Github](https://github.com/orangespaceman/eye-lighter)
 
 
 ## Example video

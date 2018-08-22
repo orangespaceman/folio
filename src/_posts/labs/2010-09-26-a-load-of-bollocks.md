@@ -2,8 +2,7 @@
 title: A Load of Bollocks
 excerpt: A site to display animated gifs full-screen in 'modern' browsers
 links:
- code: https://github.com/thegingerbloke/aloadofbollocks
- demo: http://aloadofbollocks.com/
+ code: https://github.com/orangespaceman/aloadofbollocks
 images:
   featured: featured.jpg
   thumbs:

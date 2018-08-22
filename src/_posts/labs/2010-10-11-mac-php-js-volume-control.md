@@ -3,7 +3,7 @@ title: Mac PHP/JS Volume Control
 excerpt: Control OS X system volume from a browser
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/mac-volume-control-php-js
+ code: https://github.com/orangespaceman/mac-volume-control-php-js
 images:
   featured: featured.jpg
   thumbs:
@@ -25,7 +25,7 @@ technologies:
 
 ## Overview
 
-Probably the best (or most useful) part of the [Ghetto Blaster](https://petegoodman.com/labs/ghetto-blaster-php-js-soundboard/) thing I put together is the ability to control the Mac system volume remotely.  This is a simple mobile-optimised site that contains just this functionality.
+Probably the best (or most useful) part of the [Ghetto Blaster](https://f90.co.uk/labs/ghetto-blaster-php-js-soundboard/) thing I put together is the ability to control the Mac system volume remotely.  This is a simple mobile-optimised site that contains just this functionality.
 
 The technology behind it is quite straightforward - JavaScript intercepting a click on an HTML link, sends an Ajax call to a PHP script that executes a command line call via [shell_exec](http://php.net/manual/en/function.shell-exec.php) to trigger an applescript.
 

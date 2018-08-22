@@ -3,8 +3,8 @@ title: Awe-inspring Synonyms
 excerpt: A Chrome extension that automatically replaces the word 'awesome' with a random (but superior) synonym
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/awe-inspiring-synonyms-extension
- demo: https://thegingerbloke.github.io/awe-inspiring-synonyms-extension/
+ code: https://github.com/orangespaceman/awe-inspiring-synonyms-extension
+ demo: https://orangespaceman.github.io/awe-inspiring-synonyms-extension/
 images:
   featured: featured.png
   thumbs:
@@ -31,4 +31,4 @@ To find the replaced words more easily, click the button in the toolbar to toggl
 
 ## Demo
 
-{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/awe-inspiring-synonyms-extension/" ratio="90" %}
+{% include ArticleIframe/ArticleIframe.html src="https://orangespaceman.github.io/awe-inspiring-synonyms-extension/" ratio="90" %}

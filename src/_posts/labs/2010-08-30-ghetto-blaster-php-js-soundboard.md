@@ -3,7 +3,7 @@ title: "Ghetto blaster: a PHP/JavaScript soundboard"
 excerpt: A simple soundboard that can be accessed through any web browser, which allows anyone to play a sound clip or synthesised speech through a capable web server.
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/ghetto-blaster
+ code: https://github.com/orangespaceman/ghetto-blaster
 images:
   featured: featured.jpg
   thumbs:

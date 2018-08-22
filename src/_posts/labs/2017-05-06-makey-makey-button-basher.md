@@ -3,7 +3,7 @@ title: Button Basher
 excerpt: Using a Makey Makey to control our studio mac mini
 tag: featured-lab
 links:
-  code: https://github.com/thegingerbloke/button-basher
+  code: https://github.com/orangespaceman/button-basher
 images:
   featured: featured.jpg
   thumbs:
@@ -31,7 +31,7 @@ I set up a Makey Makey with custom keyboard mappings to control Spotify and play
 
 In addition, the big red button in the middle glows faintly. Just because.
 
-Full setup notes are on [Github](https://github.com/thegingerbloke/button-basher)
+Full setup notes are on [Github](https://github.com/orangespaceman/button-basher)
 
 ## Example video
 

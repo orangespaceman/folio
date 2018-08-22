@@ -2,7 +2,7 @@
 title: Unit Deconverter
 excerpt: Converts any unit into a useless measurement
 links:
- code: https://github.com/thegingerbloke/unit-deconverter
+ code: https://github.com/orangespaceman/unit-deconverter
  demo: https://madebyloosers.github.io/unit-deconverter/
 images:
   featured: featured.png

@@ -2,7 +2,7 @@
 title: Web Development Training
 excerpt: Teaching web development
 tag: featured-project
-link: https://github.com/thegingerbloke/training-notes
+link: https://github.com/orangespaceman/training-notes
 images:
   featured: featured.jpg
   thumbs:

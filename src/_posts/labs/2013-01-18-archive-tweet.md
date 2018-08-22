@@ -3,7 +3,7 @@ title: Archive Tweet
 excerpt: Retweet things from another account a set time after they were originally posted
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/archive-tweet
+ code: https://github.com/orangespaceman/archive-tweet
 images:
   featured: featured.jpg
   thumbs:

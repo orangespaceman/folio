@@ -2,7 +2,7 @@
 title: Responsive Astronomy Picture of the Day
 excerpt: A responsive (mobile-optimised) version of the Astronomy Picture of the Day web page
 links:
- code: https://github.com/thegingerbloke/responsive-astronomy-picture-of-the-day
+ code: https://github.com/orangespaceman/responsive-astronomy-picture-of-the-day
 images:
   featured: featured.jpg
   thumbs:

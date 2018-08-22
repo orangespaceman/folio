@@ -3,7 +3,7 @@ title: Javascript Canvas Letters
 excerpt: Animated pixel letters created with JavaScript and canvas
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/canvas-letters
+ code: https://github.com/orangespaceman/canvas-letters
  demo:
 images:
   featured: featured.png
@@ -20,7 +20,7 @@ technologies:
 
 Here's a little JavaScript experiment with canvas to animate letters.
 
-{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/canvas-letters/full-screen/" ratio="90" %}
+{% include ArticleIframe/ArticleIframe.html src="https://orangespaceman.github.io/canvas-letters/full-screen/" ratio="90" %}
 
 Each letter is made up of a small matrix containing 35 numbers, representing 5 columns and seven rows.  These are then stored in JavaScript arrays.  The image below displays how the letter A' is turned into an array.
 
@@ -53,4 +53,4 @@ canvasElement.init({
 
 It's also possible to create a configurable tool to allow the display of letters to be changed on the fly
 
-{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/canvas-letters/inline/" ratio="170" %}
+{% include ArticleIframe/ArticleIframe.html src="https://orangespaceman.github.io/canvas-letters/inline/" ratio="170" %}

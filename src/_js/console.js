@@ -10,7 +10,7 @@ function init() {
       "Hello there!",
       "If you are keen to see the source JS files, take a look at" +
         " the github repo:",
-      "https://github.com/thegingerbloke/folio"
+      "https://github.com/orangespaceman/folio"
     ];
 
     var styles = [

@@ -3,7 +3,7 @@ title: "XVMB: XVMB Vault of Marketing Bollocks"
 excerpt: A site that features some of the 'best' bits of marketing bollocks that we've experienced in recent years.
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/xvmb
+ code: https://github.com/orangespaceman/xvmb
 images:
   featured: featured.jpg
   thumbs:

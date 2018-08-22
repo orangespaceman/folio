@@ -3,8 +3,8 @@ title: Konami Code
 excerpt: Adding the Konami Code to a site
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/konami-code
- demo: https://thegingerbloke.github.io/konami-code/
+ code: https://github.com/orangespaceman/konami-code
+ demo: https://orangespaceman.github.io/konami-code/
 images:
   featured: featured.jpg
   thumbs:
@@ -29,4 +29,4 @@ Give it a go - click in the iframe below then enter the Konami code
 
 ***
 
-{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/konami-code/" ratio="80" %}
+{% include ArticleIframe/ArticleIframe.html src="https://orangespaceman.github.io/konami-code/" ratio="80" %}

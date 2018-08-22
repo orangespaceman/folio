@@ -3,7 +3,7 @@ title: Plane Spotter
 excerpt: A Node app to identify nearby aeroplanes with a Raspberry Pi, Dump1090, Node, an LCD touchscreen and some magic
 tag: featured-lab
 links:
-  code: https://github.com/thegingerbloke/plane-spotter
+  code: https://github.com/orangespaceman/plane-spotter
 images:
   featured: featured.jpg
   thumbs:
@@ -55,7 +55,7 @@ The node app is set up on the Pi to auto-start on boot, opening the site in Chro
 
 By default the images are shown full-screen, with a tap on the touchscreen toggling the display of further information about the flight.
 
-Full setup notes are on [Github](https://github.com/thegingerbloke/plane-spotter)
+Full setup notes are on [Github](https://github.com/orangespaceman/plane-spotter)
 
 ## Example video
 

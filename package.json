@@ -1,9 +1,9 @@
 {
-  "name": "petegoodman.com",
+  "name": "f90.co.uk",
   "version": "3.2.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:thegingerbloke/folio.git"
+    "url": "git@github.com:orangespaceman/folio.git"
   },
   "scripts": {
     "build:css": "postcss src/_css/site.css --output src/assets/css/site.css",

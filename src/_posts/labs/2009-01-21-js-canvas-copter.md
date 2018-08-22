@@ -3,8 +3,8 @@ title: JavaScript Copter, with Canvas
 excerpt: An attempt to recreate the classic flash 'copter' game using Javascript and canvas
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/js-canvas-copter
- demo: https://thegingerbloke.github.io/js-canvas-copter/
+ code: https://github.com/orangespaceman/js-canvas-copter
+ demo: https://orangespaceman.github.io/js-canvas-copter/
 images:
   featured: featured.png
   thumbs:
@@ -20,7 +20,7 @@ As a big fan of both the [original flash copter game](http://www.coptergame.net/
 
 Click anywhere in the game to start.  Hold the mouse button down to rise, let go to fall.
 
-{% include ArticleIframe/ArticleIframe.html src="https://thegingerbloke.github.io/js-canvas-copter/" ratio="80" %}
+{% include ArticleIframe/ArticleIframe.html src="https://orangespaceman.github.io/js-canvas-copter/" ratio="80" %}
 
 To play this game you need to use a browser that supports the canvas element.
 

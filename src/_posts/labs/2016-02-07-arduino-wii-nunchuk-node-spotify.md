@@ -3,7 +3,7 @@ title: Arduino Wii Nunchuk Node Spotify
 excerpt: Control Spotify using an Arduino and a Wii Nunchuk
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/arduino-wii-nunchuk-node-spotify
+ code: https://github.com/orangespaceman/arduino-wii-nunchuk-node-spotify
 images:
   featured: featured.jpg
   thumbs:
@@ -45,7 +45,7 @@ The sketch assumes the use of a Wii Nunchuk, but this could be replaced with ano
 
 The RGB LED is completely superfluous and could easily be removed.
 
-Brief setup notes are on [Github](https://github.com/thegingerbloke/arduino-wii-nunchuk-node-spotify)
+Brief setup notes are on [Github](https://github.com/orangespaceman/arduino-wii-nunchuk-node-spotify)
 
 
 ## Example video

@@ -3,8 +3,8 @@ title: Raspberry Pi Python Garmin Strava
 excerpt: Automatically upload activities from a Garmin GPS watch to Strava when it is plugged into a Raspberry Pi
 tag: featured-lab
 links:
- code: https://github.com/thegingerbloke/pi-python-garmin-strava
- demo: https://www.strava.com/athletes/thegingerbloke
+ code: https://github.com/orangespaceman/pi-python-garmin-strava
+ demo: https://www.strava.com/athletes/orangespaceman
 images:
   featured: featured.jpg
   thumbs:
@@ -49,4 +49,4 @@ deactivate
 
 The Python script is responsible for accessing files on the watch, and interacting with the Strava API.
 
-Full setup notes are on [Github](https://github.com/thegingerbloke/pi-python-garmin-strava) and my Strava account is [here](https://www.strava.com/athletes/thegingerbloke)
+Full setup notes are on [Github](https://github.com/orangespaceman/pi-python-garmin-strava) and my Strava account is [here](https://www.strava.com/athletes/orangespaceman)

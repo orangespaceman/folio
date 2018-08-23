@@ -8,8 +8,8 @@ permalink: /:categories/:title/
 
 # custom data - site details
 sitehost: https://f90.co.uk
-sitetitle: f90 // Brighton-based freelance developer
-sitedescription: Online portfolio for f90 // freelance developer based in Brighton, UK
+sitetitle: Pete // f90 | Brighton-based freelance developer
+sitedescription: Online portfolio for Pete // f90 - a freelance developer based in Brighton, UK
 sitehandle: orangespaceman
 
 quiet:    false

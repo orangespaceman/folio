@@ -1,5 +1,5 @@
 ---
-title: Voicekitbot
+title: Button Recorder
 excerpt: Run a custom python script on a Google Voice Kit (Raspberry Pi) to play and record silly sounds, using the Button Basher
 tag: featured-lab
 links:

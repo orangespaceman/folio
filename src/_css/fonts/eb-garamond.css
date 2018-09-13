@@ -1,0 +1,13 @@
+/**
+ * EB Garamond
+ * https://www.fontsquirrel.com/fonts/eb-garamond
+ * See readme for more detail
+ */
+
+ @font-face {
+  font-family: "EB-Garamond";
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/eb-garamond/eb-garamond.woff2') format('woff2'),
+       url('../fonts/eb-garamond/eb-garamond.woff') format('woff');
+}

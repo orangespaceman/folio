@@ -57,6 +57,8 @@ yarn run lint:js
 
 ### Fonts
 
+#### Headings
+
 The main heading font is [Raleway](https://www.theleagueofmoveabletype.com/raleway)
 
 Webfont versions have been downloaded from [fontpro](http://fontpro.com/raleway-font-16024)
@@ -65,6 +67,13 @@ Webfont versions have been downloaded from [fontpro](http://fontpro.com/raleway-
 
 * [https://everythingfonts.com/ttf-to-woff](https://everythingfonts.com/ttf-to-woff)
 * [https://everythingfonts.com/ttf-to-woff2](https://everythingfonts.com/ttf-to-woff2)
+
+#### Body
+
+The main body font is [EB Garamond](https://www.fontsquirrel.com/fonts/eb-garamond)
+
+This has been downloaded from and converted with Font Squirrel
+
 
 ## Posts
 

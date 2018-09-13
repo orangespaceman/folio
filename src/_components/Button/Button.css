@@ -35,10 +35,15 @@
   color: var(--colour-white);
   content: " \0003E"; /* > */
   font-family: var(--font-headings);
+  font-size: 1rem;
   left: 1rem;
   position: absolute;
   top: 25%;
   transition: all var(--transition-time);
+}
+
+.Button-link::after {
+  display: none;
 }
 
 /* print styles */

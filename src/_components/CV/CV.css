@@ -36,6 +36,7 @@
   color: var(--colour-orange);
   content: " \0003E"; /* > */
   font-family: var(--font-headings);
+  font-size: 1rem;
   left: 0.5rem;
   position: absolute;
   top: -0.15rem;

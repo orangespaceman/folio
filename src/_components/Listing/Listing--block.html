@@ -9,7 +9,7 @@
               </h3>
               <div class="Listing-description">
                 <div class="Editorial">
-                  {{include.item.excerpt}}
+                  {{include.item.excerpt | markdownify}}
                 </div>
                 <p class="Listing-link">
                   {% if include.url and include.link %}

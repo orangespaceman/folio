@@ -10,11 +10,11 @@
 
 .Back-link::before {
   border-bottom: 1px solid transparent; /* alignment */
-  bottom: 0;
+  bottom: 0.5rem;
   color: var(--colour-orange);
   content: " \0003C"; /* < */
   font-family: var(--font-headings);
-  left: -0.7rem;
+  left: -0.9rem;
   line-height: 1;
   opacity: 1; /* override default link hover */
   position: absolute;

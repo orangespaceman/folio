@@ -32,16 +32,13 @@
   }
 }
 
-.SiteTitle-link::before {
+.SiteTitle-link::before,
+.SiteTitle-link::after {
   display: none; /* override default link hover */
 }
 
 .SiteTitle-link:hover {
   background: var(--colour-orange-dark);
-}
-
-.SiteTitle-name {
-  font-family: var(--font-headings-bold);
 }
 
 /* Site title - lines */

@@ -13,6 +13,7 @@
 }
 
 .BulletedList-item {
+  font-size: 1.2rem;
   list-style: none;
   margin-bottom: 0.25rem;
   padding-left: 1.5rem;
@@ -23,6 +24,7 @@
   color: var(--colour-orange);
   content: " \0003E"; /* > */
   font-family: var(--font-headings);
+  font-size: 1rem;
   left: 0.5rem;
   position: absolute;
   top: -0.15rem;

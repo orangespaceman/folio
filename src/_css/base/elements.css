@@ -31,18 +31,14 @@ h4,
 h5,
 h6 {
   font-family: var(--font-headings);
-}
-
-h1 strong,
-h2 strong,
-h3 strong,
-h4 strong,
-h5 strong,
-h6 strong {
-  font-family: var(--font-headings-bold);
+  font-weight: normal;
 }
 
 /* text */
+
+p {
+  font-size: 1.2rem;
+}
 
 blockquote {
   border-left: 10px solid var(--colour-grey-mid);
@@ -50,6 +46,11 @@ blockquote {
 }
 
 /* lists */
+
+li {
+  font-size: 1.2rem;
+}
+
 
 /* media */
 
@@ -61,22 +62,35 @@ img {
 /* links */
 
 a {
-  border-bottom: 1px solid var(--colour-green);
   color: var(--colour-green);
   position: relative;
   text-decoration: none;
   transition: all var(--transition-time);
 }
 
-a:hover,
-a:focus,
-a:active {
+/* after - underline */
+
+a::after {
+  border-bottom: 1px solid var(--colour-green);
+  content: "";
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0;
+  right: 0;
+  transition: all var(--transition-time);
+}
+
+a:hover::after,
+a:focus::after,
+a:active::after {
   border-bottom-color: var(--colour-orange);
 }
 
+/* before - > arrow */
+
 a::before {
   border-bottom: 1px solid transparent; /* alignment */
-  bottom: 0;
+  bottom: 0.5rem;
   color: var(--colour-orange);
   content: " \0003E"; /* > */
   font-family: var(--font-headings);
@@ -91,7 +105,7 @@ a:hover::before,
 a:focus::before,
 a:active::before {
   opacity: 1;
-  right: -0.7rem;
+  right: -0.8rem;
 }
 
 /* remove default link styles */
@@ -100,7 +114,8 @@ a.is-arrowless {
   border: 0;
 }
 
-a.is-arrowless::before {
+a.is-arrowless::before,
+a.is-arrowless::after {
   display: none;
 }
 

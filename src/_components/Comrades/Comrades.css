@@ -8,6 +8,10 @@
   margin-bottom: var(--gutter);
 }
 
+.Comrades-header {
+  margin-top: 0.5rem;
+}
+
 @media (--medium) {
   .Comrades-header {
     align-items: center;
@@ -22,7 +26,9 @@
 }
 
 .Comrades-filterInput {
-  padding: 10px;
+  font-family: var(--font-body);
+  line-height: 1;
+  padding: 0.5rem 0.5rem 0.3rem 0.5rem;
 }
 
 /* Comrades - list */

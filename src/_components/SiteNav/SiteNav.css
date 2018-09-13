@@ -16,10 +16,11 @@
 
 .SiteNav-link {
   background: var(--colour-grey-light);
-  border: 0; /* remove default */
   border-top: 0 solid var(--colour-grey-light);
   color: var(--colour-green);
   display: block;
+  font-family: var(--font-headings);
+  font-size: 1rem;
   padding: 0.75rem 1rem 0.25rem 0.25rem;
   position: relative;
 }
@@ -44,7 +45,8 @@
   color: var(--colour-orange);
 }
 
-.SiteNav-link::before {
+.SiteNav-link::before,
+.SiteNav-link::after {
   display: none; /* override default link hover */
 }
 

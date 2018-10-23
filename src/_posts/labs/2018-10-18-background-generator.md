@@ -4,6 +4,7 @@ excerpt: Generate random background images of stars or vertical lines
 tag: featured-lab
 links:
   code: https://github.com/orangespaceman/background-generator
+  demo: https://orangespaceman.github.io/background-generator/
 images:
   featured: featured.png
   thumbs:

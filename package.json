@@ -23,7 +23,7 @@
     "moment": "^2.18.0",
     "normalize.css": "^7.0.0",
     "suitcss-base": "^4.0.0",
-    "superagent": "^3.5.1"
+    "superagent": "^3.8.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.3",

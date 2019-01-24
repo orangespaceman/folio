@@ -1,7 +1,6 @@
 ---
 title: On Moonlight
 excerpt: Microsite to promote the launch of a new On running shoe
-link: https://moonlight.on-running.com
 tag: featured-project
 images:
   featured: featured.jpg
@@ -20,7 +19,7 @@ technologies:
 
 ## Overview
 
-A microsite for [On Running](https://www.on-running.com) to help promote a new running shoe.
+A microsite for [On](https://www.on-running.com) to help promote a new running shoe.
 
 The website displays content from the bottom of the page, in a desktop browser you can scroll up to see a parallax scrolling background and at the top of the page the new shoe is revealed.
 

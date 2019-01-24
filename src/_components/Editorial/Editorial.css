@@ -28,6 +28,10 @@
   margin: 1rem 0;
 }
 
+.Editorial ol {
+  list-style: decimal;
+}
+
 /* duplicate bulleted list styles */
 
 .Editorial ul li {

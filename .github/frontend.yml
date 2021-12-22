@@ -3,7 +3,7 @@ name: Frontend - linting
 on:
   push:
     branches:
-      - development
+      - main
       - 'feature/**'
 
   # Allows you to run this workflow manually from the Actions tab

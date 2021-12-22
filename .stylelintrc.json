@@ -6,7 +6,7 @@
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["import-glob"]
+        "ignoreAtRules": ["import-glob", "custom-media"]
       }
     ],
     "plugin/selector-bem-pattern": {

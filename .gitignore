@@ -13,6 +13,7 @@ npm-debug.log
 
 # Jekyll
 /public
+src/.jekyll-cache
 
 # Deploy
 deploy.sh

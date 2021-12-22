@@ -22,7 +22,7 @@ function onInputChange(e) {
   if (!searchValue) {
     Array.prototype.forEach.call(comradeListItems, setActiveState);
   } else {
-    Array.prototype.forEach.call(comradeListItems, function(comradeListItem) {
+    Array.prototype.forEach.call(comradeListItems, function (comradeListItem) {
       if (
         comradeListItem.dataset.skills.toLowerCase().indexOf(searchValue) >
           -1 ||
@@ -45,5 +45,5 @@ function setInactiveState(el) {
 }
 
 module.exports = {
-  init: init
+  init: init,
 };

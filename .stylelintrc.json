@@ -1,9 +1,14 @@
 {
   "extends": ["stylelint-config-suitcss", "stylelint-config-prettier"],
-  "plugins": [
-    "stylelint-selector-bem-pattern"
-  ],
+  "plugins": ["stylelint-selector-bem-pattern"],
   "rules": {
+    "rule-empty-line-before": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["import-glob"]
+      }
+    ],
     "plugin/selector-bem-pattern": {
       "preset": "suit",
       "componentName": "[A-Z]+",

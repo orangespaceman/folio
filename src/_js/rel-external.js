@@ -15,5 +15,5 @@ function init() {
 }
 
 module.exports = {
-  init: init
+  init: init,
 };

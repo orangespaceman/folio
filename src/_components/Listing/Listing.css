@@ -50,8 +50,8 @@
   max-width: 40%;
   position: absolute;
   right: -0.5rem;
-  transition: all var(--transition-time);
   transform: perspective(600px) rotateY(0deg) rotateX(0deg);
+  transition: all var(--transition-time);
   z-index: 1;
 }
 

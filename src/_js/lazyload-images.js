@@ -8,15 +8,12 @@ var layzr = require("layzr.js").default;
 
 function init() {
   var instance = layzr({
-    threshold: 20
+    threshold: 20,
   });
 
-  instance
-    .update()
-    .check()
-    .handlers(true);
+  instance.update().check().handlers(true);
 }
 
 module.exports = {
-  init: init
+  init: init,
 };

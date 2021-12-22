@@ -16,3 +16,10 @@ npm-debug.log
 
 # Deploy
 deploy.sh
+
+# Misc
+_content
+
+# compiled files
+src/assets/css/site.css
+src/assets/js/site.js

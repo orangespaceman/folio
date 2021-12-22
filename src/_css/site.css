@@ -18,7 +18,7 @@
 
 /* resets */
 
-@import "third-party/**/*.css";
+@import-glob "third-party/**/*.css";
 
 /* variables */
 
@@ -30,11 +30,11 @@
 
 /* components */
 
-@import "../_components/**/*.css";
+@import-glob "../_components/**/*.css";
 
 /* util classes */
 
-@import "utils/**/*.css";
+@import-glob "utils/**/*.css";
 
 /* print */
 

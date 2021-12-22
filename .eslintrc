@@ -1,7 +1,11 @@
 {
   "extends": ["eslint:recommended", "prettier"],
   "globals": { "Promise": true },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
   "env": {
+    "es6": true,
     "browser": true,
     "node": true
   }

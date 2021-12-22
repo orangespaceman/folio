@@ -1,0 +1,24 @@
+{
+  "editor.hover.enabled": true,
+
+  // CSS/JS Lint
+  "eslint.enable": true,
+  "stylelint.enable": true,
+  "css.validate": true,
+
+  // Prettier - enable per-language
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+
+  // ESlint - custom config
+  "eslint.options": {
+    "configFile": ".eslintrc",
+  },
+}

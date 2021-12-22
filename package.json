@@ -1,6 +1,7 @@
 {
   "name": "f90.co.uk",
-  "version": "3.2.0",
+  "license": "WTFPL",
+  "version": "3.3.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:orangespaceman/folio.git"
@@ -9,39 +10,50 @@
     "build:css": "postcss src/_css/site.css --output src/assets/css/site.css",
     "build:js": "webpack --config webpack.config.js",
     "build": "npm-run-all build:*",
-    "lint:css":
-      "stylelint \"src/_components/**/*.css\" && stylelint \"src/_css/**/*.css\"",
+    "lint:css": "stylelint \"src/_components/**/*.css\" && stylelint \"src/_css/**/*.css\"",
     "lint:js": "eslint src/_components/ src/_js/",
     "lint": "npm-run-all lint:*",
-    "watch:css":
-      "chokidar 'src/_components/**/*.css' 'src/_css/**/*.css' -c 'npm run build:css'",
+    "watch:css": "chokidar 'src/_components/**/*.css' 'src/_css/**/*.css' -c 'npm run build:css'",
     "watch:js": "npm run build:js -- --watch",
-    "watch": "npm-run-all --parallel watch:*"
+    "watch": "npm-run-all --parallel watch:*",
+    "prepare": "husky install"
   },
   "dependencies": {
     "layzr.js": "^2.2.2",
-    "moment": "^2.18.0",
-    "normalize.css": "^7.0.0",
-    "suitcss-base": "^4.0.0",
-    "superagent": "^3.5.1"
+    "normalize.css": "^8.0.1",
+    "suitcss-base": "^5.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.3",
-    "chokidar-cli": "^1.2.0",
-    "cssnano": "^3.9.1",
-    "eslint": "^4.13.1",
-    "eslint-config-prettier": "^2.9.0",
-    "husky": "^0.14.3",
-    "npm-run-all": "^4.0.2",
-    "postcss-cli": "^4.1.1",
-    "postcss-custom-media": "^6.0.0",
-    "postcss-custom-properties": "^6.2.0",
-    "postcss-easy-import": "^3.0.0",
-    "prettier": "1.9.2",
-    "stylelint": "^8.4.0",
-    "stylelint-config-prettier": "^2.0.0",
-    "stylelint-config-suitcss": "^12.0.0",
-    "stylelint-selector-bem-pattern": "^2.0.0",
-    "webpack": "^3.10.0"
+    "autoprefixer": "^10.4.0",
+    "chokidar-cli": "^3.0.0",
+    "cssnano": "^5.0.14",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.3",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "postcss-custom-media": "^8.0.0",
+    "postcss-custom-properties": "^12.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-import-ext-glob": "^2.0.1",
+    "prettier": "2.5.1",
+    "stylelint": "^14.2.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-suitcss": "^17.0.0",
+    "stylelint-selector-bem-pattern": "^2.1.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn lint:js",
+      "prettier --write"
+    ],
+    "*.css": [
+      "yarn lint:css",
+      "prettier --write"
+    ]
   }
 }

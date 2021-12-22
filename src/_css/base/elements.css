@@ -51,7 +51,6 @@ li {
   font-size: 1.2rem;
 }
 
-
 /* media */
 
 img {
@@ -72,10 +71,10 @@ a {
 
 a::after {
   border-bottom: 1px solid var(--colour-green);
-  content: "";
-  position: absolute;
   bottom: 0.3rem;
+  content: "";
   left: 0;
+  position: absolute;
   right: 0;
   transition: all var(--transition-time);
 }

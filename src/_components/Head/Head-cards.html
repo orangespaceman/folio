@@ -4,8 +4,6 @@
 {% capture image %}{{ site.sitehost }}{% if page.images.thumbs.desktop %}/assets/images{{page.type}}{{page.id}}/{{page.images.thumbs.desktop}}{% else %}/assets/images/avatar.png{% endif %}{% endcapture %}
 
     <meta name="twitter:card" content="{{card}}">
-    <meta name="twitter:site" content="@{{ site.sitehandle }}">
-    <meta name="twitter:creator" content="@{{ site.sitehandle }}">
     <meta property="og:url" content="{{ site.sitehost }}{{ page.id }}">
     <meta property="og:title" content="{{title}}">
     <meta property="og:description" content="{{description}}">

@@ -35,9 +35,7 @@
 
 @media (--medium) {
   .Comrades-list {
-    column-count: 3;
-    column-gap: 2rem;
-    column-width: 30%;
+    columns: 3;
 
     /* fix layout issues caused by transitions elsewhere */
     will-change: transform;

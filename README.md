@@ -80,7 +80,7 @@ This has been downloaded from and converted with Font Squirrel
 When adding a new portfolio project or lab, the following images need prepping:
 
 * featured.jpg - ratio 5:1 - roughly 2000x400
-* thumb-desktop.jpg - ratio 8:6 - roughy 1024x768
+* thumb-desktop.jpg - ratio 8:6 - roughly 1024x768
 * thumb-mobile.jpg - ratio 4:6 - roughly 400x600
 * desktop images
 * mobile images

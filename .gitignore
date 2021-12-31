@@ -24,3 +24,4 @@ _content
 # compiled files
 src/assets/css/site.css
 src/assets/js/site.js
+src/service-worker.js

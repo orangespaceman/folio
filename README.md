@@ -84,3 +84,24 @@ When adding a new portfolio project or lab, the following images need prepping:
 * thumb-mobile.jpg - ratio 4:6 - roughly 400x600
 * desktop images
 * mobile images
+
+
+## Updating dependencies
+
+To check for outdated packages:
+
+```
+yarn outdated
+```
+
+To update packages:
+
+```
+yarn upgrade-interactive --latest
+```
+
+or
+
+```
+npx npm-check-updates -u
+```

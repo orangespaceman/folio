@@ -1,7 +1,6 @@
 ---
 title: Wilderness Now
 excerpt: The front-end for a website that allows people to book adventure holidays in the UK
-link: https://www.wilderness-now.com
 tag: featured-project
 images:
   featured: featured.jpg

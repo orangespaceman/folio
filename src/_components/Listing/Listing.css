@@ -93,13 +93,8 @@
 /* Listing blocks - full-width content blocks */
 
 @media (--medium) {
-  .Listing--block {
-    margin-left: -var(--gutter);
-  }
-
   .Listing--block .Listing-information {
     display: inline-block;
-    padding-left: var(--gutter);
     vertical-align: top;
     width: 33.33%;
   }

@@ -14,12 +14,13 @@ I have been working in web development since 2005. I also teach a range of devel
 
 ### Technical Skills
 
-- HTML and CSS: PostCSS, BEM, SUIT CSS, SCSS, Less, CSS Modules, cross-browser/device responsive layouts
-- JavaScript/TypeScript: React, React Native, Vue, Node, ESNext, websockets, npm, yarn
+- HTML and CSS: PostCSS, BEM, SUIT CSS, SCSS, Less, CSS Modules, Tailwind, cross-browser/device responsive layouts
+- JavaScript/TypeScript: Vue, React, React Native, Node, ESNext, websockets, npm, yarn
 - Python: Django, Django Rest Framework
-- PHP and MySQL: Laravel, Composer
+- PHP: Laravel, Composer
+- Databases: MySQL, PostgreSQL
 - Raspberry Pis and Arduinos
-- Testing and CI
+- Testing, CI
 - Git
 - UX, Agile workflow
 - Writing and teaching technical material for academic and professional courses

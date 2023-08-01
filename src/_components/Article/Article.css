@@ -22,7 +22,7 @@
 
 @media (--medium) {
   .Article {
-    margin-left: -var(--gutter);
+    margin-left: calc(-1 * var(--gutter));
   }
 
   .Article-information {

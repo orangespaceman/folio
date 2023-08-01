@@ -1,21 +1,27 @@
-electricputty:
-  name: Electric Putty
-  link: http://www.electricputty.co.uk
-
-pirata:
-  name: Pirata London
-
 tonic:
   name: Tonic Design
 
 grandunion:
   name: Grand Union
-  link: http://www.thegrandunion.com/
+
+pirata:
+  name: Pirata London
 
 smesh:
   name: Smesh
-  link: http://sme.sh/
 
 madetech:
   name: Made Tech
   link: https://www.madetech.com
+
+electricputty:
+  name: Electric Putty
+  link: https://www.electricputty.co.uk
+
+cebai:
+  name: CebAI
+  link: https://www.bayes.city.ac.uk/business-services/consulting/centre-for-creativity-enabled-by-ai
+
+measured:
+  name: Measured
+  link: https://measured.co/

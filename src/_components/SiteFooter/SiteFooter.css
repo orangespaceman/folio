@@ -62,22 +62,6 @@
   margin-bottom: 0.5rem;
 }
 
-.SiteFooter-membership {
-  font-size: 1rem;
-}
-
-.SiteFooter-membershipLink {
-  margin-right: 3px;
-}
-
-.SiteFooter-membershipLink::before {
-  display: none;
-}
-
-.SiteFooter-membershipLink::after {
-  bottom: 0;
-}
-
 /* responsive layout */
 
 @media (--medium) {

@@ -19,7 +19,7 @@ src/.jekyll-cache
 deploy.sh
 
 # Misc
-_content
+____content
 
 # compiled files
 src/assets/css/site.css

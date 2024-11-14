@@ -14,13 +14,19 @@ adrianrowbotham:
   name: Adrian Rowbotham
   link: https://aderowbotham.com/
   skills: Design, Development
-  tags: [design, development, html, css, js, javascript, php, stanford, freelance]
+  tags: [design, development, html, css, js, javascript, php, stamford, freelance]
 
 alanthomson:
   name: Alan Thomson
-  link: http://projectmccoll.co.uk
+  link: https://linkedin.com/in/alan-thomson-ab2bab28
   skills: Development
-  tags: [development, html, css, js, javascript, php, london, freelance]
+  tags: [development, html, css, js, javascript, php, brighton]
+
+alasdairmcleay:
+  name: Alasdair McLeay
+  link: https://github.com/penx
+  skills: Development
+  tags: [development, html, css, js, javascript, brighton, freelance]
 
 alastairlockie:
   name: Alastair Lockie
@@ -82,6 +88,12 @@ benscammels:
   skills: Design, UX
   tags: [design, ux, freelance, brighton]
 
+calnicklin:
+  name: Cal Nicklin
+  link: https://github.com/calnicklin
+  skills: Development
+  tags: [development, html, css, js, brighton]
+
 carlesbarrobés:
   name: Carles Barrobés
   link: https://technomilk.wordpress.com/
@@ -94,11 +106,23 @@ cassieevans:
   skills: Development
   tags: [development, html, css, js, javascript, brighton]
 
+catbakerbassett:
+  name: Cat Baker-Bassett
+  link: https://www.linkedin.com/in/catrina-baker-bassett/
+  skills: MD
+  tags: [md, managing director, brighton]
+
 cazlock:
   name: Caz Lock
   link: http://www.cazlock.com/
   skills: Illustration, Photo Retouching
   tags: [illustration, photo-retouching, london]
+
+chloepage:
+  name: Chloe Page
+  link: https://github.com/ChloeSAPage
+  skills: Development
+  tags: [development, html, css, js, javascript, brighton]
 
 chrisboakes:
   name: Chris Boakes
@@ -118,11 +142,29 @@ chrisjames(05):
   skills: Design, UX
   tags: [design, ux, brighton]
 
+chrisvilla:
+  name: Chris Villa
+  link: https://measured.co/
+  skills: Development
+  tags: [development, html, css, js, javascript, python, brighton]
+
 christianklotz:
   name: Christian Klotz
   link: http://www.christianklotz.co.uk
   skills: Development
   tags: [development, ios, go, london]
+
+conradgregory:
+  name: Conrad Gregory
+  link: https://github.com/cnrdgrgry
+  skills: Development
+  tags: [development, html, css, js, javascript, brighton]
+
+danwallman:
+  name: Dan Wallman
+  link: https://www.linkedin.com/in/dan-wallman-3b796417/
+  skills: Education
+  tags: [education, training, brighton]
 
 danielezanfardino:
   name: Daniele Zanfardino
@@ -190,6 +232,12 @@ eduardodefelipe:
   skills: Design
   tags: [design, barcelona]
 
+elyasfaiq:
+  name: Elyas Faiq
+  link: https://github.com/BlueElyas
+  skills: Development
+  tags: [development, html, css, js, javascript, brighton]
+
 emileswarts:
   name: Emile Swarts
   link: http://emileswarts.github.io/
@@ -232,6 +280,12 @@ fredwheener:
   skills: Design, UX
   tags: [design, ux, london]
 
+freyahughes:
+  name: Freya Hughes
+  link: https://freyahughes.com/
+  skills: Copywriting
+  tags: [copywriting, brighton, freelance]
+
 gabesmak:
   name: Gabes Mak
   link: http://www.pixelbreaker.com/
@@ -261,6 +315,12 @@ hayleywatchorn:
   link: http://www.hayleywatchorn.com/
   skills: Design, Video
   tags: [design, video, london]
+
+helderbalbino:
+  name: Helder Balbino
+  link: https://github.com/HelderBalbino
+  skills: Development
+  tags: [development, html, css, js, javascript, london]
 
 henrycooke:
   name: Henry Cooke
@@ -340,6 +400,12 @@ jamielong:
   skills: Design, Photography
   tags: [design, photography, london]
 
+jamiematthews:
+  name: Jamie Matthews
+  link: https://www.linkedin.com/in/j4mie/
+  skills: Development
+  tags: [development, python, brighton]
+
 jasmineparadinejames:
   name: Jasmine Paradine-James
   link: https://uk.linkedin.com/in/jasmine-paradine-james-ba046651
@@ -360,7 +426,7 @@ jedrichards:
 
 jessicarutson:
   name: Jessica Rutson
-  link: https://instagram.com/jessierutson/
+  link: https://www.linkedin.com/in/jessica-rutson-8686061a/
   skills: Production
   tags: [production, london, freelance]
 
@@ -400,6 +466,12 @@ jonaizlewood:
   skills: Design, UX
   tags: [design, ux, brighton]
 
+jonelsom:
+  name: Jon Elsom
+  link: http://www.awonderfulchoice.com/
+  skills: Development
+  tags: [development, databases, brighton]
+
 jonashaefele:
   name: Jonas Haefele
   link: http://www.jonashaefele.com/
@@ -411,6 +483,12 @@ jonnygoodall:
   link: http://www.jonnygoodall.com/
   skills: Design
   tags: [design, london]
+
+jopickering:
+  name: Jo Pickering
+  link: https://github.com/Jo-Pickering
+  skills: Development
+  tags: [development, html, css, js, javascript, brighton]
 
 joshuamaxey:
   name: Joshua Maxey
@@ -435,6 +513,12 @@ kallelind:
   link: http://www.kallelind.com/
   skills: Design, Photography
   tags: [design, photography, sweden, freelance]
+
+kamilawilczynska:
+  name: Kamila Wilczynska
+  link: https://github.com/kamila-wilczynska
+  skills: Development
+  tags: [development, html, css, js, javascript, london]
 
 katebooth:
   name: Kate Booth
@@ -466,11 +550,29 @@ krystalwu:
   skills: Development
   tags: [development, html, css, js, javascript, php, python, london]
 
+lachiemurray:
+  name: Lachie Murray
+  link: https://github.com/lachiemurray
+  skills: Development
+  tags: [development, python, brighton]
+
+laurathorn:
+  name: Laura Thorn
+  link: https://www.linkedin.com/in/laura-thorn-805544138/
+  skills: Development
+  tags: [development, python, brighton]
+
 liamwalsh:
   name: Liam Walsh
   link: http://liamwalsh.com/
   skills: Development
   tags: [development, 3d, london]
+
+libertyjacklin:
+  name: Liberty Jacklin
+  link: https://www.libertyjacklin.com/
+  skills: Development
+  tags: [development, brighton]
 
 loucarroll:
   name: Lou Carroll
@@ -585,6 +687,12 @@ nickwavish:
   link: http://www.wavish.com/
   skills: Design, Illustration
   tags: [design, illustration, london]
+
+nicoclack:
+  name: Nico Clack
+  link: https://github.com/hedgehog125
+  skills: Development
+  tags: [development, html, css, js, javascript, brighton]
 
 nicolaspigelet:
   name: Nicolas Pigelet
@@ -742,6 +850,12 @@ sebastianmeier:
   skills: Design, Development
   tags: [design, development, berlin]
 
+sebdavies:
+  name: Seb Davies
+  link: https://github.com/Sebbybobbler
+  skills: Development
+  tags: [development, html, css, js, javascript, brighton]
+
 sergiogarcez:
   name: Sergio Garcez
   link: http://sergiogarcez.com/
@@ -753,6 +867,12 @@ sianallen:
   link:  http://uk.linkedin.com/pub/sian-allen/51/a43/b97
   skills: Design
   tags: [design, brighton, freelance]
+
+sidhaniff:
+  name: Sid Haniff
+  link: https://www.linkedin.com/in/sidhaniff/
+  skills: Development
+  tags: [development, python, brighton]
 
 simwishlade:
   name: Sim Wishlade
@@ -789,6 +909,12 @@ simonway:
   link: https://www.simonway.co.uk/
   skills: Photography
   tags: [photography, brighton]
+
+susannahbennett:
+  name: Susannah Bennett
+  link: https://github.com/sfbennett
+  skills: Development
+  tags: [development, html, css, js, javascript, brighton]
 
 tombandy:
   name: Tom Bandy

@@ -12,6 +12,9 @@ images:
     mobile: thumb-mobile.jpg
   photos:
     - mobile-home.jpg
+video:
+  video: video.mp4
+  screenshot: screenshot.jpg
 technologies:
   - JavaScript
 ---
@@ -43,8 +46,3 @@ For this lab, the three values are used as rotation values for the X, Y and Z co
 The [JavaScript file](https://github.com/orangespaceman/device-orientation-3d/blob/master/assets/js/device.js) contains plenty of comments to describe the logic that calculates these values.
 
 This is a basic implementation that doesn't use Euler angles or Quaternions (etc) and therefore suffers from Gimbal Lock. ([Read](https://stackoverflow.com/questions/41491940/) [More](https://stackoverflow.com/questions/22609518/) [Here](https://www.w3.org/TR/2016/CR-orientation-event-20160818/#worked-example-2)).
-
-
-## Example video
-
-<a data-flickr-embed="true"  href="https://www.flickr.com/gp/thegingerbloke/QH9Xiq" title="Device orientation - 3d rotation"><img src="https://farm2.staticflickr.com/1963/30579101497_5452b36caa_b.jpg" width="1024" height="576" alt="Device orientation - 3d rotation"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

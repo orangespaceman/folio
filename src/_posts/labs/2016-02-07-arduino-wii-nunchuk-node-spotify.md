@@ -11,6 +11,9 @@ images:
   photos:
     - arduino-1.jpg
     - arduino-2.jpg
+video:
+  video: video.mp4
+  screenshot: screenshot.jpg
 technologies:
   - Arduino
   - Wii Nunchuk
@@ -46,8 +49,3 @@ The sketch assumes the use of a Wii Nunchuk, but this could be replaced with ano
 The RGB LED is completely superfluous and could easily be removed.
 
 Brief setup notes are on [Github](https://github.com/orangespaceman/arduino-wii-nunchuk-node-spotify)
-
-
-## Example video
-
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/thegingerbloke/24848529436/in/dateposted-public/" title="Arduino Wii Nunchuk Node Spotify"><img src="https://farm2.staticflickr.com/1476/24848529436_a2d6e811df_b.jpg" width="1024" height="576" alt="Arduino Wii Nunchuk Node Spotify"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

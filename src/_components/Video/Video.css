@@ -1,0 +1,80 @@
+/**
+ * @define Video; use strict
+ */
+
+/* Video - button */
+
+.Video {
+  margin-bottom: var(--gutter);
+  position: relative;
+  text-align: center;
+}
+
+/* Video - toggle */
+
+.Video-toggle {
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.Video.is-active .Video-toggle {
+  display: none;
+}
+
+.Video-toggle::after {
+  border: 5px solid white;
+  border-radius: 50%;
+  content: "";
+  height: 80px;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  transition: all var(--transition-time);
+  width: 80px;
+  z-index: 2;
+}
+
+.Video-toggle::before {
+  border-bottom: 20px solid transparent;
+  border-left: 40px solid white;
+  border-top: 20px solid transparent;
+  content: "";
+  height: 0;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -20px;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  transition: all var(--transition-time);
+  width: 0;
+  z-index: 1;
+}
+
+.Video-toggle:hover::before,
+.Video-toggle:hover::after {
+  opacity: 1;
+}
+
+/* Video - screenshot */
+
+.Video-screenshot {
+  max-height: 80vh;
+  max-width: 100%;
+}
+
+.Video.is-active .Video-screenshot {
+  display: none;
+}
+
+/* Video - video */
+
+.Video-video {
+  max-height: 80vh;
+  max-width: 100%;
+}

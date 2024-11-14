@@ -11,6 +11,9 @@ images:
   photos:
     - voicekitbot.jpg
     - slack.png
+video:
+  video: video.mp4
+  screenshot: screenshot.jpg
 technologies:
   - Python
   - Google AIY Voicekit
@@ -27,7 +30,3 @@ First, it listens to commands that will control Spotify (via [Awkbot](/labs/awkb
 Second, if you ask it who should make the tea it checks who is in the studio and picks someone at random.
 
 Full setup notes are on [Github](https://github.com/making-things-club/voicekitbot)
-
-## Example video
-
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/thegingerbloke/38487279244/in/dateposted-public/" title="Voicekitbot"><img src="https://farm5.staticflickr.com/4738/38487279244_2d0bd328f0_b.jpg" width="1024" height="576" alt="Voicekitbot"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

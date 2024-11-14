@@ -12,6 +12,9 @@ images:
     mobile: thumb-mobile.jpg
   photos:
     - mobile-home.jpg
+video:
+  video: video.mp4
+  screenshot: screenshot.jpg
 technologies:
   - JavaScript
 ---
@@ -43,8 +46,3 @@ For this lab, we expand the width of the web page so that it expands in both dir
 The [JavaScript file](https://github.com/orangespaceman/device-orientation-360/blob/master/assets/js/device-orientation.js) contains plenty of comments to describe the logic that calculates these values.
 
 This is a basic implementation that doesn't use Euler angles or Quaternions (etc) and therefore suffers from Gimbal Lock. ([Read](https://stackoverflow.com/questions/41491940/) [More](https://stackoverflow.com/questions/22609518/) [Here](https://www.w3.org/TR/2016/CR-orientation-event-20160818/#worked-example-2)).
-
-
-## Example video
-
-<a data-flickr-embed="true"  href="https://www.flickr.com/gp/thegingerbloke/wpg8Q4" title="Device orientation - 360 degree page"><img src="https://farm2.staticflickr.com/1918/44794929974_5031b50ccf_b.jpg" width="1024" height="576" alt="Device orientation - 360 degree page"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

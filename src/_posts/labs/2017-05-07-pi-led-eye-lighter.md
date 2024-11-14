@@ -19,6 +19,9 @@ images:
     - 8.jpg
     - 9.jpg
     - 10.jpg
+video:
+  video: video.mp4
+  screenshot: screenshot.jpg
 technologies:
   - Raspberry Pi
   - Adafruit Dotstar APA102 LED strip
@@ -26,7 +29,6 @@ technologies:
 collaborators:
   - ruthwatson
   - samwaters
-  - edisaacs
   - paulferguson
   - matkeller
 
@@ -49,7 +51,3 @@ The lights are controlled by a Raspberry Pi. The Pi runs two scripts:
 
 Full setup notes are on [Github](https://github.com/orangespaceman/eye-lighter)
 
-
-## Example video
-
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/thegingerbloke/34042005070/in/dateposted-public/" title="Eye-lighter"><img src="https://c1.staticflickr.com/3/2807/34042005070_b4b8ba33e0_b.jpg" width="1024" height="576" alt="Eye-lighter"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

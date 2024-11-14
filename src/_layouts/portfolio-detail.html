@@ -81,6 +81,16 @@ section: Portfolio
                   </ul>
                   {% endif %}
                 </div>
+
+                {% if page.video %}
+                <div class="Article-video">
+                  <div class="Editorial">
+                    <h2>Example video</h2>
+                  </div>
+                  {% include Video/Video.html id=page.id video=page.video.video screenshot=page.video.screenshot %}
+                </div>
+                {% endif %}
+
                 <div class="Article-imagery">
                 {% if page.images.desktop %}
                 <div class="Article-screenshots Article-screenshots--desktop">

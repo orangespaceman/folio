@@ -10,6 +10,9 @@ images:
     desktop: thumb-desktop.jpg
   photos:
     - pi.jpg
+video:
+  video: video.mp4
+  screenshot: screenshot.jpg
 technologies:
   - Raspberry Pi
   - Node
@@ -56,7 +59,3 @@ The node app is set up on the Pi to auto-start on boot, opening the site in Chro
 By default the images are shown full-screen, with a tap on the touchscreen toggling the display of further information about the flight.
 
 Full setup notes are on [Github](https://github.com/orangespaceman/plane-spotter)
-
-## Example video
-
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/thegingerbloke/30918533672/in/dateposted-public/" title="Plane Spotter"><img src="https://c1.staticflickr.com/6/5337/30918533672_70fb0cde5f_b.jpg" width="1024" height="576" alt="Plane Spotter"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

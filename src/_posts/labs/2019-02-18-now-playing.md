@@ -11,6 +11,9 @@ images:
     mobile: thumb-mobile.jpg
   photos:
     - desktop-home.jpg
+video:
+  video: video.mp4
+  screenshot: screenshot.jpg
 technologies:
   - Python
   - JavaScript
@@ -25,5 +28,3 @@ I made a thing to live on a Raspberry Pi, that can then be displayed on an iPad 
 It shows details of the current Spotify/BBC 6music track that's playing on the same local network.
 
 Full setup instructions are on GitHub.
-
-<a data-flickr-embed="true"  href="https://www.flickr.com/gp/thegingerbloke/boar87" title="I made a thing for the new studio"><img src="https://farm8.staticflickr.com/7864/33251021488_3850a97593_b.jpg" width="1024" height="576" alt="I made a thing for the new studio"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

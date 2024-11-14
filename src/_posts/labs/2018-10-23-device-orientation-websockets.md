@@ -12,6 +12,9 @@ images:
     mobile: thumb-mobile.jpg
   photos:
     - desktop-home.jpg
+video:
+  video: video.mp4
+  screenshot: screenshot.jpg
 technologies:
   - JavaScript
 ---
@@ -45,8 +48,3 @@ For each device, the three device orientation values (alpha, beta and gamma) are
 The [JavaScript file](https://github.com/orangespaceman/device-orientation-websockets/blob/master/client/assets/js/device.js) contains plenty of comments to describe the logic that calculates these values.
 
 This is a basic implementation that doesn't use Euler angles or Quaternions (etc) and therefore suffers from Gimbal Lock. ([Read](https://stackoverflow.com/questions/41491940/) [More](https://stackoverflow.com/questions/22609518/) [Here](https://www.w3.org/TR/2016/CR-orientation-event-20160818/#worked-example-2)).
-
-
-## Example video
-
-<a data-flickr-embed="true"  href="https://www.flickr.com/gp/thegingerbloke/156ycE" title="Device orientation - Websockets"><img src="https://farm2.staticflickr.com/1951/44606451335_3a31f1ff44_b.jpg" width="1024" height="576" alt="Device orientation - Websockets"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

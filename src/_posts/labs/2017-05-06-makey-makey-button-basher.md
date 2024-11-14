@@ -15,12 +15,14 @@ images:
     - services-1.jpg
     - services-2.jpg
     - shortcuts.jpg
+video:
+  video: video.mp4
+  screenshot: screenshot.jpg
 technologies:
   - Arduino
   - Automator
   - Python
 collaborators:
-  - edisaacs
   - matkeller
 
 ---
@@ -32,7 +34,3 @@ I set up a Makey Makey with custom keyboard mappings to control Spotify and play
 In addition, the big red button in the middle glows faintly. Just because.
 
 Full setup notes are on [Github](https://github.com/orangespaceman/button-basher)
-
-## Example video
-
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/thegingerbloke/33686207584/in/dateposted-public/" title="Made another pointless thing"><img src="https://c1.staticflickr.com/5/4188/33686207584_749fe23766_b.jpg" width="1024" height="576" alt="Made another pointless thing"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

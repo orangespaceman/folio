@@ -28,6 +28,6 @@ This is something similar that can run on a Raspberry Pi, and can then be displa
 
 It shows details of the current track that’s playing.
 
-This app it can also be used to start radio stations, such as BBC Radio 6 Music or FIP.
+This app can also be used to start radio stations, such as BBC Radio 6 Music or FIP.
 
 Full setup instructions are on GitHub.
